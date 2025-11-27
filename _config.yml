@@ -1,8 +1,0 @@
-title: ModDota API Documentation
-description: > # this means to ignore newlines until "baseurl:"
-  A Project by ModDota to have automated documenation
-  of all aspects of Custom Games, with more coming over time.
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
