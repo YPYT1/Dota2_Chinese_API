@@ -1,368 +1,253 @@
-# Game Events URLs - 共361个
-GAME_EVENTS_URLS = [
-    "https://moddota.com/api/#!/events/account_all_hero_challenge_changed",
-    "https://moddota.com/api/#!/events/achievement_earned",
-    "https://moddota.com/api/#!/events/achievement_event",
-    "https://moddota.com/api/#!/events/achievement_write_failed",
-    "https://moddota.com/api/#!/events/aegis_event",
-    "https://moddota.com/api/#!/events/antiaddiction_toast",
-    "https://moddota.com/api/#!/events/bindpanel_close",
-    "https://moddota.com/api/#!/events/bindpanel_open",
-    "https://moddota.com/api/#!/events/bonus_updated",
-    "https://moddota.com/api/#!/events/booster_state_updated",
-    "https://moddota.com/api/#!/events/bot_takeover",
-    "https://moddota.com/api/#!/events/bought_back",
-    "https://moddota.com/api/#!/events/break_breakable",
-    "https://moddota.com/api/#!/events/break_prop",
-    "https://moddota.com/api/#!/events/broken_breakable",
-    "https://moddota.com/api/#!/events/cart_updated",
-    "https://moddota.com/api/#!/events/chat_members_changed",
-    "https://moddota.com/api/#!/events/chat_new_message",
-    "https://moddota.com/api/#!/events/client_disconnect",
-    "https://moddota.com/api/#!/events/client_reload_game_keyvalues",
-    "https://moddota.com/api/#!/events/clientside_lesson_closed",
-    "https://moddota.com/api/#!/events/colorblind_mode_changed",
-    "https://moddota.com/api/#!/events/community_cached_names_updated",
-    "https://moddota.com/api/#!/events/custom_game_friends_played_updated",
-    "https://moddota.com/api/#!/events/custom_game_lobby_list_updated",
-    "https://moddota.com/api/#!/events/custom_game_mode_list_updated",
-    "https://moddota.com/api/#!/events/custom_game_player_count_updated",
-    "https://moddota.com/api/#!/events/custom_games_friends_play_updated",
-    "https://moddota.com/api/#!/events/dashboard_caches_cleared",
-    "https://moddota.com/api/#!/events/dashboard_switched_section",
-    "https://moddota.com/api/#!/events/defeated",
-    "https://moddota.com/api/#!/events/demo_skip",
-    "https://moddota.com/api/#!/events/demo_start",
-    "https://moddota.com/api/#!/events/demo_stop",
-    "https://moddota.com/api/#!/events/difficulty_changed",
-    "https://moddota.com/api/#!/events/door_close",
-    "https://moddota.com/api/#!/events/dota_ability_changed",
-    "https://moddota.com/api/#!/events/dota_ability_channel_finished",
-    "https://moddota.com/api/#!/events/dota_action_item",
-    "https://moddota.com/api/#!/events/dota_action_success",
-    "https://moddota.com/api/#!/events/dota_ad_ban",
-    "https://moddota.com/api/#!/events/dota_ad_ban_count",
-    "https://moddota.com/api/#!/events/dota_ad_hero_collision",
-    "https://moddota.com/api/#!/events/dota_ad_nominated_ban",
-    "https://moddota.com/api/#!/events/dota_ad_randomed",
-    "https://moddota.com/api/#!/events/dota_alchemist_granted_scepter",
-    "https://moddota.com/api/#!/events/dota_assist_earned",
-    "https://moddota.com/api/#!/events/dota_banner_planted",
-    "https://moddota.com/api/#!/events/dota_barracks_kill",
-    "https://moddota.com/api/#!/events/dota_bounty",
-    "https://moddota.com/api/#!/events/dota_buyback",
-    "https://moddota.com/api/#!/events/dota_candy",
-    "https://moddota.com/api/#!/events/dota_challenge_socache_updated",
-    "https://moddota.com/api/#!/events/dota_chase_hero",
-    "https://moddota.com/api/#!/events/dota_chat_assassin_announce",
-    "https://moddota.com/api/#!/events/dota_chat_assassin_denied",
-    "https://moddota.com/api/#!/events/dota_chat_assassin_success",
-    "https://moddota.com/api/#!/events/dota_chat_ban_notification",
-    "https://moddota.com/api/#!/events/dota_chat_event",
-    "https://moddota.com/api/#!/events/dota_chat_first_blood",
-    "https://moddota.com/api/#!/events/dota_chat_informational",
-    "https://moddota.com/api/#!/events/dota_chat_kill_streak",
-    "https://moddota.com/api/#!/events/dota_chat_timed_reward",
-    "https://moddota.com/api/#!/events/dota_coin_wager",
-    "https://moddota.com/api/#!/events/dota_combat_event_message",
-    "https://moddota.com/api/#!/events/dota_combatlog",
-    "https://moddota.com/api/#!/events/dota_courier_lost",
-    "https://moddota.com/api/#!/events/dota_courier_respawned",
-    "https://moddota.com/api/#!/events/dota_courier_transfer_item",
-    "https://moddota.com/api/#!/events/dota_crafting_xp",
-    "https://moddota.com/api/#!/events/dota_creature_gained_level",
-    "https://moddota.com/api/#!/events/dota_custom_camera_pitch_updated",
-    "https://moddota.com/api/#!/events/dota_custom_camera_updated",
-    "https://moddota.com/api/#!/events/dota_effigy_kill",
-    "https://moddota.com/api/#!/events/dota_enemy_money_changed",
-    "https://moddota.com/api/#!/events/dota_event_game_camera_position_updated",
-    "https://moddota.com/api/#!/events/dota_event_game_camera_zoom_updated",
-    "https://moddota.com/api/#!/events/dota_favorite_heroes_updated",
-    "https://moddota.com/api/#!/events/dota_force_portrait_update",
-    "https://moddota.com/api/#!/events/dota_game_state_change",
-    "https://moddota.com/api/#!/events/dota_glyph_used",
-    "https://moddota.com/api/#!/events/dota_hero_ability_points_changed",
-    "https://moddota.com/api/#!/events/dota_hero_entered_shop",
-    "https://moddota.com/api/#!/events/dota_hero_inventory_item_change",
-    "https://moddota.com/api/#!/events/dota_hero_on_gain_aggro",
-    "https://moddota.com/api/#!/events/dota_hero_random",
-    "https://moddota.com/api/#!/events/dota_hero_swap",
-    "https://moddota.com/api/#!/events/dota_hero_teleport_to_unit",
-    "https://moddota.com/api/#!/events/dota_hero_undoselection",
-    "https://moddota.com/api/#!/events/dota_holdout_revive_complete",
-    "https://moddota.com/api/#!/events/dota_holdout_revive_eliminated",
-    "https://moddota.com/api/#!/events/dota_hud_error_message",
-    "https://moddota.com/api/#!/events/dota_hud_skin_changed",
-    "https://moddota.com/api/#!/events/dota_illusions_created",
-    "https://moddota.com/api/#!/events/dota_inventory_changed",
-    "https://moddota.com/api/#!/events/dota_inventory_changed_query_unit",
-    "https://moddota.com/api/#!/events/dota_inventory_item_added",
-    "https://moddota.com/api/#!/events/dota_inventory_item_changed",
-    "https://moddota.com/api/#!/events/dota_inventory_player_got_item",
-    "https://moddota.com/api/#!/events/dota_item_auto_purchase",
-    "https://moddota.com/api/#!/events/dota_item_combined",
-    "https://moddota.com/api/#!/events/dota_item_drag_begin",
-    "https://moddota.com/api/#!/events/dota_item_drag_end",
-    "https://moddota.com/api/#!/events/dota_item_gifted",
-    "https://moddota.com/api/#!/events/dota_item_physical_destroyed",
-    "https://moddota.com/api/#!/events/dota_item_picked_up",
-    "https://moddota.com/api/#!/events/dota_item_placed_in_neutral_stash",
-    "https://moddota.com/api/#!/events/dota_item_purchase",
-    "https://moddota.com/api/#!/events/dota_item_purchased",
-    "https://moddota.com/api/#!/events/dota_item_spawned",
-    "https://moddota.com/api/#!/events/dota_item_spotted",
-    "https://moddota.com/api/#!/events/dota_item_used",
-    "https://moddota.com/api/#!/events/dota_link_clicked",
-    "https://moddota.com/api/#!/events/dota_local_quickbuy_changed",
-    "https://moddota.com/api/#!/events/dota_match_done",
-    "https://moddota.com/api/#!/events/dota_match_done_client",
-    "https://moddota.com/api/#!/events/dota_match_signout",
-    "https://moddota.com/api/#!/events/dota_miniboss_kill",
-    "https://moddota.com/api/#!/events/dota_money_changed",
-    "https://moddota.com/api/#!/events/dota_neutral_creep_camp_cleared",
-    "https://moddota.com/api/#!/events/dota_neutral_item_sent_to_stash",
-    "https://moddota.com/api/#!/events/dota_no_battle_points",
-    "https://moddota.com/api/#!/events/dota_non_player_begin_cast",
-    "https://moddota.com/api/#!/events/dota_non_player_used_ability",
-    "https://moddota.com/api/#!/events/dota_npc_goal_reached",
-    "https://moddota.com/api/#!/events/dota_on_hero_finish_spawn",
-    "https://moddota.com/api/#!/events/dota_pause_event",
-    "https://moddota.com/api/#!/events/dota_player_begin_cast",
-    "https://moddota.com/api/#!/events/dota_player_connection_state_changed",
-    "https://moddota.com/api/#!/events/dota_player_deny",
-    "https://moddota.com/api/#!/events/dota_player_details_changed",
-    "https://moddota.com/api/#!/events/dota_player_gained_level",
-    "https://moddota.com/api/#!/events/dota_player_hero_selection_dirty",
-    "https://moddota.com/api/#!/events/dota_player_kill",
-    "https://moddota.com/api/#!/events/dota_player_killed",
-    "https://moddota.com/api/#!/events/dota_player_learned_ability",
-    "https://moddota.com/api/#!/events/dota_player_pick_hero",
-    "https://moddota.com/api/#!/events/dota_player_reconnected",
-    "https://moddota.com/api/#!/events/dota_player_selected_custom_team",
-    "https://moddota.com/api/#!/events/dota_player_shop_changed",
-    "https://moddota.com/api/#!/events/dota_player_show_killcam",
-    "https://moddota.com/api/#!/events/dota_player_show_minikillcam",
-    "https://moddota.com/api/#!/events/dota_player_spawned",
-    "https://moddota.com/api/#!/events/dota_player_take_tower_damage",
-    "https://moddota.com/api/#!/events/dota_player_team_changed",
-    "https://moddota.com/api/#!/events/dota_player_update_assigned_hero",
-    "https://moddota.com/api/#!/events/dota_player_update_hero_selection",
-    "https://moddota.com/api/#!/events/dota_player_update_killcam_unit",
-    "https://moddota.com/api/#!/events/dota_player_update_query_unit",
-    "https://moddota.com/api/#!/events/dota_player_update_selected_unit",
-    "https://moddota.com/api/#!/events/dota_player_used_ability",
-    "https://moddota.com/api/#!/events/dota_portrait_ability_layout_changed",
-    "https://moddota.com/api/#!/events/dota_portrait_unit_modifiers_changed",
-    "https://moddota.com/api/#!/events/dota_portrait_unit_stats_changed",
-    "https://moddota.com/api/#!/events/dota_protector_spawned",
-    "https://moddota.com/api/#!/events/dota_quest_completed",
-    "https://moddota.com/api/#!/events/dota_quest_started",
-    "https://moddota.com/api/#!/events/dota_quick_buy_changed",
-    "https://moddota.com/api/#!/events/dota_rank_wager",
-    "https://moddota.com/api/#!/events/dota_radiant_kill",
-    "https://moddota.com/api/#!/events/dota_roshan_kill",
-    "https://moddota.com/api/#!/events/dota_rubick_ability_steal",
-    "https://moddota.com/api/#!/events/dota_rune_activated",
-    "https://moddota.com/api/#!/events/dota_rune_activated_server",
-    "https://moddota.com/api/#!/events/dota_rune_deny",
-    "https://moddota.com/api/#!/events/dota_rune_spotted",
-    "https://moddota.com/api/#!/events/dota_set_quick_buy",
-    "https://moddota.com/api/#!/events/dota_shop_item_selected",
-    "https://moddota.com/api/#!/events/dota_show_center_message",
-    "https://moddota.com/api/#!/events/dota_show_error_message",
-    "https://moddota.com/api/#!/events/dota_spectator_talent_selection_changed",
-    "https://moddota.com/api/#!/events/dota_super_creep",
-    "https://moddota.com/api/#!/events/dota_team_kill_credit",
-    "https://moddota.com/api/#!/events/dota_team_player_list_changed",
-    "https://moddota.com/api/#!/events/dota_teleport_end",
-    "https://moddota.com/api/#!/events/dota_teleport_start",
-    "https://moddota.com/api/#!/events/dota_tower_kill",
-    "https://moddota.com/api/#!/events/dota_tutorial_lesson_start",
-    "https://moddota.com/api/#!/events/dota_tutorial_shop_toggled",
-    "https://moddota.com/api/#!/events/dota_tutorial_task_advance",
-    "https://moddota.com/api/#!/events/dota_unit_event",
-    "https://moddota.com/api/#!/events/dota_wager_token",
-    "https://moddota.com/api/#!/events/dota_ward_killed",
-    "https://moddota.com/api/#!/events/dota_watch_tower_captured",
-    "https://moddota.com/api/#!/events/dota_workshop_filecanceled",
-    "https://moddota.com/api/#!/events/dota_workshop_fileselected",
-    "https://moddota.com/api/#!/events/dota_year_beast_killed",
-    "https://moddota.com/api/#!/events/drop_rate_modified",
-    "https://moddota.com/api/#!/events/dynamic_shadow_light_changed",
-    "https://moddota.com/api/#!/events/enable_china_logomark",
-    "https://moddota.com/api/#!/events/entity_hurt",
-    "https://moddota.com/api/#!/events/entity_killed",
-    "https://moddota.com/api/#!/events/entity_visible",
-    "https://moddota.com/api/#!/events/event_ticket_modified",
-    "https://moddota.com/api/#!/events/fantasy_league_changed",
-    "https://moddota.com/api/#!/events/fantasy_score_info_changed",
-    "https://moddota.com/api/#!/events/fantasy_updated",
-    "https://moddota.com/api/#!/events/file_downloaded",
-    "https://moddota.com/api/#!/events/finale_start",
-    "https://moddota.com/api/#!/events/flare_ignite_npc",
-    "https://moddota.com/api/#!/events/friend_lobby_list_updated",
-    "https://moddota.com/api/#!/events/frosty_points_updated",
-    "https://moddota.com/api/#!/events/full_ui_unlocked",
-    "https://moddota.com/api/#!/events/game_end_visible",
-    "https://moddota.com/api/#!/events/game_message",
-    "https://moddota.com/api/#!/events/game_newmap",
-    "https://moddota.com/api/#!/events/game_rules_shutdown",
-    "https://moddota.com/api/#!/events/game_rules_state_change",
-    "https://moddota.com/api/#!/events/gameinstructor_draw",
-    "https://moddota.com/api/#!/events/gameinstructor_nodraw",
-    "https://moddota.com/api/#!/events/gameui_activated",
-    "https://moddota.com/api/#!/events/gameui_hidden",
-    "https://moddota.com/api/#!/events/gc_chat_channel_list_updated",
-    "https://moddota.com/api/#!/events/gc_connected",
-    "https://moddota.com/api/#!/events/gc_mismatched_version",
-    "https://moddota.com/api/#!/events/gc_user_session_created",
-    "https://moddota.com/api/#!/events/guild_data_updated",
-    "https://moddota.com/api/#!/events/guild_open_parties_updated",
-    "https://moddota.com/api/#!/events/halloween_high_score_received",
-    "https://moddota.com/api/#!/events/halloween_high_score_request_failed",
-    "https://moddota.com/api/#!/events/halloween_phase_end",
-    "https://moddota.com/api/#!/events/helicopter_grenade_punt_miss",
-    "https://moddota.com/api/#!/events/hero_picker_hidden",
-    "https://moddota.com/api/#!/events/hero_picker_shown",
-    "https://moddota.com/api/#!/events/hero_selected",
-    "https://moddota.com/api/#!/events/hero_selector_preview_set",
-    "https://moddota.com/api/#!/events/hide_highlight_hud_element",
-    "https://moddota.com/api/#!/events/highlight_hud_element",
-    "https://moddota.com/api/#!/events/hltv_cameraman",
-    "https://moddota.com/api/#!/events/hltv_chase",
-    "https://moddota.com/api/#!/events/hltv_chat",
-    "https://moddota.com/api/#!/events/hltv_fixed",
-    "https://moddota.com/api/#!/events/hltv_message",
-    "https://moddota.com/api/#!/events/hltv_rank_camera",
-    "https://moddota.com/api/#!/events/hltv_rank_entity",
-    "https://moddota.com/api/#!/events/hltv_replay",
-    "https://moddota.com/api/#!/events/hltv_replay_status",
-    "https://moddota.com/api/#!/events/hltv_status",
-    "https://moddota.com/api/#!/events/hltv_title",
-    "https://moddota.com/api/#!/events/hltv_versioninfo",
-    "https://moddota.com/api/#!/events/hostname_changed",
-    "https://moddota.com/api/#!/events/hud_flip_changed",
-    "https://moddota.com/api/#!/events/instructor_close_lesson",
-    "https://moddota.com/api/#!/events/instructor_server_hint_create",
-    "https://moddota.com/api/#!/events/instructor_server_hint_stop",
-    "https://moddota.com/api/#!/events/instructor_start_lesson",
-    "https://moddota.com/api/#!/events/intro_video_finished",
-    "https://moddota.com/api/#!/events/inventory_updated",
-    "https://moddota.com/api/#!/events/item_preview_closed",
-    "https://moddota.com/api/#!/events/item_purchased",
-    "https://moddota.com/api/#!/events/item_schema_initialized",
-    "https://moddota.com/api/#!/events/joined_chat_channel",
-    "https://moddota.com/api/#!/events/keybind_changed",
-    "https://moddota.com/api/#!/events/last_hit",
-    "https://moddota.com/api/#!/events/league_admin_info_updated",
-    "https://moddota.com/api/#!/events/league_series_info_updated",
-    "https://moddota.com/api/#!/events/left_chat_channel",
-    "https://moddota.com/api/#!/events/live_games_updated",
-    "https://moddota.com/api/#!/events/live_leagues_updated",
-    "https://moddota.com/api/#!/events/lobby_invites_updated",
-    "https://moddota.com/api/#!/events/lobby_updated",
-    "https://moddota.com/api/#!/events/local_player_controller_team",
-    "https://moddota.com/api/#!/events/local_player_pawn_changed",
-    "https://moddota.com/api/#!/events/local_player_team",
-    "https://moddota.com/api/#!/events/map_shutdown",
-    "https://moddota.com/api/#!/events/map_transition",
-    "https://moddota.com/api/#!/events/match_details_updated",
-    "https://moddota.com/api/#!/events/match_history_updated",
-    "https://moddota.com/api/#!/events/matchmaking_status_visibility_changed",
-    "https://moddota.com/api/#!/events/microtransaction_success",
-    "https://moddota.com/api/#!/events/modifier_event",
-    "https://moddota.com/api/#!/events/news_updated",
-    "https://moddota.com/api/#!/events/nommed_tree",
-    "https://moddota.com/api/#!/events/npc_replaced",
-    "https://moddota.com/api/#!/events/npc_spawn_finished",
-    "https://moddota.com/api/#!/events/npc_spawned",
-    "https://moddota.com/api/#!/events/particle_system_start",
-    "https://moddota.com/api/#!/events/particle_system_stop",
-    "https://moddota.com/api/#!/events/party_invites_updated",
-    "https://moddota.com/api/#!/events/party_updated",
-    "https://moddota.com/api/#!/events/persona_updated",
-    "https://moddota.com/api/#!/events/physgun_pickup",
-    "https://moddota.com/api/#!/events/player_activate",
-    "https://moddota.com/api/#!/events/player_changename",
-    "https://moddota.com/api/#!/events/player_chat",
-    "https://moddota.com/api/#!/events/player_completed_game",
-    "https://moddota.com/api/#!/events/player_connect",
-    "https://moddota.com/api/#!/events/player_connect_full",
-    "https://moddota.com/api/#!/events/player_death",
-    "https://moddota.com/api/#!/events/player_disconnect",
-    "https://moddota.com/api/#!/events/player_footstep",
-    "https://moddota.com/api/#!/events/player_full_update",
-    "https://moddota.com/api/#!/events/player_fullyjoined",
-    "https://moddota.com/api/#!/events/player_hintmessage",
-    "https://moddota.com/api/#!/events/player_hurt",
-    "https://moddota.com/api/#!/events/player_info",
-    "https://moddota.com/api/#!/events/player_info_individual_updated",
-    "https://moddota.com/api/#!/events/player_info_updated",
-    "https://moddota.com/api/#!/events/player_is_experienced",
-    "https://moddota.com/api/#!/events/player_is_notexperienced",
-    "https://moddota.com/api/#!/events/player_reconnected",
-    "https://moddota.com/api/#!/events/player_report_counts_updated",
-    "https://moddota.com/api/#!/events/player_spawn",
-    "https://moddota.com/api/#!/events/player_stats_updated",
-    "https://moddota.com/api/#!/events/player_team",
-    "https://moddota.com/api/#!/events/practice_lobby_visibility_changed",
-    "https://moddota.com/api/#!/events/prizepool_received",
-    "https://moddota.com/api/#!/events/profile_closed",
-    "https://moddota.com/api/#!/events/profile_opened",
-    "https://moddota.com/api/#!/events/ragdoll_dissolved",
-    "https://moddota.com/api/#!/events/recent_matches_updated",
-    "https://moddota.com/api/#!/events/reset_defeated",
-    "https://moddota.com/api/#!/events/rich_presence_updated",
-    "https://moddota.com/api/#!/events/richpresence_custom_updated",
-    "https://moddota.com/api/#!/events/round_end",
-    "https://moddota.com/api/#!/events/round_freeze_end",
-    "https://moddota.com/api/#!/events/round_start",
-    "https://moddota.com/api/#!/events/round_start_post_nav",
-    "https://moddota.com/api/#!/events/round_start_pre_entity",
-    "https://moddota.com/api/#!/events/scaleform_file_download_complete",
-    "https://moddota.com/api/#!/events/server_cvar",
-    "https://moddota.com/api/#!/events/server_message",
-    "https://moddota.com/api/#!/events/server_pre_shutdown",
-    "https://moddota.com/api/#!/events/server_shutdown",
-    "https://moddota.com/api/#!/events/server_spawn",
-    "https://moddota.com/api/#!/events/set_instructor_group_enabled",
-    "https://moddota.com/api/#!/events/spec_aegis_reclaim_time",
-    "https://moddota.com/api/#!/events/spec_item_pickup",
-    "https://moddota.com/api/#!/events/spec_mode_updated",
-    "https://moddota.com/api/#!/events/spec_target_updated",
-    "https://moddota.com/api/#!/events/store_pricesheet_updated",
-    "https://moddota.com/api/#!/events/team_data_updated",
-    "https://moddota.com/api/#!/events/team_details_updated",
-    "https://moddota.com/api/#!/events/team_info",
-    "https://moddota.com/api/#!/events/team_score",
-    "https://moddota.com/api/#!/events/team_showcase_ui_update",
-    "https://moddota.com/api/#!/events/teamplay_broadcast_audio",
-    "https://moddota.com/api/#!/events/teamplay_round_start",
-    "https://moddota.com/api/#!/events/tournament_state_updated",
-    "https://moddota.com/api/#!/events/tree_cut",
-    "https://moddota.com/api/#!/events/ugc_details_arrived",
-    "https://moddota.com/api/#!/events/ugc_download_requested",
-    "https://moddota.com/api/#!/events/ugc_installed",
-    "https://moddota.com/api/#!/events/ugc_subscribed",
-    "https://moddota.com/api/#!/events/ugc_unsubscribed",
-    "https://moddota.com/api/#!/events/user_data_downloaded",
-    "https://moddota.com/api/#!/events/vote_cast_no",
-    "https://moddota.com/api/#!/events/vote_cast_yes",
-    "https://moddota.com/api/#!/events/vote_changed",
-    "https://moddota.com/api/#!/events/vote_failed",
-    "https://moddota.com/api/#!/events/vote_passed",
-    "https://moddota.com/api/#!/events/vote_started",
-    "https://moddota.com/api/#!/events/dota_dire_kill",
-    "https://moddota.com/api/#!/events/dota_scan_used",
-    "https://moddota.com/api/#!/events/dota_shrine_kill",
-    "https://moddota.com/api/#!/events/dota_stockpile_item_placed",
-    "https://moddota.com/api/#!/events/dota_stockpile_item_removed",
-    "https://moddota.com/api/#!/events/dota_subchallenge_completed",
-    "https://moddota.com/api/#!/events/dota_team_neutral_stash_items_changed",
-    "https://moddota.com/api/#!/events/dota_versus_scene_player_behavior",
-    "https://moddota.com/api/#!/events/dota_workshop_file_selected",
-]
+"""
+Dota2 Game Events 爬虫
+从 https://moddota.com/api/#!/events 爬取所有游戏事件
+输出到 data/gameevents/events.json
+"""
+import asyncio
+import json
+import os
+from datetime import datetime
+from playwright.async_api import async_playwright
 
-# 总数
-TOTAL_COUNT = len(GAME_EVENTS_URLS)  # 361
-print(TOTAL_COUNT)
+# 配置
+ROOT_URL = "https://moddota.com/api/#!/events"
+BASE_URL = "https://moddota.com/api/"
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "gameevents")
+
+
+# ==================== 步骤一：获取所有事件地址和推荐标记 ====================
+
+async def get_all_event_urls(page):
+    """获取所有事件页面地址及推荐标记"""
+    print(f"正在访问: {ROOT_URL}")
+    await page.goto(ROOT_URL, wait_until='networkidle')
+    await asyncio.sleep(1)
+    
+    # 提取所有链接和推荐状态
+    events_info = await page.evaluate('''() => {
+        const results = [];
+        document.querySelectorAll('a.Sidebar__SidebarLink-kKnkkd').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && href.startsWith('#!/events/')) {
+                const isRecommended = !!a.querySelector('span[title="This event is useful for custom games"]');
+                results.push({
+                    url: 'https://moddota.com/api/' + href,
+                    href: href,
+                    isRecommended: isRecommended
+                });
+            }
+        });
+        return results;
+    }''')
+    
+    return events_info
+
+
+# ==================== 步骤二：提取事件数据 ====================
+
+async def extract_event_data(page, event_info):
+    """提取单个事件页面数据"""
+    return await page.evaluate('''(eventInfo) => {
+        const wrapper = document.querySelector('div[class*="FunctionDeclaration__FunctionWrapper"]');
+        if (!wrapper) return null;
+        
+        // 事件名（从 id 获取）
+        const name = wrapper.getAttribute('id') || '';
+        
+        // 签名
+        const sigEl = wrapper.querySelector('div[class*="FunctionDeclaration__FunctionSignature"]');
+        const signature = sigEl ? sigEl.textContent.trim() : '';
+        
+        // 参数
+        const parameters = [];
+        if (sigEl) {
+            sigEl.querySelectorAll('span[class*="types__FunctionParameterWrapper"]').forEach(paramEl => {
+                const spans = paramEl.querySelectorAll(':scope > span');
+                let paramName = '';
+                let paramType = '';
+                
+                if (spans.length > 0) {
+                    paramName = spans[0].textContent.replace(':', '').trim();
+                }
+                
+                // 获取类型
+                const typeSpan = paramEl.querySelector('span[class*="types__TypeSpan"]');
+                if (typeSpan) {
+                    paramType = typeSpan.textContent.trim();
+                }
+                
+                parameters.push({
+                    name: paramName,
+                    type: paramType,
+                    description: null,
+                    description_cn: '',
+                    type_description_cn: ''
+                });
+            });
+        }
+        
+        // 参数描述
+        wrapper.querySelectorAll('li[class*="FunctionDeclaration__ParameterDescription"]').forEach(li => {
+            const nameEl = li.querySelector('span[class*="FunctionDeclaration__ParameterDescriptionName"]');
+            if (nameEl) {
+                const pName = nameEl.textContent.trim();
+                const fullText = li.textContent.trim();
+                const colonIdx = fullText.indexOf(':');
+                const desc = colonIdx !== -1 ? fullText.slice(colonIdx + 1).trim() : null;
+                
+                const param = parameters.find(p => p.name === pName);
+                if (param) {
+                    param.description = desc;
+                }
+            }
+        });
+        
+        // 事件描述（排除参数描述列表）
+        let description = null;
+        const descEl = wrapper.querySelector('div[class*="styles__Description"]');
+        if (descEl) {
+            const clone = descEl.cloneNode(true);
+            clone.querySelectorAll('li').forEach(el => el.remove());
+            const text = clone.textContent.trim();
+            if (text) description = text;
+        }
+        
+        // 返回值
+        let returnType = 'void';
+        if (sigEl) {
+            const sigText = sigEl.textContent;
+            const colonIdx = sigText.lastIndexOf('):');
+            if (colonIdx !== -1) {
+                returnType = sigText.slice(colonIdx + 2).trim();
+            }
+        }
+        
+        // 链接
+        const githubEl = wrapper.querySelector('a[title="Search on GitHub"]');
+        const googleEl = wrapper.querySelector('a[title="Search on Google"]');
+        const linkEl = wrapper.querySelector('a[class*="ElementLink__StyledElementLink"]');
+        
+        return {
+            name,
+            signature,
+            description,
+            parameters,
+            returnType,
+            isRecommended: eventInfo.isRecommended,
+            githubLink: githubEl ? githubEl.getAttribute('href') : null,
+            googleLink: googleEl ? googleEl.getAttribute('href') : null,
+            link: eventInfo.href,
+            
+            // 中文化预留字段
+            name_cn: '',
+            description_cn: '',
+            example_ts: '',
+            notes_cn: '',
+            common_usage_cn: '',
+            related: [],
+            see_also: [],
+            tags: []
+        };
+    }''', event_info)
+
+
+async def crawl_event(page, event_info):
+    """爬取单个事件页面"""
+    try:
+        await page.goto(event_info['url'], wait_until='networkidle', timeout=30000)
+        await asyncio.sleep(0.3)
+        
+        data = await extract_event_data(page, event_info)
+        return data
+    except Exception as e:
+        print(f"  爬取失败 {event_info['url']}: {e}")
+        return None
+
+
+def save_json(data, filename):
+    """保存 JSON 文件"""
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    filepath = os.path.join(OUTPUT_DIR, filename)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"已保存: {filepath}")
+
+
+# ==================== 主流程 ====================
+
+async def main():
+    """主函数"""
+    events = []
+    recommended_count = 0
+    
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        
+        # 步骤一：获取所有事件地址
+        print("=" * 60)
+        print("步骤一：获取所有事件地址")
+        print("=" * 60)
+        events_info = await get_all_event_urls(page)
+        print(f"共找到 {len(events_info)} 个事件")
+        recommended_count = sum(1 for e in events_info if e['isRecommended'])
+        print(f"其中推荐事件: {recommended_count} 个")
+        
+        # 步骤二：遍历每个事件提取数据
+        print("\n" + "=" * 60)
+        print("步骤二：提取事件数据")
+        print("=" * 60)
+        
+        for i, event_info in enumerate(events_info):
+            print(f"[{i+1}/{len(events_info)}] {event_info['url'].split('/')[-1]}", end='')
+            
+            data = await crawl_event(page, event_info)
+            if data:
+                events.append(data)
+                star = ' ⭐' if data['isRecommended'] else ''
+                params = len(data['parameters'])
+                print(f" → {params} 参数{star}")
+            else:
+                print(" → 失败")
+        
+        await browser.close()
+    
+    # 步骤三：保存 JSON 文件
+    print("\n" + "=" * 60)
+    print("步骤三：保存 JSON 文件")
+    print("=" * 60)
+    
+    now = datetime.now().isoformat()
+    
+    save_json({
+        "metadata": {
+            "type": "gameevents",
+            "source": ROOT_URL,
+            "crawledAt": now,
+            "count": len(events),
+            "recommendedCount": recommended_count
+        },
+        "items": events
+    }, "events.json")
+    
+    # 统计
+    print("\n" + "=" * 60)
+    print("爬取完成！统计:")
+    print("=" * 60)
+    print(f"  事件总数: {len(events)} 个")
+    print(f"  推荐事件: {recommended_count} 个")
+    
+    total_params = sum(len(e['parameters']) for e in events)
+    with_desc = sum(1 for e in events if e['description'])
+    params_with_desc = sum(
+        sum(1 for p in e['parameters'] if p['description']) 
+        for e in events
+    )
+    
+    print(f"  参数总数: {total_params} 个")
+    print(f"  带描述的事件: {with_desc} 个")
+    print(f"  带描述的参数: {params_with_desc} 个")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

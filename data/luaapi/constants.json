@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "type": "constants",
+    "source": "https://moddota.com/api/#!/vscripts",
+    "crawledAt": "2025-11-28T00:29:05.164683",
+    "count": 8
+  },
+  "items": [
+    {
+      "name": "DOTA_ITEM_INVENTORY_SIZE",
+      "value": 9,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_INVENTORY_SIZE",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_MAX",
+      "value": 25,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_MAX",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_STASH_MAX",
+      "value": 15,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_STASH_MAX",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_STASH_MIN",
+      "value": 9,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_STASH_MIN",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_STASH_SIZE",
+      "value": 6,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_STASH_SIZE",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_MAX_ABILITIES",
+      "value": 40,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_MAX_ABILITIES",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "FIND_UNITS_EVERYWHERE",
+      "value": -1,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#FIND_UNITS_EVERYWHERE",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "SPAWN_GROUP_HANDLE_INVALID",
+      "value": 0,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#SPAWN_GROUP_HANDLE_INVALID",
+      "name_cn": "",
+      "description_cn": "",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    }
+  ]
+}
