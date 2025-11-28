@@ -1265,7 +1265,7 @@
           "typeLink": "#!/vscripts/DOTATeam_t",
           "isOptional": false,
           "description": null,
-          "description_cn": "",
+          "description_cn": "队伍编号",
           "type_description_cn": "DOTATeam_t枚举"
         },
         {
@@ -3470,7 +3470,7 @@
           "typeLink": null,
           "isOptional": false,
           "description": null,
-          "description_cn": "",
+          "description_cn": "参数6",
           "type_description_cn": ""
         }
       ],
@@ -7549,7 +7549,7 @@
           "typeLink": null,
           "isOptional": false,
           "description": null,
-          "description_cn": "",
+          "description_cn": "X坐标",
           "type_description_cn": ""
         },
         {
@@ -8538,7 +8538,7 @@
           "typeLink": null,
           "isOptional": false,
           "description": null,
-          "description_cn": "",
+          "description_cn": "参数2",
           "type_description_cn": ""
         },
         {
@@ -9428,7 +9428,7 @@
           "typeLink": "#!/vscripts/CDOTA_BaseNPC",
           "isOptional": false,
           "description": null,
-          "description_cn": "",
+          "description_cn": "目标实体",
           "type_description_cn": "CDOTA_BaseNPC"
         },
         {

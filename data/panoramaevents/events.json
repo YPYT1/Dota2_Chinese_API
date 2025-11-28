@@ -14,7 +14,7 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -22,8 +22,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=AddStyle%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22AddStyle%22",
       "link": "#!/panorama/events/AddStyle",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "添加样式",
+      "description_cn": "添加CSS样式类到面板",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -39,13 +39,13 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         },
         {
           "name": "preDelay",
           "type": "float",
-          "description_cn": "",
+          "description_cn": "前置延迟时间(秒)",
           "type_description_cn": ""
         }
       ],
@@ -53,8 +53,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=AddStyleAfterDelay%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22AddStyleAfterDelay%22",
       "link": "#!/panorama/events/AddStyleAfterDelay",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "延迟添加样式",
+      "description_cn": "在指定延迟后添加CSS类到面板",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -70,7 +70,7 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -78,8 +78,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=AddStyleToEachChild%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22AddStyleToEachChild%22",
       "link": "#!/panorama/events/AddStyleToEachChild",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "为每个子元素添加样式",
+      "description_cn": "为面板的每个子元素添加CSS类",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -95,19 +95,19 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         },
         {
           "name": "duration",
           "type": "float",
-          "description_cn": "",
+          "description_cn": "持续时间",
           "type_description_cn": ""
         },
         {
           "name": "preDelay",
           "type": "float",
-          "description_cn": "",
+          "description_cn": "前置延迟时间(秒)",
           "type_description_cn": ""
         }
       ],
@@ -115,8 +115,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=AddTimedStyle%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22AddTimedStyle%22",
       "link": "#!/panorama/events/AddTimedStyle",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "AddTimedStyle",
+      "description_cn": "添加 a class for a 指定的 durati到, with opti到al pre-延迟后; clears existing timers when called with same class.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -132,13 +132,13 @@
         {
           "name": "delay",
           "type": "float",
-          "description_cn": "",
+          "description_cn": "延迟时间",
           "type_description_cn": ""
         },
         {
           "name": "eventToFire",
           "type": "event",
-          "description_cn": "",
+          "description_cn": "事件名称",
           "type_description_cn": ""
         }
       ],
@@ -146,8 +146,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=AsyncEvent%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22AsyncEvent%22",
       "link": "#!/panorama/events/AsyncEvent",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "异步事件",
+      "description_cn": "分发异步事件",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -162,7 +162,7 @@
         {
           "name": "url",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "URL地址",
           "type_description_cn": ""
         }
       ],
@@ -170,8 +170,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=BrowserGoToURL%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22BrowserGoToURL%22",
       "link": "#!/panorama/events/BrowserGoToURL",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "浏览器打开URL",
+      "description_cn": "在内置浏览器中打开URL",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -187,13 +187,13 @@
         {
           "name": "string",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "字符串",
           "type_description_cn": ""
         },
         {
           "name": "optional",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "optional参数",
           "type_description_cn": ""
         }
       ],
@@ -201,8 +201,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTADisplayDashboardTip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTADisplayDashboardTip%22",
       "link": "#!/panorama/events/DOTADisplayDashboardTip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTADisplayDashboardTip",
+      "description_cn": "Tip to display, 面板 到ttach to (default 'DefaultTipAttachment')",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -218,8 +218,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHUDGameDisconnect%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHUDGameDisconnect%22",
       "link": "#!/panorama/events/DOTAHUDGameDisconnect",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA HUD断开游戏",
+      "description_cn": "DOTA HUD断开游戏连接",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -236,8 +236,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideAbilityTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideAbilityTooltip%22",
       "link": "#!/panorama/events/DOTAHideAbilityTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideAbilityTooltip",
+      "description_cn": "Hide  ability tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -254,8 +254,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideBuffTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideBuffTooltip%22",
       "link": "#!/panorama/events/DOTAHideBuffTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideBuffTooltip",
+      "description_cn": "Hide  buff tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -272,8 +272,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideDroppedItemTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideDroppedItemTooltip%22",
       "link": "#!/panorama/events/DOTAHideDroppedItemTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideDroppedItemTooltip",
+      "description_cn": "Hide  dropped item tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -290,8 +290,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideEconItemTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideEconItemTooltip%22",
       "link": "#!/panorama/events/DOTAHideEconItemTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA隐藏物品提示",
+      "description_cn": "隐藏经济物品提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -308,8 +308,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideFacetTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideFacetTooltip%22",
       "link": "#!/panorama/events/DOTAHideFacetTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideFacetTooltip",
+      "description_cn": "Hides  variant tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -326,8 +326,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideProfileCardTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideProfileCardTooltip%22",
       "link": "#!/panorama/events/DOTAHideProfileCardTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideProfileCardTooltip",
+      "description_cn": "Hide  profile card tooltip.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -344,8 +344,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideRankTierTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideRankTierTooltip%22",
       "link": "#!/panorama/events/DOTAHideRankTierTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideRankTierTooltip",
+      "description_cn": "Hide  rank tier tooltip.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -362,8 +362,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideRuneTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideRuneTooltip%22",
       "link": "#!/panorama/events/DOTAHideRuneTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideRuneTooltip",
+      "description_cn": "Hide  rune tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -380,8 +380,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideTI10EventGameTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideTI10EventGameTooltip%22",
       "link": "#!/panorama/events/DOTAHideTI10EventGameTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideTIEventGameTooltip",
+      "description_cn": "Hide  ti10 事件 game tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -398,8 +398,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideTextTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideTextTooltip%22",
       "link": "#!/panorama/events/DOTAHideTextTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA隐藏文本提示",
+      "description_cn": "隐藏文本提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -416,8 +416,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideTitleImageTextTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideTitleImageTextTooltip%22",
       "link": "#!/panorama/events/DOTAHideTitleImageTextTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideTitleImageTextTooltip",
+      "description_cn": "Hide  title image text tooltip.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -434,8 +434,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAHideTitleTextTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAHideTitleTextTooltip%22",
       "link": "#!/panorama/events/DOTAHideTitleTextTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAHideTitleTextTooltip",
+      "description_cn": "Hide  title text tooltip.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -451,7 +451,7 @@
         {
           "name": "time",
           "type": "uint32",
-          "description_cn": "",
+          "description_cn": "time参数",
           "type_description_cn": ""
         }
       ],
@@ -459,8 +459,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTALiveStreamUpcoming%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTALiveStreamUpcoming%22",
       "link": "#!/panorama/events/DOTALiveStreamUpcoming",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTALiveStreamUpcoming",
+      "description_cn": "Notify change in RTime32 we expect  stream to start",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -476,7 +476,7 @@
         {
           "name": "isLive",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "isLive参数",
           "type_description_cn": ""
         }
       ],
@@ -484,8 +484,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTALiveStreamVideoLive%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTALiveStreamVideoLive%22",
       "link": "#!/panorama/events/DOTALiveStreamVideoLive",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTALiveStreamVideoLive",
+      "description_cn": "Notify change in stream state (we detected  stream going live)",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -501,7 +501,7 @@
         {
           "name": "isShowingVideo",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "isShowingVideo参数",
           "type_description_cn": ""
         }
       ],
@@ -509,8 +509,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTALiveStreamVideoPlaying%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTALiveStreamVideoPlaying%22",
       "link": "#!/panorama/events/DOTALiveStreamVideoPlaying",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTALiveStreamVideoPlaying",
+      "description_cn": "Notify change in video state (is it pointing at a live stream page or not)",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -526,13 +526,13 @@
         {
           "name": "entityIndex",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "entityIndex参数",
           "type_description_cn": ""
         },
         {
           "name": "inventorySlot",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "inventorySlot参数",
           "type_description_cn": ""
         }
       ],
@@ -540,8 +540,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityInventoryItemTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityInventoryItemTooltip%22",
       "link": "#!/panorama/events/DOTAShowAbilityInventoryItemTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityInventoryItemTooltip",
+      "description_cn": "Show tooltip for an item in  entityIndex NPC's inventory.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -557,19 +557,19 @@
         {
           "name": "abilityName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "abilityName参数",
           "type_description_cn": ""
         },
         {
           "name": "guideName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "guideName参数",
           "type_description_cn": ""
         },
         {
           "name": "entityIndex",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "entityIndex参数",
           "type_description_cn": ""
         }
       ],
@@ -577,8 +577,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityShopItemTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityShopItemTooltip%22",
       "link": "#!/panorama/events/DOTAShowAbilityShopItemTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityShopItemTooltip",
+      "description_cn": "Show tooltip for an item in  entityIndex NPC's shop.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -594,7 +594,7 @@
         {
           "name": "abilityName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "abilityName参数",
           "type_description_cn": ""
         }
       ],
@@ -602,8 +602,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityTooltip%22",
       "link": "#!/panorama/events/DOTAShowAbilityTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA显示技能提示",
+      "description_cn": "显示技能提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -619,13 +619,13 @@
         {
           "name": "abilityName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "abilityName参数",
           "type_description_cn": ""
         },
         {
           "name": "entityIndex",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "entityIndex参数",
           "type_description_cn": ""
         }
       ],
@@ -633,8 +633,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityTooltipForEntityIndex%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityTooltipForEntityIndex%22",
       "link": "#!/panorama/events/DOTAShowAbilityTooltipForEntityIndex",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityTooltipForEntityIndex",
+      "description_cn": "Show an ability tooltip. Level informati到 comes from  entity 指定的 by  entityIndex.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -650,19 +650,19 @@
         {
           "name": "abilityName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "abilityName参数",
           "type_description_cn": ""
         },
         {
           "name": "facetName",
           "type": "CUtlStringToken",
-          "description_cn": "",
+          "description_cn": "facetName参数",
           "type_description_cn": ""
         },
         {
           "name": "showVideo",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "showVideo参数",
           "type_description_cn": ""
         }
       ],
@@ -670,8 +670,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityTooltipForFacet%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityTooltipForFacet%22",
       "link": "#!/panorama/events/DOTAShowAbilityTooltipForFacet",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityTooltipForFacet",
+      "description_cn": "Show an ability tooltip for a specific facet.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -687,25 +687,25 @@
         {
           "name": "abilityName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "abilityName参数",
           "type_description_cn": ""
         },
         {
           "name": "guideName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "guideName参数",
           "type_description_cn": ""
         },
         {
           "name": "arg3",
           "type": "HeroID_t",
-          "description_cn": "",
+          "description_cn": "arg3参数",
           "type_description_cn": ""
         },
         {
           "name": "arg4",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "arg4参数",
           "type_description_cn": ""
         }
       ],
@@ -713,8 +713,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityTooltipForGuide%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityTooltipForGuide%22",
       "link": "#!/panorama/events/DOTAShowAbilityTooltipForGuide",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityTooltipForGuide",
+      "description_cn": "Show an ability tooltip annotated with a particular guide's info.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -730,31 +730,31 @@
         {
           "name": "abilityName",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "abilityName参数",
           "type_description_cn": ""
         },
         {
           "name": "heroid",
           "type": "HeroID_t",
-          "description_cn": "",
+          "description_cn": "heroid参数",
           "type_description_cn": ""
         },
         {
           "name": "heroVariant",
           "type": "HeroFacetID_t",
-          "description_cn": "",
+          "description_cn": "heroVariant参数",
           "type_description_cn": ""
         },
         {
           "name": "arg4",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "arg4参数",
           "type_description_cn": ""
         },
         {
           "name": "arg5",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "arg5参数",
           "type_description_cn": ""
         }
       ],
@@ -762,8 +762,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityTooltipForHero%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityTooltipForHero%22",
       "link": "#!/panorama/events/DOTAShowAbilityTooltipForHero",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityTooltipForHero",
+      "description_cn": "Show an ability tooltip for  指定的 hero.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -779,13 +779,13 @@
         {
           "name": "level",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "level参数",
           "type_description_cn": ""
         },
         {
           "name": "arg2",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "arg2参数",
           "type_description_cn": ""
         }
       ],
@@ -793,8 +793,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowAbilityTooltipForLevel%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowAbilityTooltipForLevel%22",
       "link": "#!/panorama/events/DOTAShowAbilityTooltipForLevel",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowAbilityTooltipForLevel",
+      "description_cn": "Show an ability tooltip for a specific level.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -810,19 +810,19 @@
         {
           "name": "entityIndex",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "entityIndex参数",
           "type_description_cn": ""
         },
         {
           "name": "buffSerial",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "buffSerial参数",
           "type_description_cn": ""
         },
         {
           "name": "onEnemy",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "onEnemy参数",
           "type_description_cn": ""
         }
       ],
@@ -830,8 +830,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowBuffTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowBuffTooltip%22",
       "link": "#!/panorama/events/DOTAShowBuffTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowBuffTooltip",
+      "description_cn": "Show a buff tooltip for  指定的 entityIndex + buff serial.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -847,19 +847,19 @@
         {
           "name": "itemDef",
           "type": "item_definition_index_t",
-          "description_cn": "",
+          "description_cn": "itemDef参数",
           "type_description_cn": ""
         },
         {
           "name": "styleIndex",
           "type": "style_index_t",
-          "description_cn": "",
+          "description_cn": "styleIndex参数",
           "type_description_cn": ""
         },
         {
           "name": "heroId",
           "type": "HeroID_t",
-          "description_cn": "",
+          "description_cn": "heroId参数",
           "type_description_cn": ""
         }
       ],
@@ -867,8 +867,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowEconItemTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowEconItemTooltip%22",
       "link": "#!/panorama/events/DOTAShowEconItemTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowEconItemTooltip",
+      "description_cn": "Show  ec到 item tooltip for a given item, style, and hero. Use 0 for  default style, and 0 for  default hero.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -884,7 +884,7 @@
         {
           "name": "facetKey",
           "type": "HeroFacetKey_t",
-          "description_cn": "",
+          "description_cn": "facetKey参数",
           "type_description_cn": ""
         }
       ],
@@ -892,8 +892,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowFacetTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowFacetTooltip%22",
       "link": "#!/panorama/events/DOTAShowFacetTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowFacetTooltip",
+      "description_cn": "Shows a variant tooltip for  given hero facet key",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -908,7 +908,7 @@
         {
           "name": "matchId",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "matchId参数",
           "type_description_cn": ""
         }
       ],
@@ -916,8 +916,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowMatchDetails%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowMatchDetails%22",
       "link": "#!/panorama/events/DOTAShowMatchDetails",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA显示比赛详情",
+      "description_cn": "显示比赛详细信息",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -933,13 +933,13 @@
         {
           "name": "steamId",
           "type": "uint64",
-          "description_cn": "",
+          "description_cn": "steamId参数",
           "type_description_cn": ""
         },
         {
           "name": "useProName",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "useProName参数",
           "type_description_cn": ""
         }
       ],
@@ -947,8 +947,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowProfileCardTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowProfileCardTooltip%22",
       "link": "#!/panorama/events/DOTAShowProfileCardTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowProfileCardTooltip",
+      "description_cn": "Show a user's profile card. Use pro name determines wher to use ir professi到al team name if applicable.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -964,13 +964,13 @@
         {
           "name": "steamId",
           "type": "uint64",
-          "description_cn": "",
+          "description_cn": "steamId参数",
           "type_description_cn": ""
         },
         {
           "name": "useProName",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "useProName参数",
           "type_description_cn": ""
         }
       ],
@@ -978,8 +978,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowProfileCardTooltipForPartyMember%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowProfileCardTooltipForPartyMember%22",
       "link": "#!/panorama/events/DOTAShowProfileCardTooltipForPartyMember",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowProfileCardTooltipForPartyMember",
+      "description_cn": "Show a user's profile card including ir hero ban choices. Use pro name determines wher to use ir professi到al team name if applicable.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -995,7 +995,7 @@
         {
           "name": "steamId",
           "type": "uint64",
-          "description_cn": "",
+          "description_cn": "steamId参数",
           "type_description_cn": ""
         }
       ],
@@ -1003,8 +1003,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowRankTierTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowRankTierTooltip%22",
       "link": "#!/panorama/events/DOTAShowRankTierTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowRankTierTooltip",
+      "description_cn": "Show  rank tier tooltip for a user",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1020,19 +1020,19 @@
         {
           "name": "x",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "X坐标",
           "type_description_cn": ""
         },
         {
           "name": "y",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "Y坐标",
           "type_description_cn": ""
         },
         {
           "name": "runeType",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "runeType参数",
           "type_description_cn": ""
         }
       ],
@@ -1040,8 +1040,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowRuneTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowRuneTooltip%22",
       "link": "#!/panorama/events/DOTAShowRuneTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowRuneTooltip",
+      "description_cn": "Show a rune tooltip in  X Y locati到 for  rune type",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1057,7 +1057,7 @@
         {
           "name": "ti10EventGameTooltipInfoT",
           "type": "struct",
-          "description_cn": "",
+          "description_cn": "事件名称",
           "type_description_cn": ""
         }
       ],
@@ -1065,8 +1065,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTI10EventGameTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTI10EventGameTooltip%22",
       "link": "#!/panorama/events/DOTAShowTI10EventGameTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowTIEventGameTooltip",
+      "description_cn": "Show a ti10 事件 game tooltip",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1082,7 +1082,7 @@
         {
           "name": "text",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "文本内容",
           "type_description_cn": ""
         }
       ],
@@ -1090,8 +1090,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTextTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTextTooltip%22",
       "link": "#!/panorama/events/DOTAShowTextTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA显示文本提示",
+      "description_cn": "显示文本提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1107,13 +1107,13 @@
         {
           "name": "text",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "文本内容",
           "type_description_cn": ""
         },
         {
           "name": "style",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "style参数",
           "type_description_cn": ""
         }
       ],
@@ -1121,8 +1121,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTextTooltipStyled%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTextTooltipStyled%22",
       "link": "#!/panorama/events/DOTAShowTextTooltipStyled",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowTextTooltipStyled",
+      "description_cn": "Show a tooltip with  given text. Also apply a CSS类 named \"style\" 到llow custom styling.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1138,19 +1138,19 @@
         {
           "name": "title",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "title参数",
           "type_description_cn": ""
         },
         {
           "name": "imagePath",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "imagePath参数",
           "type_description_cn": ""
         },
         {
           "name": "text",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "文本内容",
           "type_description_cn": ""
         }
       ],
@@ -1158,8 +1158,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTitleImageTextTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTitleImageTextTooltip%22",
       "link": "#!/panorama/events/DOTAShowTitleImageTextTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowTitleImageTextTooltip",
+      "description_cn": "Show a tooltip with  given title, image, and text.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1175,25 +1175,25 @@
         {
           "name": "title",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "title参数",
           "type_description_cn": ""
         },
         {
           "name": "imagePath",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "imagePath参数",
           "type_description_cn": ""
         },
         {
           "name": "text",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "文本内容",
           "type_description_cn": ""
         },
         {
           "name": "style",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "style参数",
           "type_description_cn": ""
         }
       ],
@@ -1201,8 +1201,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTitleImageTextTooltipStyled%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTitleImageTextTooltipStyled%22",
       "link": "#!/panorama/events/DOTAShowTitleImageTextTooltipStyled",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowTitleImageTextTooltipStyled",
+      "description_cn": "Show a tooltip with  given title, image, and text. Also apply a CSS类 named \"style\" 到llow custom styling.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1218,13 +1218,13 @@
         {
           "name": "title",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "title参数",
           "type_description_cn": ""
         },
         {
           "name": "text",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "文本内容",
           "type_description_cn": ""
         }
       ],
@@ -1232,8 +1232,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTitleTextTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTitleTextTooltip%22",
       "link": "#!/panorama/events/DOTAShowTitleTextTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTA显示标题文本提示",
+      "description_cn": "显示带标题的文本提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1249,19 +1249,19 @@
         {
           "name": "title",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "title参数",
           "type_description_cn": ""
         },
         {
           "name": "text",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "文本内容",
           "type_description_cn": ""
         },
         {
           "name": "style",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "style参数",
           "type_description_cn": ""
         }
       ],
@@ -1269,8 +1269,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DOTAShowTitleTextTooltipStyled%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DOTAShowTitleTextTooltipStyled%22",
       "link": "#!/panorama/events/DOTAShowTitleTextTooltipStyled",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "DOTAShowTitleTextTooltipStyled",
+      "description_cn": "Show a tooltip with  given title and text. Also apply a CSS类 named \"style\" 到llow custom styling.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1286,8 +1286,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DismissAllContextMenus%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DismissAllContextMenus%22",
       "link": "#!/panorama/events/DismissAllContextMenus",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "关闭所有上下文菜单",
+      "description_cn": "关闭所有打开的上下文菜单",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1304,8 +1304,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=DropInputFocus%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22DropInputFocus%22",
       "link": "#!/panorama/events/DropInputFocus",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "放弃输入焦点",
+      "description_cn": "让当前面板放弃输入焦点",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1320,7 +1320,7 @@
         {
           "name": "url",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "URL地址",
           "type_description_cn": ""
         }
       ],
@@ -1328,8 +1328,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ExternalBrowserGoToURL%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ExternalBrowserGoToURL%22",
       "link": "#!/panorama/events/ExternalBrowserGoToURL",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "外部浏览器打开URL",
+      "description_cn": "在外部浏览器中打开URL",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1345,13 +1345,13 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         },
         {
           "name": "eventToFire",
           "type": "event",
-          "description_cn": "",
+          "description_cn": "事件名称",
           "type_description_cn": ""
         }
       ],
@@ -1359,8 +1359,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=IfHasClassEvent%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22IfHasClassEvent%22",
       "link": "#!/panorama/events/IfHasClassEvent",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "如果有类事件",
+      "description_cn": "如果面板有指定CSS类则触发事件",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1376,13 +1376,13 @@
         {
           "name": "otherPanelId",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "面板对象",
           "type_description_cn": ""
         },
         {
           "name": "eventToFire",
           "type": "event",
-          "description_cn": "",
+          "description_cn": "事件名称",
           "type_description_cn": ""
         }
       ],
@@ -1390,8 +1390,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=IfHoverOtherEvent%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22IfHoverOtherEvent%22",
       "link": "#!/panorama/events/IfHoverOtherEvent",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "如果悬停其他事件",
+      "description_cn": "如果悬停在其他元素上则触发事件",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1407,13 +1407,13 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         },
         {
           "name": "eventToFire",
           "type": "event",
-          "description_cn": "",
+          "description_cn": "事件名称",
           "type_description_cn": ""
         }
       ],
@@ -1421,8 +1421,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=IfNotHasClassEvent%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22IfNotHasClassEvent%22",
       "link": "#!/panorama/events/IfNotHasClassEvent",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "如果没有类事件",
+      "description_cn": "如果面板没有指定CSS类则触发事件",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1438,13 +1438,13 @@
         {
           "name": "otherPanelId",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "面板对象",
           "type_description_cn": ""
         },
         {
           "name": "eventToFire",
           "type": "event",
-          "description_cn": "",
+          "description_cn": "事件名称",
           "type_description_cn": ""
         }
       ],
@@ -1452,8 +1452,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=IfNotHoverOtherEvent%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22IfNotHoverOtherEvent%22",
       "link": "#!/panorama/events/IfNotHoverOtherEvent",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "如果没有悬停其他事件",
+      "description_cn": "如果没有悬停在其他元素上则触发事件",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1469,7 +1469,7 @@
         {
           "name": "repeatCount",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "repeatCount参数",
           "type_description_cn": ""
         }
       ],
@@ -1477,8 +1477,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=MovePanelDown%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22MovePanelDown%22",
       "link": "#!/panorama/events/MovePanelDown",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "面板下移",
+      "description_cn": "将面板在父容器中向下移动",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1494,7 +1494,7 @@
         {
           "name": "repeatCount",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "repeatCount参数",
           "type_description_cn": ""
         }
       ],
@@ -1502,8 +1502,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=MovePanelLeft%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22MovePanelLeft%22",
       "link": "#!/panorama/events/MovePanelLeft",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "MovePanelLeft",
+      "description_cn": "Move left from  面板. By default, this will change  焦点 positi到, but or 面板 types may implement this differently.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1519,7 +1519,7 @@
         {
           "name": "repeatCount",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "repeatCount参数",
           "type_description_cn": ""
         }
       ],
@@ -1527,8 +1527,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=MovePanelRight%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22MovePanelRight%22",
       "link": "#!/panorama/events/MovePanelRight",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "MovePanelRight",
+      "description_cn": "Move right from  面板. By default, this will change  焦点 positi到, but or 面板 types may implement this differently.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1544,7 +1544,7 @@
         {
           "name": "repeatCount",
           "type": "int32",
-          "description_cn": "",
+          "description_cn": "repeatCount参数",
           "type_description_cn": ""
         }
       ],
@@ -1552,8 +1552,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=MovePanelUp%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22MovePanelUp%22",
       "link": "#!/panorama/events/MovePanelUp",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "面板上移",
+      "description_cn": "将面板在父容器中向上移动",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1570,8 +1570,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PageDown%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PageDown%22",
       "link": "#!/panorama/events/PageDown",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "PageDown",
+      "description_cn": "滚动  面板 down by 到e page.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1588,8 +1588,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PageLeft%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PageLeft%22",
       "link": "#!/panorama/events/PageLeft",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "PageLeft",
+      "description_cn": "滚动  面板 left by 到e page.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1606,8 +1606,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PagePanelDown%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PagePanelDown%22",
       "link": "#!/panorama/events/PagePanelDown",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向下翻页",
+      "description_cn": "面板向下翻一页",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1624,8 +1624,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PagePanelLeft%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PagePanelLeft%22",
       "link": "#!/panorama/events/PagePanelLeft",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向左翻页",
+      "description_cn": "面板向左翻一页",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1642,8 +1642,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PagePanelRight%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PagePanelRight%22",
       "link": "#!/panorama/events/PagePanelRight",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向右翻页",
+      "description_cn": "面板向右翻一页",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1660,8 +1660,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PagePanelUp%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PagePanelUp%22",
       "link": "#!/panorama/events/PagePanelUp",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向上翻页",
+      "description_cn": "面板向上翻一页",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1678,8 +1678,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PageRight%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PageRight%22",
       "link": "#!/panorama/events/PageRight",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "PageRight",
+      "description_cn": "滚动  面板 right by 到e page.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1696,8 +1696,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=PageUp%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22PageUp%22",
       "link": "#!/panorama/events/PageUp",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "PageUp",
+      "description_cn": "滚动  面板 up by 到e page.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1713,7 +1713,7 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -1721,8 +1721,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=RemoveStyle%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22RemoveStyle%22",
       "link": "#!/panorama/events/RemoveStyle",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "移除样式",
+      "description_cn": "从面板移除CSS类",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1738,13 +1738,13 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         },
         {
           "name": "preDelay",
           "type": "float",
-          "description_cn": "",
+          "description_cn": "前置延迟时间(秒)",
           "type_description_cn": ""
         }
       ],
@@ -1752,8 +1752,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=RemoveStyleAfterDelay%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22RemoveStyleAfterDelay%22",
       "link": "#!/panorama/events/RemoveStyleAfterDelay",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "延迟移除样式",
+      "description_cn": "在指定延迟后从面板移除CSS类",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1769,7 +1769,7 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -1777,8 +1777,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=RemoveStyleFromEachChild%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22RemoveStyleFromEachChild%22",
       "link": "#!/panorama/events/RemoveStyleFromEachChild",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "从每个子元素移除样式",
+      "description_cn": "从每个子元素移除CSS类",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1795,8 +1795,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollDown%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollDown%22",
       "link": "#!/panorama/events/ScrollDown",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "ScrollDown",
+      "description_cn": "滚动  面板 down by 到e line.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1813,8 +1813,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollLeft%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollLeft%22",
       "link": "#!/panorama/events/ScrollLeft",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "ScrollLeft",
+      "description_cn": "滚动  面板 left by 到e line.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1831,8 +1831,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollPanelDown%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollPanelDown%22",
       "link": "#!/panorama/events/ScrollPanelDown",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向下滚动面板",
+      "description_cn": "向下滚动面板内容",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1849,8 +1849,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollPanelLeft%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollPanelLeft%22",
       "link": "#!/panorama/events/ScrollPanelLeft",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向左滚动面板",
+      "description_cn": "向左滚动面板内容",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1867,8 +1867,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollPanelRight%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollPanelRight%22",
       "link": "#!/panorama/events/ScrollPanelRight",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向右滚动面板",
+      "description_cn": "向右滚动面板内容",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1885,8 +1885,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollPanelUp%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollPanelUp%22",
       "link": "#!/panorama/events/ScrollPanelUp",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "向上滚动面板",
+      "description_cn": "向上滚动面板内容",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1903,8 +1903,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollRight%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollRight%22",
       "link": "#!/panorama/events/ScrollRight",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "ScrollRight",
+      "description_cn": "滚动  面板 right by 到e line.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1921,8 +1921,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollToBottom%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollToBottom%22",
       "link": "#!/panorama/events/ScrollToBottom",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "滚动到底部",
+      "description_cn": "将面板滚动到底部",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1939,8 +1939,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollToTop%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollToTop%22",
       "link": "#!/panorama/events/ScrollToTop",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "滚动到顶部",
+      "description_cn": "将面板滚动到顶部",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1957,8 +1957,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ScrollUp%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ScrollUp%22",
       "link": "#!/panorama/events/ScrollUp",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "ScrollUp",
+      "description_cn": "滚动  面板 up by 到e line.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -1974,7 +1974,7 @@
         {
           "name": "selected",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "selected参数",
           "type_description_cn": ""
         }
       ],
@@ -1982,8 +1982,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=SetChildPanelsSelected%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22SetChildPanelsSelected%22",
       "link": "#!/panorama/events/SetChildPanelsSelected",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "设置子面板选中状态",
+      "description_cn": "设置子面板的选中状态",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2000,8 +2000,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=SetInputFocus%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22SetInputFocus%22",
       "link": "#!/panorama/events/SetInputFocus",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "设置输入焦点",
+      "description_cn": "将输入焦点设置到面板",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2017,7 +2017,7 @@
         {
           "name": "enabled",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "enabled参数",
           "type_description_cn": ""
         }
       ],
@@ -2025,8 +2025,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=SetPanelEnabled%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22SetPanelEnabled%22",
       "link": "#!/panorama/events/SetPanelEnabled",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "设置面板启用状态",
+      "description_cn": "设置面板是否启用",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2042,7 +2042,7 @@
         {
           "name": "selected",
           "type": "bool",
-          "description_cn": "",
+          "description_cn": "selected参数",
           "type_description_cn": ""
         }
       ],
@@ -2050,8 +2050,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=SetPanelSelected%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22SetPanelSelected%22",
       "link": "#!/panorama/events/SetPanelSelected",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "设置面板选中状态",
+      "description_cn": "设置面板的选中状态",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2067,13 +2067,13 @@
         {
           "name": "slot",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "槽位",
           "type_description_cn": ""
         },
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -2081,8 +2081,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=SwitchStyle%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22SwitchStyle%22",
       "link": "#!/panorama/events/SwitchStyle",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "SwitchStyle",
+      "description_cn": "Switch which class  面板 has for a given attribute slot. Allows easily changing between multiple states.",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2099,8 +2099,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=TogglePanelSelected%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22TogglePanelSelected%22",
       "link": "#!/panorama/events/TogglePanelSelected",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "切换面板选中状态",
+      "description_cn": "切换面板的选中状态",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2116,7 +2116,7 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -2124,8 +2124,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ToggleStyle%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ToggleStyle%22",
       "link": "#!/panorama/events/ToggleStyle",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "切换样式",
+      "description_cn": "切换面板的CSS类",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2141,7 +2141,7 @@
         {
           "name": "class",
           "type": "panoramasymbol",
-          "description_cn": "",
+          "description_cn": "CSS类名",
           "type_description_cn": ""
         }
       ],
@@ -2149,8 +2149,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=TriggerStyle%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22TriggerStyle%22",
       "link": "#!/panorama/events/TriggerStyle",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "触发样式",
+      "description_cn": "触发样式变化",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2165,7 +2165,7 @@
         {
           "name": "name",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "名称",
           "type_description_cn": ""
         }
       ],
@@ -2173,8 +2173,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=UIHideCustomLayoutTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22UIHideCustomLayoutTooltip%22",
       "link": "#!/panorama/events/UIHideCustomLayoutTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "UI隐藏自定义布局提示",
+      "description_cn": "隐藏自定义布局的提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
@@ -2189,19 +2189,19 @@
         {
           "name": "name",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "名称",
           "type_description_cn": ""
         },
         {
           "name": "layoutPath",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "layoutPath参数",
           "type_description_cn": ""
         },
         {
           "name": "parameters",
           "type": "string",
-          "description_cn": "",
+          "description_cn": "parameters参数",
           "type_description_cn": ""
         }
       ],
@@ -2209,8 +2209,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=UIShowCustomLayoutParametersTooltip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22UIShowCustomLayoutParametersTooltip%22",
       "link": "#!/panorama/events/UIShowCustomLayoutParametersTooltip",
-      "name_cn": "",
-      "description_cn": "",
+      "name_cn": "UI显示自定义布局参数提示",
+      "description_cn": "显示自定义布局参数的提示框",
       "example_ts": "",
       "notes_cn": "",
       "usage_cn": "",
