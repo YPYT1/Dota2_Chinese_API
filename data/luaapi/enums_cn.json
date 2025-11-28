@@ -1,0 +1,2691 @@
+{
+  "metadata": {
+    "type": "enums",
+    "source": "https://moddota.com/api/#!/vscripts",
+    "crawledAt": "2025-11-28T00:29:05.164683",
+    "count": 64,
+    "translated_at": "2025-11-28T17:26:14.549919",
+    "model": "deepseek-ai/DeepSeek-V3"
+  },
+  "items": [
+    {
+      "name": "ABILITY_TYPES",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/ABILITY_TYPES",
+      "members": [
+        {
+          "name": "ABILITY_TYPE_BASIC",
+          "value": 0,
+          "description": null,
+          "description_cn": "基础技能，英雄的标准技能类型"
+        },
+        {
+          "name": "ABILITY_TYPE_ULTIMATE",
+          "value": 1,
+          "description": null,
+          "description_cn": "终极技能，英雄的大招"
+        },
+        {
+          "name": "ABILITY_TYPE_ATTRIBUTES",
+          "value": 2,
+          "description": null,
+          "description_cn": "属性技能，通常用于被动属性加成"
+        },
+        {
+          "name": "ABILITY_TYPE_HIDDEN",
+          "value": 3,
+          "description": null,
+          "description_cn": "隐藏技能，不会在技能面板显示"
+        }
+      ],
+      "name_cn": "技能类型",
+      "description_cn": "定义Dota2中不同类型的技能分类",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于区分英雄的技能类型，通常在技能创建和属性设置时使用",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "AbilityLearnResult_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/AbilityLearnResult_t",
+      "members": [
+        {
+          "name": "ABILITY_CAN_BE_UPGRADED",
+          "value": 0,
+          "description": null,
+          "description_cn": "技能可以正常升级"
+        },
+        {
+          "name": "ABILITY_CANNOT_BE_UPGRADED_NOT_UPGRADABLE",
+          "value": 1,
+          "description": null,
+          "description_cn": "技能不可升级（基础不可升级技能）"
+        },
+        {
+          "name": "ABILITY_CANNOT_BE_UPGRADED_AT_MAX",
+          "value": 2,
+          "description": null,
+          "description_cn": "技能已达到最高等级"
+        },
+        {
+          "name": "ABILITY_CANNOT_BE_UPGRADED_REQUIRES_LEVEL",
+          "value": 3,
+          "description": null,
+          "description_cn": "英雄等级不足，无法升级该技能"
+        },
+        {
+          "name": "ABILITY_NOT_LEARNABLE",
+          "value": 4,
+          "description": null,
+          "description_cn": "技能不可学习（非英雄技能或特殊状态）"
+        }
+      ],
+      "name_cn": "技能学习结果枚举",
+      "description_cn": "用于表示英雄尝试学习或升级技能时的各种可能结果状态",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "通常在英雄升级技能时调用，用于判断当前技能是否可升级及不可升级的原因",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "ActivateType",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/ActivateType",
+      "members": [
+        {
+          "name": "ACTIVATE_TYPE_INITIAL_CREATION",
+          "value": 0,
+          "description": null,
+          "description_cn": "初始创建时激活"
+        },
+        {
+          "name": "ACTIVATE_TYPE_DATAUPDATE_CREATION",
+          "value": 1,
+          "description": null,
+          "description_cn": "数据更新创建时激活"
+        },
+        {
+          "name": "ACTIVATE_TYPE_ONRESTORE",
+          "value": 2,
+          "description": null,
+          "description_cn": "从存档恢复时激活"
+        }
+      ],
+      "name_cn": "激活类型",
+      "description_cn": "定义实体激活的不同触发方式",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于区分实体是首次创建、数据更新创建还是从存档恢复",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "AttributeDerivedStats",
+      "description": null,
+      "references": 2,
+      "link": "#!/vscripts/AttributeDerivedStats",
+      "members": [
+        {
+          "name": "DOTA_ATTRIBUTE_STRENGTH_DAMAGE",
+          "value": 0,
+          "description": null,
+          "description_cn": "力量属性提供的攻击伤害加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_STRENGTH_HP",
+          "value": 1,
+          "description": null,
+          "description_cn": "力量属性提供的生命值上限加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_STRENGTH_HP_REGEN",
+          "value": 2,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_AGILITY_DAMAGE",
+          "value": 3,
+          "description": null,
+          "description_cn": "敏捷属性提供的攻击伤害加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_AGILITY_ARMOR",
+          "value": 4,
+          "description": null,
+          "description_cn": "敏捷属性提供的护甲值加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_AGILITY_ATTACK_SPEED",
+          "value": 5,
+          "description": null,
+          "description_cn": "敏捷属性提供的攻击速度加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_INTELLIGENCE_DAMAGE",
+          "value": 6,
+          "description": null,
+          "description_cn": "智力属性提供的攻击伤害加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_INTELLIGENCE_MANA",
+          "value": 7,
+          "description": null,
+          "description_cn": "智力属性提供的魔法值上限加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_INTELLIGENCE_MANA_REGEN",
+          "value": 8,
+          "description": null,
+          "description_cn": "智力属性提供的魔法恢复速率加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_INTELLIGENCE_MAGIC_RESIST",
+          "value": 9,
+          "description": null,
+          "description_cn": "智力属性提供的魔法抗性加成"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_ALL_DAMAGE",
+          "value": 10,
+          "description": null,
+          "description_cn": "全属性提供的攻击伤害加成"
+        }
+      ],
+      "name_cn": "属性衍生数值",
+      "description_cn": "定义英雄基础属性（力量/敏捷/智力）衍生的次级属性值",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于计算英雄的伤害、生命值、魔法值等战斗属性，常见于属性关联的技能效果实现",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "Attributes",
+      "description": null,
+      "references": 2,
+      "link": "#!/vscripts/Attributes",
+      "members": [
+        {
+          "name": "DOTA_ATTRIBUTE_INVALID",
+          "value": -1,
+          "description": null,
+          "description_cn": "无效属性"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_STRENGTH",
+          "value": 0,
+          "description": null,
+          "description_cn": "力量属性"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_AGILITY",
+          "value": 1,
+          "description": null,
+          "description_cn": "敏捷属性"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_INTELLECT",
+          "value": 2,
+          "description": null,
+          "description_cn": "智力属性"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_ALL",
+          "value": 3,
+          "description": null,
+          "description_cn": "全部属性"
+        },
+        {
+          "name": "DOTA_ATTRIBUTE_MAX",
+          "value": 4,
+          "description": null,
+          "description_cn": "属性枚举最大值"
+        }
+      ],
+      "name_cn": "英雄属性",
+      "description_cn": "定义英雄的三种基础属性类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于获取/设置英雄的力量/敏捷/智力属性值",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "CLICK_BEHAVIORS",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/CLICK_BEHAVIORS",
+      "members": [
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "无特殊点击行为"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_MOVE",
+          "value": 1,
+          "description": null,
+          "description_cn": "移动指令"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_ATTACK",
+          "value": 2,
+          "description": null,
+          "description_cn": "攻击指令"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_CAST",
+          "value": 3,
+          "description": null,
+          "description_cn": "施法指令"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_DROP_ITEM",
+          "value": 4,
+          "description": null,
+          "description_cn": "丢弃背包物品"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_DROP_SHOP_ITEM",
+          "value": 5,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_DRAG",
+          "value": 6,
+          "description": null,
+          "description_cn": "拖拽行为"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_LEARN_ABILITY",
+          "value": 7,
+          "description": null,
+          "description_cn": "学习技能"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_PATROL",
+          "value": 8,
+          "description": null,
+          "description_cn": "巡逻指令"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_VECTOR_CAST",
+          "value": 9,
+          "description": null,
+          "description_cn": "矢量施法指令"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_UNUSED",
+          "value": 10,
+          "description": null,
+          "description_cn": "保留未使用"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_RADAR",
+          "value": 11,
+          "description": null,
+          "description_cn": "小地图雷达点击"
+        },
+        {
+          "name": "DOTA_CLICK_BEHAVIOR_LAST",
+          "value": 12,
+          "description": null,
+          "description_cn": "枚举结束标记"
+        }
+      ],
+      "name_cn": "点击行为类型",
+      "description_cn": "定义单位对不同点击事件的响应行为类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于控制单位对玩家鼠标点击的交互响应，如移动、攻击、施法等",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "ConVarFlags",
+      "description": null,
+      "references": 2,
+      "link": "#!/vscripts/ConVarFlags",
+      "members": [
+        {
+          "name": "FCVAR_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "无特殊标志"
+        },
+        {
+          "name": "FCVAR_DEVELOPMENTONLY",
+          "value": 2,
+          "description": null,
+          "description_cn": "仅在开发模式下可用"
+        },
+        {
+          "name": "FCVAR_HIDDEN",
+          "value": 16,
+          "description": null,
+          "description_cn": "不在自动补全和帮助中显示"
+        },
+        {
+          "name": "FCVAR_PROTECTED",
+          "value": 32,
+          "description": "Makes the ConVar value hidden from all clients (for example sv_password).\nReported as \"prot\" by cvarlist.",
+          "description_cn": "防止被恶意修改"
+        },
+        {
+          "name": "FCVAR_SPONLY",
+          "value": 64,
+          "description": "Executing the command or changing the ConVar is only allowed in singleplayer.\nReported as \"sp\" by cvarlist.",
+          "description_cn": "仅限单人游戏使用"
+        },
+        {
+          "name": "FCVAR_ARCHIVE",
+          "value": 128,
+          "description": "Save the ConVar value into config.cfg.\nReported as \"a\" by cvarlist, except Lua ConVars.",
+          "description_cn": "保存到配置文件中"
+        },
+        {
+          "name": "FCVAR_NOTIFY",
+          "value": 256,
+          "description": "For serverside ConVars, notifies all players with blue chat text when the value gets changed.\nReported as \"nf\" by cvarlist.",
+          "description_cn": "变更时通知所有玩家"
+        },
+        {
+          "name": "FCVAR_USERINFO",
+          "value": 512,
+          "description": "For clientside commands, sends the value to the server.\nReported as \"user\" by cvarlist.",
+          "description_cn": "作为用户信息广播"
+        },
+        {
+          "name": "FCVAR_UNLOGGED",
+          "value": 2048,
+          "description": "Don't log the ConVar changes to console/log files/users.\nReported as \"log\" by cvarlist.",
+          "description_cn": "不记录到日志文件"
+        },
+        {
+          "name": "FCVAR_REPLICATED",
+          "value": 8192,
+          "description": "For serverside ConVars, it will send its value to all clients. The ConVar with the same name must also exist on the client!\nReported as \"rep\" by cvarlist.",
+          "description_cn": "从服务器同步到客户端"
+        },
+        {
+          "name": "FCVAR_CHEAT",
+          "value": 16384,
+          "description": "Requires sv_cheats to be enabled to change the ConVar or run the command.\nReported as \"cheat\" by cvarlist.",
+          "description_cn": "作弊指令(仅sv_cheats 1时可用)"
+        },
+        {
+          "name": "FCVAR_PER_USER",
+          "value": 32768,
+          "description": null,
+          "description_cn": "每个用户独立设置"
+        },
+        {
+          "name": "FCVAR_DEMO",
+          "value": 65536,
+          "description": "Force the ConVar to be recorded by demo recordings.\nReported as \"demo\" by cvarlist.",
+          "description_cn": "录制到Demo文件中"
+        },
+        {
+          "name": "FCVAR_DONTRECORD",
+          "value": 131072,
+          "description": "Opposite of FCVAR_DEMO, ensures the ConVar is not recorded in demos.\nReported as \"norecord\" by cvarlist.",
+          "description_cn": "不录制到Demo文件中"
+        },
+        {
+          "name": "FCVAR_NOT_CONNECTED",
+          "value": 4194304,
+          "description": "Makes the ConVar not changeable while connected to a server or in singleplayer.",
+          "description_cn": "非连接状态下可用"
+        },
+        {
+          "name": "FCVAR_VCONSOLE_SET_FOCUS",
+          "value": 134217728,
+          "description": null,
+          "description_cn": "设置虚拟控制台焦点"
+        }
+      ],
+      "name_cn": "控制台变量标志",
+      "description_cn": "用于定义和控制台变量(ConVar)行为相关的标志位枚举",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于配置服务器/客户端控制台变量的访问权限和行为特性",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DAMAGE_TYPES",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DAMAGE_TYPES",
+      "members": [
+        {
+          "name": "DAMAGE_TYPE_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "无伤害类型"
+        },
+        {
+          "name": "DAMAGE_TYPE_PHYSICAL",
+          "value": 1,
+          "description": null,
+          "description_cn": "物理伤害，受护甲减免"
+        },
+        {
+          "name": "DAMAGE_TYPE_MAGICAL",
+          "value": 2,
+          "description": null,
+          "description_cn": "魔法伤害，受魔法抗性减免"
+        },
+        {
+          "name": "DAMAGE_TYPE_PURE",
+          "value": 4,
+          "description": null,
+          "description_cn": "纯粹伤害，无视护甲和魔抗"
+        },
+        {
+          "name": "DAMAGE_TYPE_ALL",
+          "value": 7,
+          "description": null,
+          "description_cn": "包含所有基础伤害类型(物理+魔法+纯粹)"
+        },
+        {
+          "name": "DAMAGE_TYPE_HP_REMOVAL",
+          "value": 8,
+          "description": null,
+          "description_cn": "生命移除，不触发任何伤害相关事件"
+        },
+        {
+          "name": "DAMAGE_TYPE_ABILITY_DEFINED",
+          "value": 16,
+          "description": null,
+          "description_cn": "由技能自定义的特殊伤害类型"
+        }
+      ],
+      "name_cn": "伤害类型",
+      "description_cn": "定义Dota2中不同类型的伤害计算方式",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于技能、物品和攻击的伤害类型判定，影响护甲、魔抗等减伤机制的计算",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAAbilitySpeakTrigger_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAAbilitySpeakTrigger_t",
+      "members": [
+        {
+          "name": "DOTA_ABILITY_SPEAK_START_ACTION_PHASE",
+          "value": 0,
+          "description": null,
+          "description_cn": "技能开始准备阶段时触发语音"
+        },
+        {
+          "name": "DOTA_ABILITY_SPEAK_CAST",
+          "value": 1,
+          "description": null,
+          "description_cn": "技能施放时触发语音"
+        }
+      ],
+      "name_cn": "DOTA技能语音触发类型",
+      "description_cn": "定义技能在何种情况下触发语音的枚举类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于配置英雄技能在不同阶段播放的语音特效",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAConnectionState_t",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DOTAConnectionState_t",
+      "members": [
+        {
+          "name": "DOTA_CONNECTION_STATE_UNKNOWN",
+          "value": 0,
+          "description": null,
+          "description_cn": "未知连接状态"
+        },
+        {
+          "name": "DOTA_CONNECTION_STATE_NOT_YET_CONNECTED",
+          "value": 1,
+          "description": null,
+          "description_cn": "尚未建立连接"
+        },
+        {
+          "name": "DOTA_CONNECTION_STATE_CONNECTED",
+          "value": 2,
+          "description": null,
+          "description_cn": "已成功连接"
+        },
+        {
+          "name": "DOTA_CONNECTION_STATE_DISCONNECTED",
+          "value": 3,
+          "description": null,
+          "description_cn": "已断开连接"
+        },
+        {
+          "name": "DOTA_CONNECTION_STATE_ABANDONED",
+          "value": 4,
+          "description": null,
+          "description_cn": "玩家已放弃比赛"
+        },
+        {
+          "name": "DOTA_CONNECTION_STATE_LOADING",
+          "value": 5,
+          "description": null,
+          "description_cn": "正在加载游戏"
+        },
+        {
+          "name": "DOTA_CONNECTION_STATE_FAILED",
+          "value": 6,
+          "description": null,
+          "description_cn": "连接失败"
+        }
+      ],
+      "name_cn": "DOTA连接状态枚举",
+      "description_cn": "表示玩家与DOTA2服务器的连接状态",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于检测玩家当前连接状态，处理断线重连、掉线惩罚等逻辑",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTACustomCameraEventFlags_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTACustomCameraEventFlags_t",
+      "members": [
+        {
+          "name": "k_ECustomCameraEventFlags_Zoom",
+          "value": 1,
+          "description": null,
+          "description_cn": "控制摄像机缩放"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_Position",
+          "value": 2,
+          "description": null,
+          "description_cn": "设置摄像机绝对位置"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_PositionPlayerHero",
+          "value": 4,
+          "description": null,
+          "description_cn": "将摄像机锁定到玩家英雄位置"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_Pitch",
+          "value": 8,
+          "description": null,
+          "description_cn": "调整摄像机俯仰角"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_Yaw",
+          "value": 16,
+          "description": null,
+          "description_cn": "调整摄像机偏航角"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_Lock",
+          "value": 32,
+          "description": null,
+          "description_cn": "锁定摄像机视角"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_Unlock",
+          "value": 64,
+          "description": null,
+          "description_cn": "解除摄像机锁定"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_ResetDefault",
+          "value": 128,
+          "description": null,
+          "description_cn": "重置为默认摄像机设置"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_SpecificPlayer",
+          "value": 256,
+          "description": null,
+          "description_cn": "针对特定玩家生效"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_FadeOut",
+          "value": 512,
+          "description": null,
+          "description_cn": "屏幕淡出效果"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_FadeIn",
+          "value": 1024,
+          "description": null,
+          "description_cn": "屏幕淡入效果"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_LetterboxOn",
+          "value": 2048,
+          "description": null,
+          "description_cn": "启用电影黑边效果"
+        },
+        {
+          "name": "k_ECustomCameraEventFlags_LetterboxOff",
+          "value": 4096,
+          "description": null,
+          "description_cn": "关闭电影黑边效果"
+        }
+      ],
+      "name_cn": "自定义摄像机事件标志",
+      "description_cn": "用于控制游戏摄像机行为的标志位枚举，每个值代表不同的摄像机操作类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "在自定义游戏模式中实现特殊镜头效果，如过场动画、英雄追踪或电影化镜头",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTADamageFlag_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTADamageFlag_t",
+      "members": [
+        {
+          "name": "DOTA_DAMAGE_FLAG_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_IGNORES_MAGIC_ARMOR",
+          "value": 1,
+          "description": null,
+          "description_cn": "忽略魔法抗性"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_IGNORES_PHYSICAL_ARMOR",
+          "value": 2,
+          "description": null,
+          "description_cn": "忽略物理护甲"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_BYPASSES_INVULNERABILITY",
+          "value": 4,
+          "description": null,
+          "description_cn": "穿透无敌状态"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_BYPASSES_PHYSICAL_BLOCK",
+          "value": 8,
+          "description": null,
+          "description_cn": "穿透物理格挡"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_REFLECTION",
+          "value": 16,
+          "description": null,
+          "description_cn": "可被反射的伤害"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_HPLOSS",
+          "value": 32,
+          "description": null,
+          "description_cn": "生命值损失（不计为伤害）"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_NO_DIRECTOR_EVENT",
+          "value": 64,
+          "description": null,
+          "description_cn": "不触发导演事件"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_NON_LETHAL",
+          "value": 128,
+          "description": null,
+          "description_cn": "非致命伤害"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS",
+          "value": 512,
+          "description": null,
+          "description_cn": "不受伤害倍率影响"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION",
+          "value": 1024,
+          "description": null,
+          "description_cn": "不受法术增强影响"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_DONT_DISPLAY_DAMAGE_IF_SOURCE_HIDDEN",
+          "value": 2048,
+          "description": null,
+          "description_cn": "来源隐藏时不显示伤害数字"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_NO_SPELL_LIFESTEAL",
+          "value": 4096,
+          "description": null,
+          "description_cn": "不触发法术吸血"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_PROPERTY_FIRE",
+          "value": 8192,
+          "description": null,
+          "description_cn": "火焰属性伤害"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_IGNORES_BASE_PHYSICAL_ARMOR",
+          "value": 16384,
+          "description": null,
+          "description_cn": "忽略基础物理护甲"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_SECONDARY_PROJECTILE_ATTACK",
+          "value": 32768,
+          "description": null,
+          "description_cn": "次级投射物攻击"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_FORCE_SPELL_AMPLIFICATION",
+          "value": 65536,
+          "description": null,
+          "description_cn": "强制法术增强"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_MAGIC_AUTO_ATTACK",
+          "value": 131072,
+          "description": null,
+          "description_cn": "魔法自动攻击"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_ATTACK_MODIFIER",
+          "value": 262144,
+          "description": null,
+          "description_cn": "攻击修改器效果"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_BYPASSES_ALL_BLOCK",
+          "value": 524288,
+          "description": null,
+          "description_cn": "穿透所有格挡"
+        },
+        {
+          "name": "DOTA_DAMAGE_FLAG_NO_REFLECTION",
+          "value": 1048576,
+          "description": null,
+          "description_cn": "不可被反射"
+        }
+      ],
+      "name_cn": "伤害标志类型",
+      "description_cn": "定义伤害计算时的特殊处理标志，用于控制伤害如何与护甲、无敌状态、伤害反射等机制交互",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "在技能伤害计算、攻击伤害处理等场景中用于特殊伤害效果实现",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAHUDVisibility_t",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DOTAHUDVisibility_t",
+      "members": [
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVALID",
+          "value": -1,
+          "description": null,
+          "description_cn": "无效值"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_TIMEOFDAY",
+          "value": 0,
+          "description": null,
+          "description_cn": "顶部时间显示（昼夜指示）"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_HEROES",
+          "value": 1,
+          "description": null,
+          "description_cn": "顶部英雄头像栏"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_SCOREBOARD",
+          "value": 2,
+          "description": null,
+          "description_cn": "顶部记分板"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_ACTION_PANEL",
+          "value": 3,
+          "description": null,
+          "description_cn": "动作面板（技能栏）"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_ACTION_MINIMAP",
+          "value": 4,
+          "description": null,
+          "description_cn": "小地图"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_PANEL",
+          "value": 5,
+          "description": null,
+          "description_cn": "物品栏面板"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_SHOP",
+          "value": 6,
+          "description": null,
+          "description_cn": "商店按钮"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_ITEMS",
+          "value": 7,
+          "description": null,
+          "description_cn": "物品格子"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_QUICKBUY",
+          "value": 8,
+          "description": null,
+          "description_cn": "快速购买区域"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_COURIER",
+          "value": 9,
+          "description": null,
+          "description_cn": "信使控制按钮"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_PROTECT",
+          "value": 10,
+          "description": null,
+          "description_cn": "保护性物品栏"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_INVENTORY_GOLD",
+          "value": 11,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_SHOP_SUGGESTEDITEMS",
+          "value": 12,
+          "description": null,
+          "description_cn": "商店推荐物品"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_SHOP_COMMONITEMS",
+          "value": 13,
+          "description": null,
+          "description_cn": "商店常用物品"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_HERO_SELECTION_TEAMS",
+          "value": 14,
+          "description": null,
+          "description_cn": "英雄选择界面-队伍显示"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_HERO_SELECTION_GAME_NAME",
+          "value": 15,
+          "description": null,
+          "description_cn": "英雄选择界面-游戏名称"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_HERO_SELECTION_CLOCK",
+          "value": 16,
+          "description": null,
+          "description_cn": "英雄选择界面-倒计时"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_HERO_SELECTION_HEADER",
+          "value": 17,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_MENU_BUTTONS",
+          "value": 18,
+          "description": null,
+          "description_cn": "顶部菜单按钮"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_BAR_BACKGROUND",
+          "value": 19,
+          "description": null,
+          "description_cn": "顶部状态栏背景"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_BAR_RADIANT_TEAM",
+          "value": 20,
+          "description": null,
+          "description_cn": "顶部状态栏-天辉队伍"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_BAR_DIRE_TEAM",
+          "value": 21,
+          "description": null,
+          "description_cn": "顶部状态栏-夜魇队伍"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_BAR_SCORE",
+          "value": 22,
+          "description": null,
+          "description_cn": "顶部状态栏-比分"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_ENDGAME",
+          "value": 23,
+          "description": null,
+          "description_cn": "游戏结束界面"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_ENDGAME_CHAT",
+          "value": 24,
+          "description": null,
+          "description_cn": "游戏结束聊天框"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_QUICK_STATS",
+          "value": 25,
+          "description": null,
+          "description_cn": "快速统计数据"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_PREGAME_STRATEGYUI",
+          "value": 26,
+          "description": null,
+          "description_cn": "赛前策略界面"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_KILLCAM",
+          "value": 27,
+          "description": null,
+          "description_cn": "击杀镜头"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_FIGHT_RECAP",
+          "value": 28,
+          "description": null,
+          "description_cn": "战斗回顾"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_TOP_BAR",
+          "value": 29,
+          "description": null,
+          "description_cn": "顶部状态栏整体"
+        },
+        {
+          "name": "DOTA_HUD_CUSTOMUI_BEHIND_HUD_ELEMENTS",
+          "value": 30,
+          "description": null,
+          "description_cn": "自定义UI（在HUD元素后方）"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_AGHANIMS_STATUS",
+          "value": 31,
+          "description": null,
+          "description_cn": "阿哈利姆状态指示器"
+        },
+        {
+          "name": "DOTA_HUD_VISIBILITY_COUNT",
+          "value": 32,
+          "description": null,
+          "description_cn": "枚举值总数"
+        }
+      ],
+      "name_cn": "DOTA界面可见性枚举",
+      "description_cn": "定义DOTA2游戏界面中各个HUD元素的可见性状态",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于控制HUD元素的显示/隐藏，常见于自定义UI、观战模式、教程系统等场景",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAInventoryFlags_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAInventoryFlags_t",
+      "members": [
+        {
+          "name": "DOTA_INVENTORY_ALLOW_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "不允许任何物品栏操作"
+        },
+        {
+          "name": "DOTA_INVENTORY_ALLOW_MAIN",
+          "value": 1,
+          "description": null,
+          "description_cn": "允许使用主物品栏"
+        },
+        {
+          "name": "DOTA_INVENTORY_ALLOW_STASH",
+          "value": 2,
+          "description": null,
+          "description_cn": "允许使用备用物品栏"
+        },
+        {
+          "name": "DOTA_INVENTORY_ALL_ACCESS",
+          "value": 3,
+          "description": null,
+          "description_cn": "允许完全访问所有物品栏"
+        },
+        {
+          "name": "DOTA_INVENTORY_ALLOW_DROP_ON_GROUND",
+          "value": 4,
+          "description": null,
+          "description_cn": "允许将物品丢弃在地面上"
+        },
+        {
+          "name": "DOTA_INVENTORY_ALLOW_DROP_AT_FOUNTAIN",
+          "value": 8,
+          "description": null,
+          "description_cn": "允许在泉水处丢弃物品"
+        },
+        {
+          "name": "DOTA_INVENTORY_LIMIT_DROP_ON_GROUND",
+          "value": 16,
+          "description": null,
+          "description_cn": "限制地面丢弃物品的数量"
+        }
+      ],
+      "name_cn": "DOTA库存标志位",
+      "description_cn": "用于控制英雄物品栏的存取权限和行为规则",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "常用于定义物品在英雄背包中的存储规则，如是否允许存放在主背包、备用背包，或是否允许丢弃等",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTALimits_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTALimits_t",
+      "members": [
+        {
+          "name": "DOTA_DEFAULT_MAX_TEAM",
+          "value": 5,
+          "description": "Default number of players per team.",
+          "description_cn": "默认最大队伍数量（5v5标准比赛）"
+        },
+        {
+          "name": "DOTA_DEFAULT_MAX_TEAM_PLAYERS",
+          "value": 10,
+          "description": "Default number of non-spectator players supported.",
+          "description_cn": "默认每队最大玩家数（10人/5v5）"
+        },
+        {
+          "name": "DOTA_MAX_PLAYER_TEAMS",
+          "value": 10,
+          "description": "Max number of player teams supported.",
+          "description_cn": "玩家可加入的最大队伍数量"
+        },
+        {
+          "name": "DOTA_MAX_SPECTATOR_LOBBY_SIZE",
+          "value": 15,
+          "description": "Max number of viewers in a spectator lobby.",
+          "description_cn": "观战大厅最大容量"
+        },
+        {
+          "name": "DOTA_MAX_TEAM",
+          "value": 24,
+          "description": "Max number of players per team.",
+          "description_cn": "系统支持的最大队伍数量"
+        },
+        {
+          "name": "DOTA_MAX_TEAM_PLAYERS",
+          "value": 24,
+          "description": "Max number of non-spectator players supported.",
+          "description_cn": "系统支持的每队最大玩家数"
+        },
+        {
+          "name": "DOTA_MAX_SPECTATOR_TEAM_SIZE",
+          "value": 40,
+          "description": "How many spectators can watch.",
+          "description_cn": "观战团队最大人数"
+        },
+        {
+          "name": "DOTA_MAX_PLAYERS",
+          "value": 64,
+          "description": "Max number of players connected to the server including spectators.",
+          "description_cn": "游戏支持的最大玩家总数"
+        }
+      ],
+      "name_cn": "DOTA限制类型",
+      "description_cn": "定义Dota2游戏中各种玩家数量相关的上限值",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于限制比赛房间规模、队伍人数等游戏参数",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAMinimapEvent_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAMinimapEvent_t",
+      "members": [
+        {
+          "name": "DOTA_MINIMAP_EVENT_ANCIENT_UNDER_ATTACK",
+          "value": 2,
+          "description": null,
+          "description_cn": "远古遗迹正在被攻击"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_BASE_UNDER_ATTACK",
+          "value": 4,
+          "description": null,
+          "description_cn": "基地建筑正在被攻击"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_BASE_GLYPHED",
+          "value": 8,
+          "description": null,
+          "description_cn": "基地触发防御符文"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_TEAMMATE_UNDER_ATTACK",
+          "value": 16,
+          "description": null,
+          "description_cn": "队友正在被攻击"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_TEAMMATE_TELEPORTING",
+          "value": 32,
+          "description": null,
+          "description_cn": "队友正在传送"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_TEAMMATE_DIED",
+          "value": 64,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_TUTORIAL_TASK_ACTIVE",
+          "value": 128,
+          "description": null,
+          "description_cn": "教程任务激活"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_TUTORIAL_TASK_FINISHED",
+          "value": 256,
+          "description": null,
+          "description_cn": "教程任务完成"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_HINT_LOCATION",
+          "value": 512,
+          "description": null,
+          "description_cn": "位置提示标记"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_ENEMY_TELEPORTING",
+          "value": 1024,
+          "description": null,
+          "description_cn": "敌人正在传送"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_CANCEL_TELEPORTING",
+          "value": 2048,
+          "description": null,
+          "description_cn": "取消传送"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_RADAR",
+          "value": 4096,
+          "description": null,
+          "description_cn": "雷达扫描事件"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_RADAR_TARGET",
+          "value": 8192,
+          "description": null,
+          "description_cn": "雷达扫描目标"
+        },
+        {
+          "name": "DOTA_MINIMAP_EVENT_MOVE_TO_TARGET",
+          "value": 16384,
+          "description": null,
+          "description_cn": "移动至目标位置"
+        }
+      ],
+      "name_cn": "DOTA小地图事件类型",
+      "description_cn": "定义在小地图上显示的各种事件类型枚举",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于处理小地图事件触发逻辑，如基地被攻击提示、队友传送提醒等",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAModifierAttribute_t",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DOTAModifierAttribute_t",
+      "members": [
+        {
+          "name": "MODIFIER_ATTRIBUTE_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "无特殊属性"
+        },
+        {
+          "name": "MODIFIER_ATTRIBUTE_PERMANENT",
+          "value": 1,
+          "description": null,
+          "description_cn": "永久性修改器，无法被常规方式驱散"
+        },
+        {
+          "name": "MODIFIER_ATTRIBUTE_MULTIPLE",
+          "value": 2,
+          "description": null,
+          "description_cn": "允许同一来源的多个相同修改器叠加"
+        },
+        {
+          "name": "MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE",
+          "value": 4,
+          "description": null,
+          "description_cn": "无视无敌状态仍可施加修改器"
+        },
+        {
+          "name": "MODIFIER_ATTRIBUTE_AURA_PRIORITY",
+          "value": 8,
+          "description": null,
+          "description_cn": "赋予光环效果更高优先级"
+        },
+        {
+          "name": "MODIFIER_ATTRIBUTE_IGNORE_DODGE",
+          "value": 16,
+          "description": null,
+          "description_cn": "无视闪避效果仍可施加修改器"
+        }
+      ],
+      "name_cn": "DOTAModifierAttribute_t",
+      "description_cn": "定义修改器(buff)的属性标志位，用于控制修改器的特殊行为",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "在创建自定义技能或物品效果时，用于指定修改器的特殊行为特性",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAMusicStatus_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAMusicStatus_t",
+      "members": [
+        {
+          "name": "DOTA_MUSIC_STATUS_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "无背景音乐状态"
+        },
+        {
+          "name": "DOTA_MUSIC_STATUS_EXPLORATION",
+          "value": 1,
+          "description": null,
+          "description_cn": "探索状态背景音乐"
+        },
+        {
+          "name": "DOTA_MUSIC_STATUS_BATTLE",
+          "value": 2,
+          "description": null,
+          "description_cn": "战斗状态背景音乐"
+        },
+        {
+          "name": "DOTA_MUSIC_STATUS_PRE_GAME_EXPLORATION",
+          "value": 3,
+          "description": null,
+          "description_cn": "游戏开始前的探索状态背景音乐"
+        },
+        {
+          "name": "DOTA_MUSIC_STATUS_DEAD",
+          "value": 4,
+          "description": null,
+          "description_cn": "英雄死亡状态背景音乐"
+        },
+        {
+          "name": "DOTA_MUSIC_STATUS_LAST",
+          "value": 5,
+          "description": null,
+          "description_cn": "枚举结束标记"
+        }
+      ],
+      "name_cn": "DOTA音乐状态枚举",
+      "description_cn": "用于表示游戏内不同场景下的背景音乐状态",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于控制不同游戏阶段的背景音乐切换，如探索状态、战斗状态等",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAPostGameColumn_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAPostGameColumn_t",
+      "members": [
+        {
+          "name": "DOTA_POST_GAME_COLUMN_LEVEL",
+          "value": 0,
+          "description": null,
+          "description_cn": "英雄等级"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_ITEMS",
+          "value": 1,
+          "description": null,
+          "description_cn": "装备物品"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_KILLS",
+          "value": 2,
+          "description": null,
+          "description_cn": "击杀数"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_DEATHS",
+          "value": 3,
+          "description": null,
+          "description_cn": "死亡数"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_ASSISTS",
+          "value": 4,
+          "description": null,
+          "description_cn": "助攻数"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_NET_WORTH",
+          "value": 5,
+          "description": null,
+          "description_cn": "净财产值"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_LAST_HITS",
+          "value": 6,
+          "description": null,
+          "description_cn": "正补数"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_DENIES",
+          "value": 7,
+          "description": null,
+          "description_cn": "反补数"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_DAMAGE",
+          "value": 8,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_HEALING",
+          "value": 9,
+          "description": null,
+          "description_cn": "治疗量"
+        },
+        {
+          "name": "DOTA_POST_GAME_COLUMN_MAX",
+          "value": 10,
+          "description": null,
+          "description_cn": "枚举最大值"
+        }
+      ],
+      "name_cn": "DOTA赛后数据列类型",
+      "description_cn": "该枚举定义了Dota2比赛结束后展示的各种玩家数据统计列的类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于赛后计分板界面，展示每名玩家的关键游戏数据统计",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAPostGameLayout_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAPostGameLayout_t",
+      "members": [
+        {
+          "name": "DOTA_POST_GAME_LAYOUT_DOUBLE_COLUMN",
+          "value": 0,
+          "description": null,
+          "description_cn": "双栏布局模式"
+        },
+        {
+          "name": "DOTA_POST_GAME_LAYOUT_SINGLE_COLUMN",
+          "value": 1,
+          "description": null,
+          "description_cn": "单栏布局模式"
+        },
+        {
+          "name": "DOTA_POST_GAME_LAYOUT_MAX",
+          "value": 2,
+          "description": null,
+          "description_cn": "布局模式最大值（保留用途）"
+        }
+      ],
+      "name_cn": "DOTAPostGameLayout_t",
+      "description_cn": "定义Dota2游戏结束后界面布局的枚举类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于控制比赛结束后结算界面的显示布局模式",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAProjectileAttachment_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTAProjectileAttachment_t",
+      "members": [
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "不使用特定附着点"
+        },
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1",
+          "value": 1,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_2",
+          "value": 2,
+          "description": null,
+          "description_cn": "使用英雄的第二攻击动作附着点"
+        },
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_HITLOCATION",
+          "value": 3,
+          "description": null,
+          "description_cn": "使用命中位置的附着点"
+        },
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_3",
+          "value": 4,
+          "description": null,
+          "description_cn": "使用英雄的第三攻击动作附着点"
+        },
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_4",
+          "value": 5,
+          "description": null,
+          "description_cn": "使用英雄的第四攻击动作附着点"
+        },
+        {
+          "name": "DOTA_PROJECTILE_ATTACHMENT_LAST",
+          "value": 6,
+          "description": null,
+          "description_cn": "枚举结束标记"
+        }
+      ],
+      "name_cn": "投射物附着点枚举",
+      "description_cn": "定义投射物发射时使用的英雄骨骼附着点位置",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于控制技能或攻击投射物的发射位置，如不同攻击动作阶段的弹道起点",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAScriptInventorySlot_t",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DOTAScriptInventorySlot_t",
+      "members": [
+        {
+          "name": "DOTA_ITEM_SLOT_1",
+          "value": 0,
+          "description": null,
+          "description_cn": "主物品栏第1格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_2",
+          "value": 1,
+          "description": null,
+          "description_cn": "主物品栏第2格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_3",
+          "value": 2,
+          "description": null,
+          "description_cn": "主物品栏第3格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_4",
+          "value": 3,
+          "description": null,
+          "description_cn": "主物品栏第4格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_5",
+          "value": 4,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_6",
+          "value": 5,
+          "description": null,
+          "description_cn": "主物品栏第6格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_7",
+          "value": 6,
+          "description": null,
+          "description_cn": "备用物品栏第7格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_8",
+          "value": 7,
+          "description": null,
+          "description_cn": "备用物品栏第8格"
+        },
+        {
+          "name": "DOTA_ITEM_SLOT_9",
+          "value": 8,
+          "description": null,
+          "description_cn": "备用物品栏第9格"
+        },
+        {
+          "name": "DOTA_STASH_SLOT_1",
+          "value": 9,
+          "description": null,
+          "description_cn": "储藏处第1格"
+        },
+        {
+          "name": "DOTA_STASH_SLOT_2",
+          "value": 10,
+          "description": null,
+          "description_cn": "储藏处第2格"
+        },
+        {
+          "name": "DOTA_STASH_SLOT_3",
+          "value": 11,
+          "description": null,
+          "description_cn": "储藏处第3格"
+        },
+        {
+          "name": "DOTA_STASH_SLOT_4",
+          "value": 12,
+          "description": null,
+          "description_cn": "储藏处第4格"
+        },
+        {
+          "name": "DOTA_STASH_SLOT_5",
+          "value": 13,
+          "description": null,
+          "description_cn": "储藏处第5格"
+        },
+        {
+          "name": "DOTA_STASH_SLOT_6",
+          "value": 14,
+          "description": null,
+          "description_cn": "储藏处第6格"
+        },
+        {
+          "name": "DOTA_ITEM_TP_SCROLL",
+          "value": 15,
+          "description": null,
+          "description_cn": "回城卷轴专用槽位"
+        },
+        {
+          "name": "DOTA_ITEM_NEUTRAL_ACTIVE_SLOT",
+          "value": 16,
+          "description": null,
+          "description_cn": "中立物品主动技能槽位"
+        },
+        {
+          "name": "DOTA_ITEM_NEUTRAL_PASSIVE_SLOT",
+          "value": 17,
+          "description": null,
+          "description_cn": "中立物品被动技能槽位"
+        },
+        {
+          "name": "DOTA_ITEM_TRANSIENT_ITEM",
+          "value": 23,
+          "description": null,
+          "description_cn": "临时物品槽位(如信使运送中)"
+        },
+        {
+          "name": "DOTA_ITEM_TRANSIENT_RECIPE",
+          "value": 24,
+          "description": null,
+          "description_cn": "临时合成配方槽位"
+        },
+        {
+          "name": "DOTA_ITEM_TRANSIENT_CAST_ITEM",
+          "value": 26,
+          "description": null,
+          "description_cn": "施法时临时物品槽位"
+        }
+      ],
+      "name_cn": "物品栏槽位枚举",
+      "description_cn": "定义英雄物品栏和储藏处槽位的枚举类型",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于获取或设置英雄/单位特定槽位的物品，处理物品栏操作",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTASlotType_t",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DOTASlotType_t",
+      "members": [
+        {
+          "name": "DOTA_LOADOUT_TYPE_INVALID",
+          "value": -1,
+          "description": null,
+          "description_cn": "无效槽位类型"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_WEAPON",
+          "value": 0,
+          "description": null,
+          "description_cn": "主武器槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_OFFHAND_WEAPON",
+          "value": 1,
+          "description": null,
+          "description_cn": "副手武器槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_WEAPON2",
+          "value": 2,
+          "description": null,
+          "description_cn": "第二主武器槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_OFFHAND_WEAPON2",
+          "value": 3,
+          "description": null,
+          "description_cn": "第二副手武器槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HEAD",
+          "value": 4,
+          "description": null,
+          "description_cn": "头部装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_SHOULDER",
+          "value": 5,
+          "description": null,
+          "description_cn": "肩部装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ARMS",
+          "value": 6,
+          "description": null,
+          "description_cn": "手臂装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ARMOR",
+          "value": 7,
+          "description": null,
+          "description_cn": "护甲装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BELT",
+          "value": 8,
+          "description": null,
+          "description_cn": "腰带装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_NECK",
+          "value": 9,
+          "description": null,
+          "description_cn": "颈部装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BACK",
+          "value": 10,
+          "description": null,
+          "description_cn": "背部装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_GLOVES",
+          "value": 11,
+          "description": null,
+          "description_cn": "手套装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_LEGS",
+          "value": 12,
+          "description": null,
+          "description_cn": "腿部装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TAIL",
+          "value": 13,
+          "description": null,
+          "description_cn": "尾部装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MISC",
+          "value": 14,
+          "description": null,
+          "description_cn": "杂项装备槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_COSTUME",
+          "value": 15,
+          "description": null,
+          "description_cn": "特殊服装槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HERO_BASE",
+          "value": 16,
+          "description": null,
+          "description_cn": "英雄基础模型槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BODY_HEAD",
+          "value": 17,
+          "description": null,
+          "description_cn": "身体头部组合槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MOUNT",
+          "value": 18,
+          "description": null,
+          "description_cn": "坐骑槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_SUMMON",
+          "value": 19,
+          "description": null,
+          "description_cn": "召唤物槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_SHAPESHIFT",
+          "value": 20,
+          "description": null,
+          "description_cn": "变形形态槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TAUNT",
+          "value": 21,
+          "description": null,
+          "description_cn": "嘲讽动作槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HERO_EFFIGY",
+          "value": 22,
+          "description": null,
+          "description_cn": "英雄雕像槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_AMBIENT_EFFECTS",
+          "value": 23,
+          "description": null,
+          "description_cn": "环境特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_ATTACK",
+          "value": 24,
+          "description": null,
+          "description_cn": "攻击技能特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY1",
+          "value": 25,
+          "description": null,
+          "description_cn": "第一技能特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY2",
+          "value": 26,
+          "description": null,
+          "description_cn": "第二技能特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY3",
+          "value": 27,
+          "description": null,
+          "description_cn": "第三技能特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY4",
+          "value": 28,
+          "description": null,
+          "description_cn": "第四技能特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_ULTIMATE",
+          "value": 29,
+          "description": null,
+          "description_cn": "终极技能特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_1",
+          "value": 30,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_2",
+          "value": 31,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_3",
+          "value": 32,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_4",
+          "value": 33,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_5",
+          "value": 34,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_6",
+          "value": 35,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_7",
+          "value": 36,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_8",
+          "value": 37,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_EFFECTS_9",
+          "value": 38,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_VOICE",
+          "value": 39,
+          "description": null,
+          "description_cn": "语音包槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_PERSONA_1_START",
+          "value": 40,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_WEAPON_PERSONA_1",
+          "value": 40,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_OFFHAND_WEAPON_PERSONA_1",
+          "value": 41,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_WEAPON2_PERSONA_1",
+          "value": 42,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_OFFHAND_WEAPON2_PERSONA_1",
+          "value": 43,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HEAD_PERSONA_1",
+          "value": 44,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_SHOULDER_PERSONA_1",
+          "value": 45,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ARMS_PERSONA_1",
+          "value": 46,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ARMOR_PERSONA_1",
+          "value": 47,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BELT_PERSONA_1",
+          "value": 48,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_NECK_PERSONA_1",
+          "value": 49,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BACK_PERSONA_1",
+          "value": 50,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_LEGS_PERSONA_1",
+          "value": 51,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_GLOVES_PERSONA_1",
+          "value": 52,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TAIL_PERSONA_1",
+          "value": 53,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MISC_PERSONA_1",
+          "value": 54,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BODY_HEAD_PERSONA_1",
+          "value": 55,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MOUNT_PERSONA_1",
+          "value": 56,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_SUMMON_PERSONA_1",
+          "value": 57,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_SHAPESHIFT_PERSONA_1",
+          "value": 58,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TAUNT_PERSONA_1",
+          "value": 59,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HERO_EFFIGY_PERSONA_1",
+          "value": 60,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_AMBIENT_EFFECTS_PERSONA_1",
+          "value": 61,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_ATTACK_PERSONA_1",
+          "value": 62,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY1_PERSONA_1",
+          "value": 63,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY2_PERSONA_1",
+          "value": 64,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY3_PERSONA_1",
+          "value": 65,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY4_PERSONA_1",
+          "value": 66,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ABILITY_ULTIMATE_PERSONA_1",
+          "value": 67,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_PERSONA_1_END",
+          "value": 68,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_VOICE_PERSONA_1",
+          "value": 68,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_PERSONA_SELECTOR",
+          "value": 69,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_COURIER",
+          "value": 70,
+          "description": null,
+          "description_cn": "信使槽位"
+        },
+        {
+          "name": "DOTA_PLAYER_LOADOUT_START",
+          "value": 70,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ANNOUNCER",
+          "value": 71,
+          "description": null,
+          "description_cn": "播音员包槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MEGA_KILLS",
+          "value": 72,
+          "description": null,
+          "description_cn": "连杀播报槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MUSIC",
+          "value": 73,
+          "description": null,
+          "description_cn": "音乐包槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_WARD",
+          "value": 74,
+          "description": null,
+          "description_cn": "守卫槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HUD_SKIN",
+          "value": 75,
+          "description": null,
+          "description_cn": "界面皮肤槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_LOADING_SCREEN",
+          "value": 76,
+          "description": null,
+          "description_cn": "载入画面槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_WEATHER",
+          "value": 77,
+          "description": null,
+          "description_cn": "天气特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HEROIC_STATUE",
+          "value": 78,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MULTIKILL_BANNER",
+          "value": 79,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_CURSOR_PACK",
+          "value": 80,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TELEPORT_EFFECT",
+          "value": 81,
+          "description": null,
+          "description_cn": "传送特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_BLINK_EFFECT",
+          "value": 82,
+          "description": null,
+          "description_cn": "闪烁特效槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_EMBLEM",
+          "value": 83,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TERRAIN",
+          "value": 84,
+          "description": null,
+          "description_cn": "地形皮肤槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_RADIANT_CREEPS",
+          "value": 85,
+          "description": null,
+          "description_cn": "天辉小兵皮肤槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_DIRE_CREEPS",
+          "value": 86,
+          "description": null,
+          "description_cn": "夜魇小兵皮肤槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_RADIANT_TOWER",
+          "value": 87,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_DIRE_TOWER",
+          "value": 88,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_VERSUS_SCREEN",
+          "value": 89,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_STREAK_EFFECT",
+          "value": 90,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_KILL_EFFECT",
+          "value": 91,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_DEATH_EFFECT",
+          "value": 92,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_HEAD_EFFECT",
+          "value": 93,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_MAP_EFFECT",
+          "value": 94,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_COURIER_EFFECT",
+          "value": 95,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_RADIANT_SIEGE_CREEPS",
+          "value": 96,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_DIRE_SIEGE_CREEPS",
+          "value": 97,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ROSHAN",
+          "value": 98,
+          "description": null,
+          "description_cn": "Roshan皮肤槽位"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_TORMENTOR",
+          "value": 99,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_ANCIENT",
+          "value": 100,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_PLAYER_LOADOUT_END",
+          "value": 100,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_NONE",
+          "value": 101,
+          "description": null,
+          "description_cn": "无槽位类型"
+        },
+        {
+          "name": "DOTA_LOADOUT_TYPE_COUNT",
+          "value": 102,
+          "description": null,
+          "description_cn": "槽位类型总数"
+        }
+      ],
+      "name_cn": "DOTASlotType_t",
+      "description_cn": "定义Dota2中英雄和玩家装备槽位的枚举类型，用于标识不同类型的装备、技能特效和游戏元素",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于自定义游戏模式、饰品系统和玩家个人化配置",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTASpeechType_t",
+      "description": null,
+      "references": 0,
+      "link": "#!/vscripts/DOTASpeechType_t",
+      "members": [
+        {
+          "name": "DOTA_SPEECH_USER_INVALID",
+          "value": 0,
+          "description": null,
+          "description_cn": "无效语音类型"
+        },
+        {
+          "name": "DOTA_SPEECH_USER_SINGLE",
+          "value": 1,
+          "description": null,
+          "description_cn": "单用户私聊"
+        },
+        {
+          "name": "DOTA_SPEECH_USER_TEAM",
+          "value": 2,
+          "description": null,
+          "description_cn": "队伍内广播（包含观战者）"
+        },
+        {
+          "name": "DOTA_SPEECH_USER_TEAM_NEARBY",
+          "value": 3,
+          "description": null,
+          "description_cn": "队伍内及附近单位广播"
+        },
+        {
+          "name": "DOTA_SPEECH_USER_NEARBY",
+          "value": 4,
+          "description": null,
+          "description_cn": "附近所有单位广播"
+        },
+        {
+          "name": "DOTA_SPEECH_USER_ALL",
+          "value": 5,
+          "description": null,
+          "description_cn": "全图广播（所有玩家）"
+        },
+        {
+          "name": "DOTA_SPEECH_GOOD_TEAM",
+          "value": 6,
+          "description": null,
+          "description_cn": "天辉队伍广播"
+        },
+        {
+          "name": "DOTA_SPEECH_BAD_TEAM",
+          "value": 7,
+          "description": null,
+          "description_cn": "夜魇队伍广播"
+        },
+        {
+          "name": "DOTA_SPEECH_SPECTATOR",
+          "value": 8,
+          "description": null,
+          "description_cn": "仅观战者广播"
+        },
+        {
+          "name": "DOTA_SPEECH_USER_TEAM_NOSPECTATOR",
+          "value": 9,
+          "description": null,
+          "description_cn": "队伍内广播（不含观战者）"
+        },
+        {
+          "name": "DOTA_SPEECH_RECIPIENT_TYPE_MAX",
+          "value": 10,
+          "description": null,
+          "description_cn": "接收者类型最大值"
+        }
+      ],
+      "name_cn": "DOTA语音类型",
+      "description_cn": "定义Dota2中语音消息的接收者类型枚举",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于控制语音消息的发送范围，如队伍聊天、全图广播等场景",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTATeam_t",
+      "description": null,
+      "references": 32,
+      "link": "#!/vscripts/DOTATeam_t",
+      "members": [
+        {
+          "name": "DOTA_TEAM_FIRST",
+          "value": 2,
+          "description": null,
+          "description_cn": "第一个队伍标识"
+        },
+        {
+          "name": "DOTA_TEAM_GOODGUYS",
+          "value": 2,
+          "description": null,
+          "description_cn": "天辉阵营（原版中的正义方）"
+        },
+        {
+          "name": "DOTA_TEAM_BADGUYS",
+          "value": 3,
+          "description": null,
+          "description_cn": "夜魇阵营（原版中的邪恶方）"
+        },
+        {
+          "name": "DOTA_TEAM_NEUTRALS",
+          "value": 4,
+          "description": null,
+          "description_cn": "中立生物阵营"
+        },
+        {
+          "name": "DOTA_TEAM_NOTEAM",
+          "value": 5,
+          "description": null,
+          "description_cn": "无阵营归属"
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_1",
+          "value": 6,
+          "description": null,
+          "description_cn": "自定义队伍1"
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_MIN",
+          "value": 6,
+          "description": null,
+          "description_cn": "最小自定义队伍ID"
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_2",
+          "value": 7,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_3",
+          "value": 8,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_COUNT",
+          "value": 8,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_4",
+          "value": 9,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_5",
+          "value": 10,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_6",
+          "value": 11,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_7",
+          "value": 12,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_8",
+          "value": 13,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_CUSTOM_MAX",
+          "value": 13,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_DRAFT_POOL",
+          "value": 14,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_TEAM_COUNT",
+          "value": 15,
+          "description": null,
+          "description_cn": ""
+        }
+      ],
+      "name_cn": "DOTATeam_t",
+      "description_cn": "定义Dota2中各种队伍类型的枚举",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于区分游戏中的不同阵营队伍，包括天辉、夜魇、中立生物等",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAUnitAttackCapability_t",
+      "description": null,
+      "references": 2,
+      "link": "#!/vscripts/DOTAUnitAttackCapability_t",
+      "members": [
+        {
+          "name": "DOTA_UNIT_CAP_NO_ATTACK",
+          "value": 0,
+          "description": null,
+          "description_cn": ""
+        },
+        {
+          "name": "DOTA_UNIT_CAP_MELEE_ATTACK",
+          "value": 1,
+          "description": null,
+          "description_cn": "单位具备近战攻击能力"
+        },
+        {
+          "name": "DOTA_UNIT_CAP_RANGED_ATTACK",
+          "value": 2,
+          "description": null,
+          "description_cn": "单位具备远程攻击能力"
+        },
+        {
+          "name": "DOTA_UNIT_ATTACK_CAPABILITY_BIT_COUNT",
+          "value": 3,
+          "description": null,
+          "description_cn": "攻击能力位标识计数（内部使用）"
+        },
+        {
+          "name": "DOTA_UNIT_CAP_RANGED_ATTACK_DIRECTIONAL",
+          "value": 4,
+          "description": null,
+          "description_cn": "单位具备定向远程攻击能力"
+        }
+      ],
+      "name_cn": "单位攻击能力类型",
+      "description_cn": "定义单位具备的攻击类型能力标识",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于配置英雄/单位的攻击方式，如近战、远程或特殊攻击模式",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    },
+    {
+      "name": "DOTAUnitMoveCapability_t",
+      "description": null,
+      "references": 1,
+      "link": "#!/vscripts/DOTAUnitMoveCapability_t",
+      "members": [
+        {
+          "name": "DOTA_UNIT_CAP_MOVE_NONE",
+          "value": 0,
+          "description": null,
+          "description_cn": "单位无法移动（如防御塔、泉水等固定单位）"
+        },
+        {
+          "name": "DOTA_UNIT_CAP_MOVE_GROUND",
+          "value": 1,
+          "description": null,
+          "description_cn": "单位拥有地面移动能力（如大多数英雄和小兵）"
+        },
+        {
+          "name": "DOTA_UNIT_CAP_MOVE_FLY",
+          "value": 2,
+          "description": null,
+          "description_cn": "单位拥有飞行移动能力（如飞行信使、蝙蝠骑士开启飞行状态）"
+        }
+      ],
+      "name_cn": "单位移动能力枚举",
+      "description_cn": "定义单位在地图上的移动类型，包括无法移动、地面移动和飞行移动",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "用于设置或判断单位的移动方式（如飞行单位、地面单位或固定单位）",
+      "related": [],
+      "see_also": [],
+      "tags": [],
+      "warnings_cn": ""
+    }
+  ]
+}

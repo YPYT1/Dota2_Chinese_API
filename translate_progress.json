@@ -1,4 +1,6 @@
 {
   "gameevents/events.json": 361,
-  "luaapi/classes.json": 27
+  "luaapi/classes.json": 98,
+  "luaapi/functions.json": 241,
+  "luaapi/enums.json": 27
 }

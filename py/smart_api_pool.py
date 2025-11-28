@@ -445,6 +445,12 @@ class SmartAPIPool:
                     print(f"  ⚠️ 服务器错误 (尝试 {attempt+1}/{max_retries})，等待 {wait_time} 秒...")
                     time.sleep(wait_time)
                     
+                elif "connection" in error_msg or "closed" in error_msg or "reset" in error_msg or "eof" in error_msg:
+                    # 网络连接问题 - 等待后重试，不降权
+                    wait_time = 15 * min(consecutive_failures, 4)  # 15-60秒
+                    print(f"  ⚠️ 网络连接断开 (尝试 {attempt+1}/{max_retries})，等待 {wait_time} 秒...")
+                    time.sleep(wait_time)
+                    
                 elif "余额" in str(e) or "balance" in error_msg or "quota" in error_msg or "insufficient" in error_msg:
                     # 余额不足 - 禁用该 Key
                     self.report_failure(key, "余额不足")
