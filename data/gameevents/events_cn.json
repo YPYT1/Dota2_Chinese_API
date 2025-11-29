@@ -118,7 +118,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_hero_inventory_item_change%22",
       "link": "#!/events/dota_hero_inventory_item_change",
       "name_cn": "英雄物品栏变更事件",
-      "description_cn": "当英雄的物品栏发生变化时触发此事件，包括物品被添加、移除、丢弃、出售或处于回购窗口期内等情况",
+      "description_cn": "英雄实体索引",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -165,7 +165,7 @@
           "type": "PlayerID",
           "description": null,
           "description_cn": "触发物品合成的玩家ID",
-          "type_description_cn": "玩家ID"
+          "type_description_cn": "整数"
         },
         {
           "name": "itemname",
@@ -211,7 +211,7 @@
           "type": "PlayerID",
           "description": null,
           "description_cn": "拾取物品的玩家ID",
-          "type_description_cn": "玩家ID"
+          "type_description_cn": "整数"
         },
         {
           "name": "ItemEntityIndex",
@@ -252,7 +252,7 @@
           "type": "PlayerID",
           "description": null,
           "description_cn": "购买物品的玩家ID",
-          "type_description_cn": "玩家ID"
+          "type_description_cn": "整数"
         },
         {
           "name": "itemname",
@@ -293,14 +293,14 @@
           "type": "string",
           "description": null,
           "description_cn": "被使用的技能名称",
-          "type_description_cn": "字符串类型"
+          "type_description_cn": "字符串"
         },
         {
           "name": "caster_entindex",
           "type": "EntityIndex",
           "description": null,
           "description_cn": "施法单位的实体索引",
-          "type_description_cn": "实体索引类型"
+          "type_description_cn": "实体索引"
         }
       ],
       "returnType": "void",
@@ -463,28 +463,28 @@
           "name": "victim_userid",
           "type": "EntityIndex",
           "description": null,
-          "description_cn": "被击杀玩家的实体ID",
+          "description_cn": "被击杀玩家的用户ID",
           "type_description_cn": "实体索引"
         },
         {
           "name": "killer1_userid",
           "type": "EntityIndex",
           "description": null,
-          "description_cn": "第一个击杀者的实体ID",
+          "description_cn": "第一个击杀者的用户ID",
           "type_description_cn": "实体索引"
         },
         {
           "name": "killer2_userid",
           "type": "EntityIndex",
           "description": null,
-          "description_cn": "第二个击杀者的实体ID",
+          "description_cn": "第二个击杀者的用户ID",
           "type_description_cn": "实体索引"
         },
         {
           "name": "killer3_userid",
           "type": "EntityIndex",
           "description": null,
-          "description_cn": "第三个击杀者的实体ID",
+          "description_cn": "第三个击杀者的用户ID",
           "type_description_cn": "实体索引"
         },
         {
@@ -685,8 +685,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_player_take_tower_damage%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_player_take_tower_damage%22",
       "link": "#!/events/dota_player_take_tower_damage",
-      "name_cn": "玩家受到防御塔伤害",
-      "description_cn": "当玩家控制的英雄或单位受到敌方防御塔攻击造成伤害时触发的事件",
+      "name_cn": "玩家受到防御塔攻击",
+      "description_cn": "当玩家控制的英雄或单位受到防御塔攻击并承受伤害时触发。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -704,8 +704,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_player_update_query_unit%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_player_update_query_unit%22",
       "link": "#!/events/dota_player_update_query_unit",
-      "name_cn": "玩家更新查询单位",
-      "description_cn": "当玩家通过点击或框选等方式改变当前查询的单位时触发该事件。主要用于获取玩家当前正在查看或操作的单位信息。",
+      "name_cn": "玩家更新选中单位",
+      "description_cn": "当玩家通过点击或框选等方式改变当前选中的单位时触发。主要用于获取玩家当前正在操作的单位信息。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "常用于监听玩家当前选中的单位，实现UI更新或特定交互逻辑。",
@@ -723,7 +723,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_player_update_selected_unit%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_player_update_selected_unit%22",
       "link": "#!/events/dota_player_update_selected_unit",
-      "name_cn": "玩家更新选中单位",
+      "name_cn": "玩家更新选中单位事件",
       "description_cn": "当玩家切换当前选择的单位（如英雄、召唤物等）时触发的事件。可用于追踪玩家当前控制的对象变化。",
       "example_ts": "",
       "notes_cn": "",
@@ -764,8 +764,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_player_used_ability%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_player_used_ability%22",
       "link": "#!/events/dota_player_used_ability",
-      "name_cn": "玩家使用技能事件",
-      "description_cn": "当玩家使用一个技能时触发该事件,可用于监听技能使用情况",
+      "name_cn": "玩家使用技能",
+      "description_cn": "当玩家使用技能时触发。可用于监听技能使用情况。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -798,7 +798,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_rune_activated_server%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_rune_activated_server%22",
       "link": "#!/events/dota_rune_activated_server",
-      "name_cn": "符文激活事件（服务端）",
+      "name_cn": "符文激活（服务端）",
       "description_cn": "当玩家在地图上激活一个符文时触发的事件，可用于监听符文使用情况或实现自定义符文效果",
       "example_ts": "",
       "notes_cn": "",
@@ -817,14 +817,14 @@
           "type": "EntityIndex",
           "description": null,
           "description_cn": "击杀者的用户ID",
-          "type_description_cn": "实体索引"
+          "type_description_cn": "用户ID"
         },
         {
           "name": "victim_userid",
           "type": "EntityIndex",
           "description": null,
           "description_cn": "被击杀者的用户ID",
-          "type_description_cn": "实体索引"
+          "type_description_cn": "用户ID"
         },
         {
           "name": "teamnumber",
@@ -846,7 +846,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_team_kill_credit%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_team_kill_credit%22",
       "link": "#!/events/dota_team_kill_credit",
-      "name_cn": "团队击杀奖励",
+      "name_cn": "团队击杀奖励事件",
       "description_cn": "当一名玩家击杀敌方英雄时触发，用于记录团队击杀数和奖励计算",
       "example_ts": "",
       "notes_cn": "",
@@ -865,7 +865,7 @@
           "type": "EntityIndex",
           "description": null,
           "description_cn": "击杀防御塔的玩家实体ID",
-          "type_description_cn": "实体索引"
+          "type_description_cn": "用户ID"
         },
         {
           "name": "teamnumber",
@@ -915,8 +915,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_tower_kill%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_tower_kill%22",
       "link": "#!/events/dota_tower_kill",
-      "name_cn": "防御塔击杀事件",
-      "description_cn": "当游戏中的防御塔被摧毁时触发此事件，用于追踪防御塔击杀信息及发放团队奖励",
+      "name_cn": "防御塔被摧毁事件",
+      "description_cn": "防御塔的等级（1-4表示外塔到高地塔）",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -970,7 +970,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=entity_hurt%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22entity_hurt%22",
       "link": "#!/events/entity_hurt",
-      "name_cn": "实体受伤事件",
+      "name_cn": "实体受伤",
       "description_cn": "当游戏中的任意实体受到伤害时触发此事件。可用于监听伤害事件并执行自定义逻辑。",
       "example_ts": "",
       "notes_cn": "",
@@ -1018,7 +1018,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=entity_killed%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22entity_killed%22",
       "link": "#!/events",
-      "name_cn": "单位被击杀",
+      "name_cn": "单位被击杀事件",
       "description_cn": "当一个游戏单位被击杀时触发的事件。可用于追踪击杀行为、统计伤害来源或触发击杀相关逻辑。",
       "example_ts": "",
       "notes_cn": "",
@@ -1037,7 +1037,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=game_rules_state_change%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22game_rules_state_change%22",
       "link": "#!/events/game_rules_state_change",
-      "name_cn": "游戏规则状态变更",
+      "name_cn": "游戏规则状态变更事件",
       "description_cn": "当游戏规则状态发生变化时触发此事件。用于监听游戏阶段的切换（如从准备阶段切换到游戏进行阶段）。",
       "example_ts": "",
       "notes_cn": "",
@@ -1151,8 +1151,8 @@
           "name": "userid",
           "type": "EntityIndex",
           "description": "Chatting player.",
-          "description_cn": "聊天玩家的实体索引",
-          "type_description_cn": "实体索引"
+          "description_cn": "聊天玩家的用户句柄",
+          "type_description_cn": "用户句柄"
         },
         {
           "name": "playerid",
@@ -1199,8 +1199,8 @@
           "name": "userid",
           "type": "EntityIndex",
           "description": "User ID on server (unique on server).",
-          "description_cn": "服务器上的用户ID（服务器内唯一）",
-          "type_description_cn": "实体索引"
+          "description_cn": "服务器上的用户ID（服务器内唯一，注意：此为用户句柄，非实体索引）",
+          "type_description_cn": "用户句柄"
         },
         {
           "name": "networkid",
@@ -1256,8 +1256,8 @@
           "name": "userid",
           "type": "EntityIndex",
           "description": "User ID on server (unique on server).",
-          "description_cn": "服务器上的用户ID（在服务器上唯一）",
-          "type_description_cn": "实体索引"
+          "description_cn": "服务器上的用户ID（服务器内唯一，注意：此为用户句柄，非实体索引）",
+          "type_description_cn": "用户句柄"
         },
         {
           "name": "index",
@@ -1295,8 +1295,8 @@
           "name": "userid",
           "type": "EntityIndex",
           "description": "User ID on server.",
-          "description_cn": "玩家在服务器上的用户ID",
-          "type_description_cn": "实体索引"
+          "description_cn": "玩家在服务器上的用户ID（注意：此为用户句柄，非实体索引）",
+          "type_description_cn": "用户句柄"
         },
         {
           "name": "reason",
@@ -2234,8 +2234,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dashboard_caches_cleared%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dashboard_caches_cleared%22",
       "link": "#!/events/dashboard_caches_cleared",
-      "name_cn": "仪表板缓存已清除",
-      "description_cn": "当游戏仪表板(控制台/UI界面)的缓存数据被清除时触发该事件。通常用于监听界面重置或数据刷新操作。",
+      "name_cn": "主界面缓存已清除",
+      "description_cn": "当游戏主界面的缓存数据被清除时触发该事件。通常用于监听界面重置或数据刷新操作。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -2261,8 +2261,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dashboard_switched_section%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dashboard_switched_section%22",
       "link": "#!/events/dashboard_switched_section",
-      "name_cn": "仪表板切换区域",
-      "description_cn": "当玩家在游戏仪表板中切换不同功能区域时触发",
+      "name_cn": "主界面切换区域",
+      "description_cn": "当玩家在游戏主界面中切换不同功能区域时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -2289,7 +2289,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22defeated%22",
       "link": "#!/events/defeated",
       "name_cn": "单位被击败",
-      "description_cn": "当一个单位被击败（生命值降为0）时触发的事件",
+      "description_cn": "当一个单位被击败（生命值降为0）时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "常用于检测单位死亡后的逻辑处理",
@@ -2336,8 +2336,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=demo_skip%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22demo_skip%22",
       "link": "#!/events/demo_skip",
-      "name_cn": "演示跳过",
-      "description_cn": "当客户端跳过游戏回放时触发，用于处理跳过演示时的逻辑",
+      "name_cn": "回放跳过",
+      "description_cn": "当客户端跳过游戏回放时触发，用于处理跳过回放时的逻辑",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -5835,7 +5835,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_player_show_minikillcam%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_player_show_minikillcam%22",
       "link": "#!/events/dota_player_show_minikillcam",
-      "name_cn": "dota_player_show_minikillcam",
+      "name_cn": "玩家显示迷你击杀镜头",
       "description_cn": "当玩家触发迷你击杀镜头时触发的事件，用于展示击杀回放片段",
       "example_ts": "",
       "notes_cn": "",
@@ -6796,7 +6796,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_team_neutral_stash_items_acknowledged_changed%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_team_neutral_stash_items_acknowledged_changed%22",
       "link": "#!/events/dota_team_neutral_stash_items_acknowledged_changed",
-      "name_cn": "队伍中立物品库存确认状态变更",
+      "name_cn": "队伍中立物品品阶库存确认状态变更",
       "description_cn": "当队伍的中立物品库存确认状态发生变化时触发，用于追踪玩家是否查看了新获取的中立物品",
       "example_ts": "",
       "notes_cn": "",
@@ -6823,7 +6823,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_team_neutral_stash_items_changed%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_team_neutral_stash_items_changed%22",
       "link": "#!/events/dota_team_neutral_stash_items_changed",
-      "name_cn": "中立物品库存变更",
+      "name_cn": "中立物品品阶库存变更",
       "description_cn": "当某支队伍的中立物品库存发生变化时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -6894,8 +6894,8 @@
           "name": "killer_userid",
           "type": "EntityIndex",
           "description": null,
-          "description_cn": "执行反补的玩家实体ID",
-          "type_description_cn": "实体索引"
+          "description_cn": "执行反补的玩家用户ID",
+          "type_description_cn": "用户ID"
         },
         {
           "name": "teamnumber",
@@ -7165,7 +7165,7 @@
           "name": "entindex",
           "type": "EntityIndex",
           "description": null,
-          "description_cn": "被占领哨塔的实体索引",
+          "description_cn": "被占领前哨的实体索引",
           "type_description_cn": "实体索引"
         },
         {
@@ -7188,8 +7188,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_watch_tower_captured%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_watch_tower_captured%22",
       "link": "#!/events/dota_watch_tower_captured",
-      "name_cn": "监视哨塔被占领",
-      "description_cn": "当游戏中的监视哨塔被某个队伍占领时触发此事件",
+      "name_cn": "前哨被占领",
+      "description_cn": "当游戏中的前哨被某个队伍占领时触发此事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -7350,14 +7350,14 @@
           "name": "userid",
           "type": "EntityIndex",
           "description": "The player who sees the entity.",
-          "description_cn": "触发该事件的玩家实体ID",
+          "description_cn": "触发该事件的玩家句柄",
           "type_description_cn": "实体索引"
         },
         {
           "name": "subject",
           "type": "long",
           "description": "Entindex of the entity they see.",
-          "description_cn": "被观察到的目标实体ID",
+          "description_cn": "被观察到的目标实体句柄",
           "type_description_cn": "长整型"
         },
         {
@@ -7524,7 +7524,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=finale_start%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22finale_start%22",
       "link": "#!/events/finale_start",
-      "name_cn": "终局开始",
+      "name_cn": "终幕开始",
       "description_cn": "当游戏进入最终阶段时触发的事件，用于处理终局相关的逻辑",
       "example_ts": "",
       "notes_cn": "",
@@ -7542,7 +7542,7 @@
           "name": "entindex",
           "type": "EntityIndex",
           "description": "Entity ignited.",
-          "description_cn": "被点燃单位的实体索引",
+          "description_cn": "被点燃NPC的实体索引",
           "type_description_cn": "实体索引类型"
         }
       ],
@@ -7551,7 +7551,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=flare_ignite_npc%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22flare_ignite_npc%22",
       "link": "#!/events/flare_ignite_npc",
-      "name_cn": "照明弹点燃单位",
+      "name_cn": "照明弹点燃NPC",
       "description_cn": "当照明弹成功点燃某个单位时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -7570,8 +7570,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=friend_lobby_list_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22friend_lobby_list_updated%22",
       "link": "#!/events/friend_lobby_list_updated",
-      "name_cn": "好友房间列表更新",
-      "description_cn": "当好友的房间列表发生变化时触发此事件，用于通知客户端更新好友房间列表显示",
+      "name_cn": "好友大厅列表更新",
+      "description_cn": "当好友的大厅列表发生变化时触发此事件，用于通知客户端更新好友大厅列表显示",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -7645,7 +7645,7 @@
           "name": "target",
           "type": "byte",
           "description": "0 = console, 1 = HUD.",
-          "description_cn": "目标玩家索引(0表示所有玩家)",
+          "description_cn": "目标玩家索引（0表示所有玩家）",
           "type_description_cn": "字节类型"
         },
         {
@@ -7686,7 +7686,7 @@
           "name": "transition",
           "type": "bool",
           "description": "True if this is a transition from one map to another.",
-          "description_cn": "是否使用过渡效果",
+          "description_cn": "是否使用转场效果",
           "type_description_cn": "布尔值"
         }
       ],
@@ -7695,7 +7695,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=game_newmap%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22game_newmap%22",
       "link": "#!/events/game_newmap",
-      "name_cn": "游戏新地图加载",
+      "name_cn": "游戏加载新地图",
       "description_cn": "当游戏加载新地图时触发，用于处理地图切换时的逻辑",
       "example_ts": "",
       "notes_cn": "",
@@ -7809,8 +7809,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=gc_chat_channel_list_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22gc_chat_channel_list_updated%22",
       "link": "#!/events/gc_chat_channel_list_updated",
-      "name_cn": "GC聊天频道列表更新",
-      "description_cn": "当GC（游戏协调器）的聊天频道列表发生变化时触发此事件。用于通知客户端刷新可用的聊天频道列表。",
+      "name_cn": "游戏协调器聊天频道列表更新",
+      "description_cn": "当游戏协调器(Game Coordinator)的聊天频道列表发生变化时触发此事件。用于通知客户端刷新可用的聊天频道列表。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -7847,8 +7847,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=gc_mismatched_version%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22gc_mismatched_version%22",
       "link": "#!/events/gc_mismatched_version",
-      "name_cn": "GC版本不匹配",
-      "description_cn": "当游戏客户端与游戏协调器(GC)的版本不一致时触发此事件",
+      "name_cn": "游戏协调器版本不匹配",
+      "description_cn": "当游戏客户端与游戏协调器(Game Coordinator)的版本不一致时触发此事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -7923,7 +7923,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=halloween_high_score_received%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22halloween_high_score_received%22",
       "link": "#!/events/halloween_high_score_received",
-      "name_cn": "万圣节高分接收",
+      "name_cn": "万圣节高分记录接收",
       "description_cn": "当玩家在万圣节活动中接收到新的高分记录时触发此事件",
       "example_ts": "",
       "notes_cn": "",
@@ -7942,7 +7942,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=halloween_high_score_request_failed%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22halloween_high_score_request_failed%22",
       "link": "#!/events/halloween_high_score_request_failed",
-      "name_cn": "万圣节高分请求失败",
+      "name_cn": "万圣节高分记录请求失败",
       "description_cn": "当请求万圣节活动高分数据失败时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -7995,7 +7995,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=helicopter_grenade_punt_miss%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22helicopter_grenade_punt_miss%22",
       "link": "#!/events/helicopter_grenade_punt_miss",
-      "name_cn": "直升机手榴弹踢空",
+      "name_cn": "直升机手榴弹未命中",
       "description_cn": "当直升机英雄使用手榴弹技能但未命中任何目标时触发",
       "example_ts": "",
       "notes_cn": "",
@@ -8251,7 +8251,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22hltv_chase%22",
       "link": "#!/events/hltv_chase",
       "name_cn": "HLTV追踪事件",
-      "description_cn": "当HLTV（Dota2观战系统）需要追踪两个玩家控制器的视角时触发，用于实现观战视角的平滑过渡和定位",
+      "description_cn": "当HLTV（DotaTV）需要追踪两个玩家控制器的视角时触发，用于实现观战视角的平滑过渡和定位",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -8292,7 +8292,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22hltv_chat%22",
       "link": "#!/events/hltv_chat",
       "name_cn": "HLTV聊天事件",
-      "description_cn": "当HLTV（Dota2观战系统）聊天频道收到消息时触发，用于处理观战模式的聊天信息",
+      "description_cn": "当HLTV（DotaTV）聊天频道收到消息时触发，用于处理观战模式的聊天信息",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -8395,7 +8395,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22hltv_message%22",
       "link": "#!/events/hltv_message",
       "name_cn": "HLTV消息事件",
-      "description_cn": "当HLTV(游戏直播)系统发送消息时触发的事件",
+      "description_cn": "当HLTV（观战系统）发送消息时触发的事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -8453,7 +8453,7 @@
           "name": "userid",
           "type": "EntityIndex",
           "description": "Player slot.",
-          "description_cn": "被排名评估的实体索引",
+          "description_cn": "被排名评估的玩家ID",
           "type_description_cn": "实体索引"
         },
         {
@@ -8538,7 +8538,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22hltv_replay_status%22",
       "link": "#!/events/hltv_replay_status",
       "name_cn": "HLTV录像状态",
-      "description_cn": "当HLTV(Dota2赛事直播系统)的录像状态发生变化时触发，用于通知客户端当前的录像状态",
+      "description_cn": "当HLTV（观战系统）的录像状态发生变化时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -8586,7 +8586,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22hltv_status%22",
       "link": "#!/events/hltv_status",
       "name_cn": "HLTV状态",
-      "description_cn": "当HLTV（Dota2观战直播系统）状态更新时触发，用于传递当前HLTV服务器的连接状态信息",
+      "description_cn": "当HLTV（观战系统）状态更新时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -8613,7 +8613,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22hltv_title%22",
       "link": "#!/events/hltv_title",
       "name_cn": "HLTV标题",
-      "description_cn": "当HLTV（直播）系统需要显示标题时触发此事件",
+      "description_cn": "当HLTV（观战系统）需要显示标题时触发此事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -8727,7 +8727,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=instructor_close_lesson%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22instructor_close_lesson%22",
       "link": "#!/events/instructor_close_lesson",
-      "name_cn": "教学关闭课程",
+      "name_cn": "关闭教学课程",
       "description_cn": "当玩家关闭一个教学提示课程时触发，用于处理教学系统的课程关闭逻辑",
       "example_ts": "",
       "notes_cn": "",
@@ -8936,7 +8936,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=instructor_server_hint_create%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22instructor_server_hint_create%22",
       "link": "#!/events/instructor_server_hint_create",
-      "name_cn": "服务器提示创建",
+      "name_cn": "创建服务器提示",
       "description_cn": "当服务器需要向玩家显示游戏内提示时触发此事件，用于创建自定义提示信息",
       "example_ts": "",
       "notes_cn": "",
@@ -8970,7 +8970,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=instructor_server_hint_stop%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22instructor_server_hint_stop%22",
       "link": "#!/events/instructor_server_hint_stop",
-      "name_cn": "服务器提示停止",
+      "name_cn": "停止服务器提示",
       "description_cn": "当服务器需要停止一个正在显示的提示时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -9032,7 +9032,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=instructor_start_lesson%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22instructor_start_lesson%22",
       "link": "#!/events/instructor_start_lesson",
-      "name_cn": "教学开始课程",
+      "name_cn": "开始教学课程",
       "description_cn": "当游戏内教学系统启动一个新课程时触发，用于处理教学提示的显示和行为控制",
       "example_ts": "",
       "notes_cn": "",
@@ -9280,7 +9280,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=live_games_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22live_games_updated%22",
       "link": "#!/events/live_games_updated",
-      "name_cn": "实时比赛更新",
+      "name_cn": "观战比赛更新",
       "description_cn": "当服务器上的实时比赛数据发生变化时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -9299,7 +9299,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=live_leagues_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22live_leagues_updated%22",
       "link": "#!/events/live_leagues_updated",
-      "name_cn": "实时联赛更新",
+      "name_cn": "观战联赛更新",
       "description_cn": "当Dota2实时联赛数据发生变化时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -9356,7 +9356,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=local_player_controller_team%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22local_player_controller_team%22",
       "link": "#!/events/local_player_controller_team",
-      "name_cn": "本地玩家控制器队伍",
+      "name_cn": "本地玩家控制队伍",
       "description_cn": "当本地玩家的控制器队伍发生变化时触发",
       "example_ts": "",
       "notes_cn": "",
@@ -9376,7 +9376,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22local_player_pawn_changed%22",
       "link": "#!/events/local_player_pawn_changed",
       "name_cn": "本地玩家控制单位变更",
-      "description_cn": "当本地玩家控制的英雄/单位发生变化时触发此事件",
+      "description_cn": "当本地玩家控制的单位发生变化时触发此事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -9557,14 +9557,14 @@
           "name": "caster",
           "type": "short",
           "description": null,
-          "description_cn": "施法者单位的实体索引",
+          "description_cn": "施法者单位的句柄",
           "type_description_cn": "短整型"
         },
         {
           "name": "ability",
           "type": "short",
           "description": null,
-          "description_cn": "关联技能的实体索引",
+          "description_cn": "关联技能的句柄",
           "type_description_cn": "短整型"
         }
       ],
@@ -9573,8 +9573,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=modifier_event%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22modifier_event%22",
       "link": "#!/events/modifier_event",
-      "name_cn": "修改器事件",
-      "description_cn": "当与修改器相关的事件发生时触发，用于响应特定的游戏状态变化",
+      "name_cn": "Modifier事件",
+      "description_cn": "当与Modifier相关的事件发生时触发，用于响应特定的游戏状态变化",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -9619,7 +9619,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=nommed_tree%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22nommed_tree%22",
       "link": "#!/events/nommed_tree",
-      "name_cn": "吃掉树木",
+      "name_cn": "树木被吃",
       "description_cn": "当玩家控制的单位吃掉一棵树时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -9681,7 +9681,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22npc_spawn_finished%22",
       "link": "#!/events/npc_spawn_finished",
       "name_cn": "单位生成完成",
-      "description_cn": "当一个单位（英雄/小兵/中立生物等）在游戏中完全生成并准备就绪时触发",
+      "description_cn": "当一个单位（英雄/小兵/野怪等）在游戏中完全生成并准备就绪时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -9742,7 +9742,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22particle_system_stop%22",
       "link": "#!/events/particle_system_stop",
       "name_cn": "粒子系统停止",
-      "description_cn": "当需要停止一个正在播放的粒子特效时触发，可以立即或平滑地停止特效",
+      "description_cn": "当停止一个正在播放的粒子特效时触发，可以立即或平滑地停止特效",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -9806,7 +9806,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=persona_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22persona_updated%22",
       "link": "#!/events/persona_updated",
-      "name_cn": "人物信息更新",
+      "name_cn": "玩家资料更新",
       "description_cn": "当玩家的Steam个人资料信息发生变更时触发该事件",
       "example_ts": "",
       "notes_cn": "",
@@ -9825,7 +9825,7 @@
           "type": "ehandle",
           "description": "Entity picked up.",
           "description_cn": "被拾取的目标实体",
-          "type_description_cn": "实体句柄"
+          "type_description_cn": "实体Handle"
         }
       ],
       "returnType": "void",
@@ -9879,7 +9879,7 @@
           "type": "EntityIndex",
           "description": "User ID on server.",
           "description_cn": "玩家的实体索引",
-          "type_description_cn": "EntityIndex 类型"
+          "type_description_cn": "实体索引"
         },
         {
           "name": "oldname",
@@ -9960,8 +9960,8 @@
           "name": "attacker",
           "type": "player_controller_and_pawn",
           "description": "User ID who killed.",
-          "description_cn": "击杀者的玩家控制器和pawn信息",
-          "type_description_cn": "玩家控制器和pawn"
+          "description_cn": "击杀者的玩家控制器和Pawn信息",
+          "type_description_cn": "玩家控制器和Pawn"
         }
       ],
       "returnType": "void",
@@ -10022,7 +10022,7 @@
           "type": "short",
           "description": "Number of this full update.",
           "description_cn": "更新次数计数器",
-          "type_description_cn": "短整型"
+          "type_description_cn": "短整数"
         }
       ],
       "returnType": "void",
@@ -10116,7 +10116,7 @@
           "name": "attacker",
           "type": "player_controller_and_pawn",
           "description": "Player who attacked.",
-          "description_cn": "造成伤害的攻击者（玩家控制器和角色实体）",
+          "description_cn": "造成伤害的攻击者（玩家控制器和英雄实体）",
           "type_description_cn": "玩家控制器和角色实体"
         },
         {
@@ -10158,7 +10158,7 @@
           "type": "EntityIndex",
           "description": "User ID on server (unique on server).",
           "description_cn": "玩家实体索引",
-          "type_description_cn": "EntityIndex 类型"
+          "type_description_cn": "实体索引"
         },
         {
           "name": "steamid",
@@ -10199,7 +10199,7 @@
           "type": "long",
           "description": null,
           "description_cn": "触发事件的玩家账号ID",
-          "type_description_cn": "长整型数字"
+          "type_description_cn": "32位无符号整数"
         }
       ],
       "returnType": "void",
@@ -10340,7 +10340,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22player_spawn%22",
       "link": "#!/events/player_spawn",
       "name_cn": "玩家重生",
-      "description_cn": "当玩家控制的英雄在泉水中重生时触发该事件",
+      "description_cn": "当玩家控制的英雄在泉水复活时触发该事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -10560,8 +10560,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=ragdoll_dissolved%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22ragdoll_dissolved%22",
       "link": "#!/events/ragdoll_dissolved",
-      "name_cn": "布娃娃消失",
-      "description_cn": "当一个布娃娃物理实体从游戏中完全溶解/消失时触发",
+      "name_cn": "布娃娃实体溶解",
+      "description_cn": "当一个布娃娃物理实体从游戏中完全溶解时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -10625,8 +10625,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=rich_presence_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22rich_presence_updated%22",
       "link": "#!/events/rich_presence_updated",
-      "name_cn": "富状态更新",
-      "description_cn": "当玩家的游戏状态信息（如当前选择的英雄、游戏模式等）发生变化时触发",
+      "name_cn": "Rich Presence状态更新",
+      "description_cn": "当玩家的Rich Presence信息（如当前选择的英雄、游戏模式等）发生变化时触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -10644,8 +10644,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=richpresence_custom_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22richpresence_custom_updated%22",
       "link": "#!/events/richpresence_custom_updated",
-      "name_cn": "自定义富状态更新",
-      "description_cn": "当玩家的自定义富状态信息被更新时触发，用于同步玩家当前的游戏状态到社交平台",
+      "name_cn": "自定义Rich Presence状态更新",
+      "description_cn": "当玩家的自定义Rich Presence信息被更新时触发，用于同步玩家当前的游戏状态到社交平台",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -10771,8 +10771,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=round_start_post_nav%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22round_start_post_nav%22",
       "link": "#!/events/round_start_post_nav",
-      "name_cn": "回合开始后导航生成",
-      "description_cn": "当Dota2回合开始且导航网格(Nav Mesh)生成完成后触发的事件",
+      "name_cn": "回合开始后导航网格生成",
+      "description_cn": "当Dota2回合开始且导航网格生成完成后触发",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -10919,7 +10919,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=server_pre_shutdown%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22server_pre_shutdown%22",
       "link": "#!/events/server_pre_shutdown",
-      "name_cn": "服务器预关闭",
+      "name_cn": "服务器即将关闭",
       "description_cn": "当服务器即将关闭时触发，可用于执行关闭前的清理操作",
       "example_ts": "",
       "notes_cn": "",
@@ -10947,7 +10947,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22server_shutdown%22",
       "link": "#!/events/server_shutdown",
       "name_cn": "服务器关闭",
-      "description_cn": "当服务器即将关闭时触发此事件，可用于执行关闭前的清理操作",
+      "description_cn": "当服务器关闭时触发此事件，可用于执行关闭前的清理操作",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -11036,7 +11036,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=server_spawn%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22server_spawn%22",
       "link": "#!/events/server_spawn",
-      "name_cn": "服务器生成",
+      "name_cn": "服务器启动",
       "description_cn": "当Dota2服务器启动并完成初始化时触发，提供服务器相关信息",
       "example_ts": "",
       "notes_cn": "",
@@ -11070,7 +11070,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=set_instructor_group_enabled%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22set_instructor_group_enabled%22",
       "link": "#!/events/set_instructor_group_enabled",
-      "name_cn": "设置教学组启用状态",
+      "name_cn": "设置指导组启用状态",
       "description_cn": "当需要启用或禁用特定的教学提示组时触发此事件。用于控制游戏中教学系统的分组显示状态。",
       "example_ts": "",
       "notes_cn": "",
@@ -11088,7 +11088,7 @@
           "name": "reclaim_time",
           "type": "float",
           "description": null,
-          "description_cn": "不朽盾可以被重新拾取的时间间隔（秒）",
+          "description_cn": "不朽盾重生后的可拾取时间（秒）",
           "type_description_cn": "浮点数"
         }
       ],
@@ -11097,7 +11097,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=spec_aegis_reclaim_time%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22spec_aegis_reclaim_time%22",
       "link": "#!/events/spec_aegis_reclaim_time",
-      "name_cn": "不朽盾回收时间",
+      "name_cn": "不朽盾重生时间",
       "description_cn": "当玩家触发不朽盾回收行为时触发的事件，用于设置不朽盾可以被重新拾取的延迟时间",
       "example_ts": "",
       "notes_cn": "",
@@ -11179,7 +11179,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=spec_mode_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22spec_mode_updated%22",
       "link": "#!/events/spec_mode_updated",
-      "name_cn": "观察者模式更新",
+      "name_cn": "观战模式更新",
       "description_cn": "当玩家切换观察者模式时触发",
       "example_ts": "",
       "notes_cn": "",
@@ -11204,7 +11204,7 @@
           "name": "target",
           "type": "ehandle",
           "description": "Ehandle of the target.",
-          "description_cn": "新的观察目标单位句柄",
+          "description_cn": "新的观战目标单位句柄",
           "type_description_cn": "实体句柄"
         }
       ],
@@ -11213,7 +11213,7 @@
       "githubLink": "https://github.com/search?l=Lua&q=spec_target_updated%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22spec_target_updated%22",
       "link": "#!/events/spec_target_updated",
-      "name_cn": "观察目标更新",
+      "name_cn": "观战目标更新",
       "description_cn": "当观察者视角的目标单位发生变化时触发此事件",
       "example_ts": "",
       "notes_cn": "",

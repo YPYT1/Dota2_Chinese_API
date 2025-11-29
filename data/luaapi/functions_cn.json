@@ -34,7 +34,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "视野中心点的三维坐标",
-          "type_description_cn": "Vector向量类型"
+          "type_description_cn": "Vector类型"
         },
         {
           "name": "radius",
@@ -74,7 +74,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "常用于技能效果（如宙斯的静电场）、侦察物品或游戏机制需要临时开图的场景",
+      "common_usage_cn": "常用于技能效果（如灵娜的月光轰炸、岙岭巨人扫描）、帝王之眼等视野计算场景",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -142,7 +142,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "输入的角度值，包含pitch/yaw/roll三个分量",
-          "type_description_cn": "QAngle类型(欧拉角)"
+          "type_description_cn": "QAngle类型"
         }
       ],
       "returnType": "Vector",
@@ -315,13 +315,13 @@
         }
       ],
       "name_cn": "施加伤害",
-      "description_cn": "对NPC单位造成伤害。这是Dota2中处理伤害计算的核心函数，可用于技能、物品或任何需要造成伤害的场景。",
+      "description_cn": "对NPC单位造成伤害。这是Dota2中处理伤害计算的核心函数，可用于自定义技能、物品特效或环境伤害等场景。",
       "returnType_cn": "浮点数",
       "returnDescription_cn": "返回实际造成的伤害值",
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "通常在技能效果触发时使用，如英雄技能造成伤害、物品特效触发伤害或陷阱造成伤害等情况。",
+      "common_usage_cn": "通常在技能效果触发时使用，如狮子戴分割大地、火女极热绝绝等主动技能伤害，或辉耀、血棘等物品特效伤害。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -344,7 +344,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "旋转轴向量（单位向量）",
-          "type_description_cn": "三维向量(Vector)"
+          "type_description_cn": "向量(Vector)"
         },
         {
           "name": "arg2",
@@ -353,7 +353,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "旋转角度（弧度制）",
-          "type_description_cn": "浮点数(float)"
+          "type_description_cn": "浮点数"
         }
       ],
       "returnType": "Quaternion",
@@ -389,7 +389,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "目标实体句柄",
-          "type_description_cn": "handle(实体引用)"
+          "type_description_cn": "句柄"
         },
         {
           "name": "arg2",
@@ -398,7 +398,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "需要计算的三维坐标点",
-          "type_description_cn": "Vector(三维向量)"
+          "type_description_cn": "向量"
         }
       ],
       "returnType": "Vector",
@@ -434,7 +434,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "第一个实体的句柄",
-          "type_description_cn": "实体对象引用"
+          "type_description_cn": "句柄"
         },
         {
           "name": "arg2",
@@ -443,7 +443,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "第二个实体的句柄",
-          "type_description_cn": "实体对象引用"
+          "type_description_cn": "句柄"
         }
       ],
       "returnType": "float",
@@ -533,7 +533,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "目标实体的句柄",
-          "type_description_cn": "实体句柄(ehandle)"
+          "type_description_cn": "句柄"
         }
       ],
       "returnType": "nil",
@@ -827,7 +827,7 @@
       "returnType": "CScriptHTTPRequest",
       "returnTypeLink": "#!/vscripts/CScriptHTTPRequest",
       "options": [],
-      "name_cn": "创建HTTP请求脚本虚拟机",
+      "name_cn": "创建脚本VM的HTTP请求",
       "description_cn": "创建一个HTTP请求对象。用于在Dota2 Mod中发起HTTP网络请求。",
       "returnType_cn": "CScriptHTTPRequest",
       "returnDescription_cn": "返回一个HTTP请求对象，可用于设置请求头和发送请求。",
@@ -879,7 +879,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "通常在游戏模式初始化时为玩家分配英雄，或用于自定义游戏模式中的英雄替换功能。",
+      "common_usage_cn": "或用于全英雄模式、能力征召等自定义游戏模式。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -1048,13 +1048,13 @@
         }
       ],
       "name_cn": "创建幻象",
-      "description_cn": "为指定英雄创建属于特定单位的幻象，并使用提供的修改器数据进行配置。",
+      "description_cn": "为指定英雄创建属于特定单位的幻象，并使用提供的Modifier数据进行配置。",
       "returnType_cn": "[CDOTA_BaseNPC_Hero]",
       "returnDescription_cn": "返回创建的幻象英雄实体数组",
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "常用于实现幻影长矛手、混沌骑士等英雄的分身技能，或创建自定义技能产生的幻象单位。",
+      "common_usage_cn": "常用于实现幻影长矛手、混沌骑士、恐怖利刃等英雄的分身技能，或创建自定义技能产生的幻象单位。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -1131,7 +1131,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "物品生成的世界坐标位置",
-          "type_description_cn": "三维向量"
+          "type_description_cn": "Vector"
         },
         {
           "name": "item",
@@ -1153,7 +1153,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "用于实现物品投掷效果，如炸弹人的遥控炸弹放置或炼金的化学狂暴药剂投掷",
+      "common_usage_cn": "用于实现物品投掷效果，如修补匠的遥控炸弹放置、炼金术士的不稳定化学攻击、怪物掉落物品等场景",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -1238,7 +1238,7 @@
           "typeLink": null,
           "isOptional": false,
           "description": null,
-          "description_cn": "要应用的修改器名称（Lua文件名，不带.lua后缀）",
+          "description_cn": "要应用的Modifier/效果名称（Lua文件名，不带.lua后缀）",
           "type_description_cn": "字符串"
         },
         {
@@ -1247,7 +1247,7 @@
           "typeLink": null,
           "isOptional": false,
           "description": null,
-          "description_cn": "传递给修改器的额外参数表（可选）",
+          "description_cn": "传递给Modifier/效果的额外参数表（可选）",
           "type_description_cn": "table或nil"
         },
         {
@@ -1281,14 +1281,14 @@
       "returnType": "CDOTA_BaseNPC",
       "returnTypeLink": "#!/vscripts/CDOTA_BaseNPC",
       "options": [],
-      "name_cn": "创建修改器思考者",
-      "description_cn": "创建一个不与特定NPC关联的修改器（buff/debuff）实体，通常用于实现区域效果或环境特效",
+      "name_cn": "创建Thinker实体",
+      "description_cn": "创建一个不与特定NPC单位关联的Thinker实体。Thinker是一个隐形的虚拟单位，用于承载Modifier/效果实现区域持续效果",
       "returnType_cn": "CDOTA_BaseNPC",
       "returnDescription_cn": "返回创建的思考者单位实体，可用于后续控制或销毁",
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "用于实现类似剧毒术士的瘴气、光法的冲击波等需要在地面持续作用的技能效果",
+      "common_usage_cn": "用于实现毒狗的瘴气、光法的冲击波、宙斯的静电场等需要在地面持续生效的范围技能效果",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -1409,7 +1409,7 @@
       "options": [],
       "name_cn": "创建临时树木",
       "description_cn": "在指定位置创建一个临时树木实体，使用默认的树木模型。该树木会在指定持续时间后自动消失。",
-      "returnType_cn": "动画实体",
+      "returnType_cn": "CBaseAnimatingActivity",
       "returnDescription_cn": "返回创建的临时树木实体引用，可用于后续操作如提前移除或修改属性。",
       "example_ts": "",
       "notes_cn": "",
@@ -1437,7 +1437,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "树木创建的世界坐标位置",
-          "type_description_cn": "Vector类型三维坐标"
+          "type_description_cn": "向量类型三维坐标"
         },
         {
           "name": "duration",
@@ -1545,7 +1545,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "触发器中心点的三维坐标",
-          "type_description_cn": "Vector类型，表示三维空间坐标"
+          "type_description_cn": "向量类型，表示三维空间坐标"
         },
         {
           "name": "radius",
@@ -2147,7 +2147,7 @@
       "returnType": "SpawnGroupHandle",
       "returnTypeLink": null,
       "options": [],
-      "name_cn": "DOTA_在指定位置生成地图",
+      "name_cn": "在指定位置生成地图",
       "description_cn": "在目标位置生成一个.vmap格式的地图文件",
       "returnType_cn": "SpawnGroupHandle",
       "returnDescription_cn": "返回生成组的句柄，用于后续操作控制",
@@ -2373,7 +2373,7 @@
           "typeLink": "#!/vscripts/Vector",
           "isOptional": false,
           "description": null,
-          "description_cn": "盒子朝向角度（欧拉角）",
+          "description_cn": "长方体朝向角度（欧拉角）",
           "type_description_cn": "三维向量"
         },
         {
@@ -2382,7 +2382,7 @@
           "typeLink": "#!/vscripts/Vector",
           "isOptional": false,
           "description": null,
-          "description_cn": "盒子的大小（长宽高）",
+          "description_cn": "长方体的大小（长宽高）",
           "type_description_cn": "三维向量"
         },
         {
@@ -2661,7 +2661,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "线段起点世界坐标",
-          "type_description_cn": "三维向量"
+          "type_description_cn": "Vector"
         },
         {
           "name": "target",
@@ -2670,7 +2670,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "线段终点世界坐标",
-          "type_description_cn": "三维向量"
+          "type_description_cn": "Vector"
         },
         {
           "name": "r",
@@ -2751,7 +2751,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "线段起点坐标",
-          "type_description_cn": "三维向量（X,Y,Z坐标）"
+          "type_description_cn": "Vector"
         },
         {
           "name": "arg2",
@@ -2760,7 +2760,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "线段终点坐标",
-          "type_description_cn": "三维向量（X,Y,Z坐标）"
+          "type_description_cn": "Vector"
         },
         {
           "name": "arg3",
@@ -2769,7 +2769,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "线段颜色(RGB)",
-          "type_description_cn": "三维向量（红,绿,蓝分量）"
+          "type_description_cn": "Vector"
         },
         {
           "name": "arg4",
@@ -2931,7 +2931,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "球体中心点的世界坐标位置",
-          "type_description_cn": "Vector类型的三维坐标"
+          "type_description_cn": "Vector"
         },
         {
           "name": "rgb",
@@ -2940,7 +2940,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "球体颜色(RGB分量)，取值范围0-1",
-          "type_description_cn": "Vector类型的颜色值"
+          "type_description_cn": "Vector"
         },
         {
           "name": "a",
@@ -3396,8 +3396,8 @@
       "returnType": "int",
       "returnTypeLink": null,
       "options": [],
-      "name_cn": "执行溅射攻击",
-      "description_cn": "使攻击者对目标单位执行一次带有溅射效果的攻击。溅射伤害会从起始半径扩展到结束半径，影响范围内的其他单位。通常用于实现类似战斧、巨龙形态等溅射攻击效果的技能。",
+      "name_cn": "执行分裂攻击",
+      "description_cn": "使攻击者对目标单位执行一次带有分裂效果的攻击。分裂伤害会从起始半径扩展到结束半径，影响范围内的其他单位。用于实现战斧、龙骑士巨龙形态、斯温神力挥击等分裂攻击效果。",
       "returnType_cn": "整型",
       "returnDescription_cn": "返回受到溅射伤害的单位数量",
       "example_ts": "",
@@ -3785,7 +3785,7 @@
           "typeLink": null,
           "isOptional": false,
           "description": "Zero-based tier number.",
-          "description_cn": "中立物品等级（1-5）",
+          "description_cn": "中立物品品阶（1-5阶）",
           "type_description_cn": "整型"
         },
         {
@@ -4008,8 +4008,8 @@
       "returnType": "nil",
       "returnTypeLink": null,
       "options": [],
-      "name_cn": "为玩家播放播报员音效",
-      "description_cn": "为指定玩家播放自定义的播报员音效文件。该函数通常在游戏事件触发时使用，如英雄击杀、连杀成就或特殊事件发生时。",
+      "name_cn": "为玩家播放播音员音效",
+      "description_cn": "为指定玩家播放自定义的播音员音效文件。该函数通常在游戏事件触发时使用，如英雄击杀、连杀成就或特殊事件发生时。",
       "returnType_cn": "无",
       "returnDescription_cn": "该函数不返回任何值",
       "example_ts": "",
@@ -4150,7 +4150,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "通常用于游戏模式初始化、英雄选择阶段、Roshan被击杀、防御塔被摧毁等需要全图提示的重要事件。",
+      "common_usage_cn": "通常用于游戏模式初始化、英雄选择阶段、肉山被击杀、防御塔被摧毁等需要全图提示的重要事件。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -4752,7 +4752,7 @@
           "typeLink": "#!/vscripts/Vector",
           "isOptional": false,
           "description": null,
-          "description_cn": "目标位置的坐标向量",
+          "description_cn": "目标位置的坐标",
           "type_description_cn": "Vector类型坐标"
         },
         {
@@ -5318,7 +5318,7 @@
       "options": [],
       "name_cn": "通过技能名获取技能数据",
       "description_cn": "根据技能名称获取该技能的完整键值对数据表",
-      "returnType_cn": "表",
+      "returnType_cn": "Lua表",
       "returnDescription_cn": "包含该技能所有定义属性的Lua表",
       "example_ts": "",
       "notes_cn": "",
@@ -5380,7 +5380,7 @@
       "options": [],
       "name_cn": "获取当前激活的刷怪组句柄",
       "description_cn": "返回当前处于激活状态的刷怪组(SpawnGroup)的句柄。用于在游戏运行时获取正在生成单位的刷怪组控制权。",
-      "returnType_cn": "刷怪组句柄(SpawnGroupHandle)",
+      "returnType_cn": "SpawnGroup句柄",
       "returnDescription_cn": "当前激活的刷怪组的引用句柄，若没有激活的刷怪组则返回nil",
       "example_ts": "",
       "notes_cn": "",
@@ -5408,7 +5408,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "需要寻找位置的单位实体",
-          "type_description_cn": "单位句柄"
+          "type_description_cn": "句柄"
         },
         {
           "name": "arg2",
@@ -5417,7 +5417,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "期望放置位置的原始坐标",
-          "type_description_cn": "三维向量坐标"
+          "type_description_cn": "向量"
         }
       ],
       "returnType": "Vector",
@@ -5425,7 +5425,7 @@
       "options": [],
       "name_cn": "获取单位空闲位置",
       "description_cn": "为指定单位寻找一个未被占用的可用位置坐标",
-      "returnType_cn": "坐标向量",
+      "returnType_cn": "向量",
       "returnDescription_cn": "返回一个确保单位可以正常放置的三维坐标向量",
       "example_ts": "",
       "notes_cn": "",
@@ -6032,7 +6032,7 @@
       "options": [],
       "name_cn": "获取物理角速度",
       "description_cn": "获取VPHYS或普通对象的角速度。返回一个矢量，表示旋转轴乘以每秒旋转度数。",
-      "returnType_cn": "矢量",
+      "returnType_cn": "向量",
       "returnDescription_cn": "返回表示角速度的三维矢量，单位为度/秒",
       "example_ts": "",
       "notes_cn": "",
@@ -6118,7 +6118,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "用于在中立生物被击杀时，计算可能掉落的中立物品。",
+      "common_usage_cn": "用于在野怪被击杀时，计算可能掉落的中立物品。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -6412,7 +6412,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "用于记分板显示、击杀数成就系统、或基于击杀数的游戏模式逻辑判断",
+      "common_usage_cn": "用于记分板显示、死斗模式胜利条件判断、或基于击杀数的自定义游戏机制",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -7050,7 +7050,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "常用于技能释放前的位置校验、单位传送后的合法性检测、AI路径finding的预处理。",
+      "common_usage_cn": "常用于技能释放前的位置校验、单位传送后的合法性检测、AI寻路的预处理。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -8138,7 +8138,7 @@
       "example_ts": "",
       "notes_cn": "",
       "warnings_cn": "",
-      "common_usage_cn": "通常在游戏模式初始化阶段调用，用于预载自定义英雄、creep或召唤单位的资源。",
+      "common_usage_cn": "通常在游戏模式初始化阶段调用，用于预载自定义英雄、小兵或召唤单位的资源。",
       "related": [],
       "tags": [],
       "deprecated": false,
@@ -8161,7 +8161,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "包含单位预载参数的键值表",
-          "type_description_cn": "句柄类型"
+          "type_description_cn": "句柄"
         },
         {
           "name": "callback",
@@ -8170,7 +8170,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "预载完成后的回调函数",
-          "type_description_cn": "函数引用"
+          "type_description_cn": "函数"
         },
         {
           "name": "precacheId",
@@ -8179,7 +8179,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "预载操作的唯一标识符",
-          "type_description_cn": "整型"
+          "type_description_cn": "整数"
         }
       ],
       "returnType": "nil",
@@ -8187,7 +8187,7 @@
       "options": [],
       "name_cn": "异步预载单位表",
       "description_cn": "根据实体键值表异步预载DOTA单位资源。该函数用于在游戏开始前预加载单位模型、音效等资源，避免运行时卡顿。",
-      "returnType_cn": "无返回值",
+      "returnType_cn": "无",
       "returnDescription_cn": "该函数不返回任何值",
       "example_ts": "",
       "notes_cn": "",
@@ -8215,7 +8215,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "包含单位预载参数的Lua表",
-          "type_description_cn": "句柄类型"
+          "type_description_cn": "句柄"
         },
         {
           "name": "context",
@@ -8329,7 +8329,7 @@
       "returnType": "QAngle",
       "returnTypeLink": "#!/vscripts/QAngle",
       "options": [],
-      "name_cn": "QSlerp",
+      "name_cn": "四元数球面插值",
       "description_cn": "基于时间在球面坐标系中对角度进行线性插值计算（从起始角度到目标角度）。",
       "returnType_cn": "QAngle",
       "returnDescription_cn": "返回插值计算后的三维角度向量",
@@ -9204,7 +9204,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "震动中心点的世界坐标",
-          "type_description_cn": "Vector类型坐标"
+          "type_description_cn": "向量类型坐标"
         },
         {
           "name": "amplitude",
@@ -9339,7 +9339,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "输入值",
-          "type_description_cn": "float"
+          "type_description_cn": "浮点数"
         },
         {
           "name": "arg2",
@@ -9348,7 +9348,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "输入范围下限",
-          "type_description_cn": "float"
+          "type_description_cn": "浮点数"
         },
         {
           "name": "arg3",
@@ -9357,7 +9357,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "输入范围上限",
-          "type_description_cn": "float"
+          "type_description_cn": "浮点数"
         },
         {
           "name": "arg4",
@@ -9366,7 +9366,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "输出范围下限",
-          "type_description_cn": "float"
+          "type_description_cn": "浮点数"
         },
         {
           "name": "arg5",
@@ -9381,9 +9381,9 @@
       "returnType": "float",
       "returnTypeLink": null,
       "options": [],
-      "name_cn": "Script_RemapValClamped",
+      "name_cn": "数值范围映射（带约束）",
       "description_cn": "将输入值从一个范围线性映射到另一个范围，并对结果进行边界约束。当需要将一个变量的值按照比例转换到另一个区间时使用，同时确保结果不超过目标范围的边界。",
-      "returnType_cn": "float",
+      "returnType_cn": "浮点数",
       "returnDescription_cn": "返回经过线性映射和边界约束后的结果值",
       "example_ts": "",
       "notes_cn": "",
@@ -9807,7 +9807,7 @@
           "isOptional": false,
           "description": null,
           "description_cn": "需要控制渲染的实体句柄",
-          "type_description_cn": "实体句柄类型"
+          "type_description_cn": "实体Handle类型"
         },
         {
           "name": "arg2",
@@ -10138,7 +10138,7 @@
       "returnTypeLink": null,
       "options": [],
       "name_cn": "显示消息",
-      "description_cn": "在所有客户端上显示HUD消息（游戏界面顶部中央位置）",
+      "description_cn": "在所有玩家的游戏界面上显示HUD消息（屏幕顶部中央）",
       "returnType_cn": "无返回值",
       "returnDescription_cn": "该函数不返回任何值",
       "example_ts": "",
@@ -10182,8 +10182,8 @@
       "returnType": "CDOTA_ShopTrigger",
       "returnTypeLink": "#!/vscripts/CDOTA_ShopTrigger",
       "options": [],
-      "name_cn": "生成DOTA商店触发范围近似区域",
-      "description_cn": "在指定位置创建一个近似圆形的DOTA商店触发区域，用于定义英雄可购买物品的有效范围",
+      "name_cn": "生成商店触发区域",
+      "description_cn": "在指定位置创建一个近似圆形的商店触发区域，英雄进入该范围内可购买物品",
       "returnType_cn": "CDOTA_ShopTrigger",
       "returnDescription_cn": "返回创建的商店触发区域实体",
       "example_ts": "",
@@ -11234,7 +11234,7 @@
       "returnType": "float",
       "returnTypeLink": null,
       "options": [],
-      "name_cn": "Time",
+      "name_cn": "获取服务器时间",
       "description_cn": "获取当前服务器时间。",
       "returnType_cn": "浮点数",
       "returnDescription_cn": "返回以秒为单位的当前服务器时间。",
@@ -11400,7 +11400,7 @@
           "fields": []
         }
       ],
-      "name_cn": "可碰撞体追踪",
+      "name_cn": "碰撞体射线检测",
       "description_cn": "执行一条射线检测，判断射线路径上是否存在可碰撞的实体或地形障碍物。常用于技能施放前的地形检测或弹道碰撞判断。",
       "returnType_cn": "布尔值",
       "returnDescription_cn": "返回true表示射线路径上存在碰撞体，false表示路径畅通",
