@@ -23,7 +23,7 @@ export default async function PanoramaEnumPage({ params }: { params: Promise<{ n
       <div className="space-y-2">
         <h1 className="text-3xl font-bold tracking-tight">{enumItem.name}</h1>
         <p className="text-xl text-muted-foreground">{enumItem.name_cn}</p>
-        <p className="text-base leading-7">{enumItem.description_cn || enumItem.description}</p>
+        <p className="text-base leading-7">{enumItem.description_cn}</p>
       </div>
 
       {enumItem.members && enumItem.members.length > 0 && (
@@ -34,7 +34,7 @@ export default async function PanoramaEnumPage({ params }: { params: Promise<{ n
               <div key={member.name} className="grid grid-cols-[1fr_auto_2fr] gap-4 p-4 text-sm hover:bg-muted/30">
                 <span className="font-mono font-medium text-primary">{member.name}</span>
                 <span className="font-mono text-muted-foreground">= {member.value}</span>
-                <span className="text-muted-foreground">{member.description_cn || member.description}</span>
+                <span className="text-muted-foreground">{member.description_cn}</span>
               </div>
             ))}
           </div>

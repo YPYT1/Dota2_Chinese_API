@@ -162,7 +162,7 @@ export function getAllSearchItems(): SearchItem[] {
       scope: 'game-events',
       href: `/game-events/${event.name}`,
       description: event.description_cn,
-      keywords: event.fields?.map(f => f.name).join(' '),
+      keywords: event.parameters?.map(p => p.name).join(' '),
     });
   });
 
@@ -203,7 +203,7 @@ export function getAllSearchItems(): SearchItem[] {
       scope: 'panorama-events',
       href: `/panorama-events/${event.name}`,
       description: event.description_cn,
-      keywords: event.fields?.map(f => f.name).join(' '),
+      keywords: event.parameters?.map(p => p.name).join(' '),
     });
   });
 
