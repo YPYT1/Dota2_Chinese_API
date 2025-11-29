@@ -35,15 +35,15 @@ export function OnThisPage({ sections }: OnThisPageProps) {
   return (
     <div className="hidden xl:block w-48 shrink-0 pl-8 border-l border-border/40">
       <div className="sticky top-6 space-y-3">
-        <p className="text-xs font-semibold uppercase text-foreground/80 tracking-wider">On This Page</p>
+        <p className="text-xs font-bold uppercase text-foreground tracking-wider">On This Page</p>
         <div className="flex flex-col space-y-2">
           {sections.map(({ id, label }) => (
             <a
               key={id}
               href={`#${id}`}
               className={cn(
-                "text-xs transition-colors hover:text-foreground block truncate",
-                activeId === id ? "text-primary font-medium" : "text-muted-foreground"
+                "text-xs transition-colors block truncate",
+                activeId === id ? "text-primary font-bold" : "text-foreground/70 hover:text-foreground font-medium"
               )}
               onClick={(e) => {
                 e.preventDefault();

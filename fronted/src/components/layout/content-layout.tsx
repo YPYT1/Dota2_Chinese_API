@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { InlineSearch } from '@/components/search/inline-search';
-import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
@@ -45,7 +44,6 @@ export function ContentLayout({ children, className }: ContentLayoutProps) {
 
         {/* Page Content */}
         <div className="relative z-0 mx-auto max-w-[1600px] px-6 py-8">
-          <Breadcrumbs />
           {children}
         </div>
       </div>

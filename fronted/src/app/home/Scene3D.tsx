@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Text3D, Center, Environment, Float } from '@react-three/drei';
+import { Text3D, Center, Float } from '@react-three/drei';
 import * as THREE from 'three';
 
 function SwingingLamp() {
@@ -19,7 +19,6 @@ function SwingingLamp() {
   useFrame(({ clock }) => {
     if (pivotRef.current) {
       const t = clock.getElapsedTime();
-      // Complex swinging motion
       const angleZ = Math.sin(t * 1.5) * 0.4 + Math.sin(t * 0.5) * 0.1; 
       const angleX = Math.sin(t * 1.1) * 0.2;
       
@@ -29,22 +28,18 @@ function SwingingLamp() {
   });
 
   return (
-    <group position={[0, 10, 0]}> {/* Ceiling anchor high up */}
+    <group position={[0, 10, 0]}>
       <group ref={pivotRef}>
-        {/* Cord */}
         <mesh position={[0, -3, 0]}>
           <cylinderGeometry args={[0.02, 0.02, 6]} />
           <meshStandardMaterial color="#111" />
         </mesh>
         
-        {/* Lamp Fixture */}
         <group position={[0, -6, 0]}>
-          {/* Housing */}
           <mesh position={[0, 0.2, 0]}>
              <cylinderGeometry args={[0.3, 0.5, 0.8]} />
              <meshStandardMaterial color="#333" roughness={0.3} metalness={0.8} />
           </mesh>
-          {/* Shade */}
           <mesh position={[0, -0.2, 0]}>
             <coneGeometry args={[1.8, 1.5, 64, 1, true]} />
             <meshPhysicalMaterial 
@@ -55,13 +50,11 @@ function SwingingLamp() {
                 side={THREE.DoubleSide} 
             />
           </mesh>
-          {/* Bulb */}
           <mesh position={[0, -0.2, 0]}>
              <sphereGeometry args={[0.4, 32, 32]} />
              <meshBasicMaterial color="#fff" toneMapped={false} />
           </mesh>
 
-          {/* The Light */}
           <spotLight
             ref={lightRef}
             castShadow
@@ -74,10 +67,8 @@ function SwingingLamp() {
             shadow-mapSize={[2048, 2048]}
             shadow-bias={-0.0001}
           />
-          {/* Fill light attached to lamp for better metal reflections */}
           <pointLight intensity={200} distance={10} color="#eef" />
           
-          {/* Invisible target for spotlight to point to */}
           <object3D ref={targetRef} position={[0, -10, 0]} />
         </group>
       </group>
@@ -90,7 +81,7 @@ function Title3D() {
     <Center position={[0, 0, 0]}>
         <Float speed={3} rotationIntensity={0.2} floatIntensity={0.2}>
             <Text3D
-                font="https://threejs.org/examples/fonts/helvetiker_bold.typeface.json"
+                font="https://unpkg.com/three@0.160.0/examples/fonts/helvetiker_bold.typeface.json"
                 size={1.2}
                 height={0.3}
                 curveSegments={24}
@@ -105,7 +96,6 @@ function Title3D() {
                     color="#aaaaaa"
                     metalness={0.9}
                     roughness={0.1}
-                    envMapIntensity={1.5}
                 />
             </Text3D>
         </Float>
@@ -119,16 +109,15 @@ function SceneContent() {
         <SwingingLamp />
         <Title3D />
         
-        {/* Floor for shadows */}
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]} receiveShadow>
             <planeGeometry args={[100, 100]} />
             <shadowMaterial transparent opacity={0.15} color="#000000" />
         </mesh>
 
-        {/* Subtle ambient light */}
+        {/* Lights replacing Environment to prevent fetch errors */}
         <ambientLight intensity={0.5} />
-        {/* Environment for reflections */}
-        <Environment preset="city" blur={1} intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
+        <pointLight position={[-5, 0, 5]} intensity={0.5} color="blue" />
     </>
   );
 }
