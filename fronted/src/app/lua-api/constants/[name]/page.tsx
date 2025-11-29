@@ -36,7 +36,7 @@ export default async function ConstantPage({ params }: { params: Promise<{ name:
             </div>
             <div>
               <h3 className="text-sm font-semibold text-muted-foreground">Description</h3>
-              <p className="mt-1 text-base">{constant.description_cn || constant.description}</p>
+              <p className="mt-1 text-base">{constant.description_cn}</p>
             </div>
           </div>
         </CardContent>
