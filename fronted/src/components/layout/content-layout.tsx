@@ -52,7 +52,7 @@ export function ContentLayout({ children, className }: ContentLayoutProps) {
     <div className="flex flex-col h-full bg-background">
       {/* Search Header */}
       <div className="sticky top-0 z-10 flex-none border-b border-border/40 bg-background/80 px-6 py-4 backdrop-blur-xl">
-        <div className="relative mx-auto max-w-4xl">
+        <div className="relative mx-auto max-w-[1600px]">
           <Button
             variant="outline"
             className="relative h-10 w-full justify-start bg-muted/50 text-sm font-normal text-muted-foreground shadow-none hover:bg-muted hover:text-foreground sm:pr-12 md:w-full lg:w-full"
@@ -69,7 +69,7 @@ export function ContentLayout({ children, className }: ContentLayoutProps) {
 
       {/* Main Content */}
       <div className={cn("flex-1 overflow-y-auto", className)}>
-        <div className="mx-auto max-w-4xl px-6 py-8">
+        <div className="mx-auto max-w-[1600px] px-6 py-8">
           {children}
         </div>
       </div>

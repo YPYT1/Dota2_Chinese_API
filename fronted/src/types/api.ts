@@ -9,6 +9,21 @@ export interface LuaParameter {
   type_description_cn: string;
 }
 
+export interface OptionField {
+  name: string;
+  type: string;
+  typeLink: string | null;
+  isOptional: boolean;
+  description_cn: string;
+  type_description_cn: string;
+}
+
+export interface OptionObject {
+  name: string;
+  extends: string | null;
+  fields: OptionField[];
+}
+
 export interface LuaMethod {
   name: string;
   signature: string;
@@ -32,6 +47,7 @@ export interface LuaMethod {
   related: string[];
   tags: string[];
   deprecated: boolean;
+  options?: OptionObject[];
 }
 
 export interface LuaClass {
