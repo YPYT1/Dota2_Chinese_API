@@ -153,7 +153,7 @@
           "name": "DOTA_ATTRIBUTE_STRENGTH_HP_REGEN",
           "value": 2,
           "description": null,
-          "description_cn": "属性力量生命值恢复"
+          "description_cn": "力量属性提供的生命恢复加成"
         },
         {
           "name": "DOTA_ATTRIBUTE_AGILITY_DAMAGE",
@@ -301,13 +301,13 @@
           "name": "DOTA_CLICK_BEHAVIOR_DROP_ITEM",
           "value": 4,
           "description": null,
-          "description_cn": "丢弃背包物品"
+          "description_cn": "丢弃物品"
         },
         {
           "name": "DOTA_CLICK_BEHAVIOR_DROP_SHOP_ITEM",
           "value": 5,
           "description": null,
-          "description_cn": "点击行为丢弃商店物品"
+          "description_cn": "丢弃商店物品"
         },
         {
           "name": "DOTA_CLICK_BEHAVIOR_DRAG",
@@ -727,7 +727,7 @@
           "name": "DOTA_DAMAGE_FLAG_NONE",
           "value": 0,
           "description": null,
-          "description_cn": "伤害标志无"
+          "description_cn": "无伤害标志"
         },
         {
           "name": "DOTA_DAMAGE_FLAG_IGNORES_MAGIC_ARMOR",
@@ -745,13 +745,13 @@
           "name": "DOTA_DAMAGE_FLAG_BYPASSES_INVULNERABILITY",
           "value": 4,
           "description": null,
-          "description_cn": "穿透无敌状态"
+          "description_cn": "无视无敌状态"
         },
         {
           "name": "DOTA_DAMAGE_FLAG_BYPASSES_PHYSICAL_BLOCK",
           "value": 8,
           "description": null,
-          "description_cn": "穿透物理格挡"
+          "description_cn": "无视物理格挡"
         },
         {
           "name": "DOTA_DAMAGE_FLAG_REFLECTION",
@@ -835,7 +835,7 @@
           "name": "DOTA_DAMAGE_FLAG_ATTACK_MODIFIER",
           "value": 262144,
           "description": null,
-          "description_cn": "攻击修改器效果"
+          "description_cn": "攻击Modifier效果"
         },
         {
           "name": "DOTA_DAMAGE_FLAG_BYPASSES_ALL_BLOCK",
@@ -850,7 +850,7 @@
           "description_cn": "不可被反射"
         }
       ],
-      "name_cn": "伤害标志类型",
+      "name_cn": "伤害类型标志",
       "description_cn": "定义伤害计算时的特殊处理标志，用于控制伤害如何与护甲、无敌状态、伤害反射等机制交互",
       "example_ts": "",
       "notes_cn": "",
@@ -876,7 +876,7 @@
           "name": "DOTA_HUD_VISIBILITY_TOP_TIMEOFDAY",
           "value": 0,
           "description": null,
-          "description_cn": "顶部时间显示（昼夜指示）"
+          "description_cn": "顶部时间显示（游戏时间）"
         },
         {
           "name": "DOTA_HUD_VISIBILITY_TOP_HEROES",
@@ -942,7 +942,7 @@
           "name": "DOTA_HUD_VISIBILITY_INVENTORY_GOLD",
           "value": 11,
           "description": null,
-          "description_cn": "可见性-物品栏金钱"
+          "description_cn": "可见性-物品栏金币"
         },
         {
           "name": "DOTA_HUD_VISIBILITY_SHOP_SUGGESTEDITEMS",
@@ -1071,7 +1071,7 @@
           "description_cn": "枚举值总数"
         }
       ],
-      "name_cn": "DOTA界面可见性枚举",
+      "name_cn": "DOTA HUD可见性枚举",
       "description_cn": "定义DOTA2游戏界面中各个HUD元素的可见性状态",
       "example_ts": "",
       "notes_cn": "",
@@ -1103,7 +1103,7 @@
           "name": "DOTA_INVENTORY_ALLOW_STASH",
           "value": 2,
           "description": null,
-          "description_cn": "允许使用备用物品栏"
+          "description_cn": "允许使用储物处"
         },
         {
           "name": "DOTA_INVENTORY_ALL_ACCESS",
@@ -1130,7 +1130,7 @@
           "description_cn": "限制地面丢弃物品的数量"
         }
       ],
-      "name_cn": "DOTA库存标志位",
+      "name_cn": "DOTA物品栏标志位",
       "description_cn": "用于控制英雄物品栏的存取权限和行为规则",
       "example_ts": "",
       "notes_cn": "",
@@ -1186,7 +1186,7 @@
           "name": "DOTA_MAX_SPECTATOR_TEAM_SIZE",
           "value": 40,
           "description": "How many spectators can watch.",
-          "description_cn": "观战团队最大人数"
+          "description_cn": "观战队伍最大人数"
         },
         {
           "name": "DOTA_MAX_PLAYERS",
@@ -1195,7 +1195,7 @@
           "description_cn": "游戏支持的最大玩家总数"
         }
       ],
-      "name_cn": "DOTA限制类型",
+      "name_cn": "DOTA限制常量",
       "description_cn": "定义Dota2游戏中各种玩家数量相关的上限值",
       "example_ts": "",
       "notes_cn": "",
@@ -1215,7 +1215,7 @@
           "name": "DOTA_MINIMAP_EVENT_ANCIENT_UNDER_ATTACK",
           "value": 2,
           "description": null,
-          "description_cn": "远古遗迹正在被攻击"
+          "description_cn": "遗迹正在被攻击"
         },
         {
           "name": "DOTA_MINIMAP_EVENT_BASE_UNDER_ATTACK",
@@ -1227,7 +1227,7 @@
           "name": "DOTA_MINIMAP_EVENT_BASE_GLYPHED",
           "value": 8,
           "description": null,
-          "description_cn": "基地触发防御符文"
+          "description_cn": "基地触发守护符文"
         },
         {
           "name": "DOTA_MINIMAP_EVENT_TEAMMATE_UNDER_ATTACK",
@@ -1245,7 +1245,7 @@
           "name": "DOTA_MINIMAP_EVENT_TEAMMATE_DIED",
           "value": 64,
           "description": null,
-          "description_cn": "小地图事件队友死亡"
+          "description_cn": "队友死亡"
         },
         {
           "name": "DOTA_MINIMAP_EVENT_TUTORIAL_TASK_ACTIVE",
@@ -1296,7 +1296,7 @@
           "description_cn": "移动至目标位置"
         }
       ],
-      "name_cn": "DOTA小地图事件类型",
+      "name_cn": "DOTA小地图事件",
       "description_cn": "定义在小地图上显示的各种事件类型枚举",
       "example_ts": "",
       "notes_cn": "",
@@ -1322,38 +1322,38 @@
           "name": "MODIFIER_ATTRIBUTE_PERMANENT",
           "value": 1,
           "description": null,
-          "description_cn": "永久性修改器，无法被常规方式驱散"
+          "description_cn": "永久性Modifier，无法被常规方式驱散"
         },
         {
           "name": "MODIFIER_ATTRIBUTE_MULTIPLE",
           "value": 2,
           "description": null,
-          "description_cn": "允许同一来源的多个相同修改器叠加"
+          "description_cn": "允许同一来源的多个相同Modifier叠加"
         },
         {
           "name": "MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE",
           "value": 4,
           "description": null,
-          "description_cn": "无视无敌状态仍可施加修改器"
+          "description_cn": "无视无敌状态仍可施加Modifier"
         },
         {
           "name": "MODIFIER_ATTRIBUTE_AURA_PRIORITY",
           "value": 8,
           "description": null,
-          "description_cn": "赋予光环效果更高优先级"
+          "description_cn": "赋予Aura更高优先级"
         },
         {
           "name": "MODIFIER_ATTRIBUTE_IGNORE_DODGE",
           "value": 16,
           "description": null,
-          "description_cn": "无视闪避效果仍可施加修改器"
+          "description_cn": "无视闪避效果仍可施加Modifier"
         }
       ],
-      "name_cn": "DOTAModifierAttribute_t",
-      "description_cn": "定义修改器(buff)的属性标志位，用于控制修改器的特殊行为",
+      "name_cn": "DOTAModifier属性",
+      "description_cn": "定义Modifier的属性标志位，用于控制Modifier的特殊行为",
       "example_ts": "",
       "notes_cn": "",
-      "common_usage_cn": "在创建自定义技能或物品效果时，用于指定修改器的特殊行为特性",
+      "common_usage_cn": "在创建自定义技能或物品效果时，用于指定Modifier的特殊行为特性",
       "related": [],
       "see_also": [],
       "tags": [],
@@ -1369,40 +1369,40 @@
           "name": "DOTA_MUSIC_STATUS_NONE",
           "value": 0,
           "description": null,
-          "description_cn": "无背景音乐状态"
+          "description_cn": "无背景音乐"
         },
         {
           "name": "DOTA_MUSIC_STATUS_EXPLORATION",
           "value": 1,
           "description": null,
-          "description_cn": "探索状态背景音乐"
+          "description_cn": "探索背景音乐"
         },
         {
           "name": "DOTA_MUSIC_STATUS_BATTLE",
           "value": 2,
           "description": null,
-          "description_cn": "战斗状态背景音乐"
+          "description_cn": "战斗背景音乐"
         },
         {
           "name": "DOTA_MUSIC_STATUS_PRE_GAME_EXPLORATION",
           "value": 3,
           "description": null,
-          "description_cn": "游戏开始前的探索状态背景音乐"
+          "description_cn": "游戏开始前的探索背景音乐"
         },
         {
           "name": "DOTA_MUSIC_STATUS_DEAD",
           "value": 4,
           "description": null,
-          "description_cn": "英雄死亡状态背景音乐"
+          "description_cn": "英雄死亡背景音乐"
         },
         {
           "name": "DOTA_MUSIC_STATUS_LAST",
           "value": 5,
           "description": null,
-          "description_cn": "枚举结束标记"
+          "description_cn": "枚举末尾标记"
         }
       ],
-      "name_cn": "DOTA音乐状态枚举",
+      "name_cn": "DOTA音乐状态",
       "description_cn": "用于表示游戏内不同场景下的背景音乐状态",
       "example_ts": "",
       "notes_cn": "",
@@ -1452,7 +1452,7 @@
           "name": "DOTA_POST_GAME_COLUMN_NET_WORTH",
           "value": 5,
           "description": null,
-          "description_cn": "净财产值"
+          "description_cn": "总资产"
         },
         {
           "name": "DOTA_POST_GAME_COLUMN_LAST_HITS",
@@ -1485,11 +1485,11 @@
           "description_cn": "枚举最大值"
         }
       ],
-      "name_cn": "DOTA赛后数据列类型",
-      "description_cn": "该枚举定义了Dota2比赛结束后展示的各种玩家数据统计列的类型",
+      "name_cn": "DOTA赛后统计列类型",
+      "description_cn": "该枚举定义了Dota2比赛结束后展示的各种玩家统计列的类型",
       "example_ts": "",
       "notes_cn": "",
-      "common_usage_cn": "用于赛后计分板界面，展示每名玩家的关键游戏数据统计",
+      "common_usage_cn": "用于赛后计分板界面，展示每名玩家的关键游戏统计",
       "related": [],
       "see_also": [],
       "tags": [],
@@ -1505,26 +1505,26 @@
           "name": "DOTA_POST_GAME_LAYOUT_DOUBLE_COLUMN",
           "value": 0,
           "description": null,
-          "description_cn": "双栏布局模式"
+          "description_cn": "双列布局"
         },
         {
           "name": "DOTA_POST_GAME_LAYOUT_SINGLE_COLUMN",
           "value": 1,
           "description": null,
-          "description_cn": "单栏布局模式"
+          "description_cn": "单列布局"
         },
         {
           "name": "DOTA_POST_GAME_LAYOUT_MAX",
           "value": 2,
           "description": null,
-          "description_cn": "布局模式最大值（保留用途）"
+          "description_cn": "布局类型最大值（用于枚举边界）"
         }
       ],
-      "name_cn": "DOTAPostGameLayout_t",
-      "description_cn": "定义Dota2游戏结束后界面布局的枚举类型",
+      "name_cn": "DOTA赛后界面布局类型",
+      "description_cn": "定义Dota2比赛结束后界面布局的枚举类型",
       "example_ts": "",
       "notes_cn": "",
-      "common_usage_cn": "用于控制比赛结束后结算界面的显示布局模式",
+      "common_usage_cn": "用于控制比赛结束后结算界面的布局模式",
       "related": [],
       "see_also": [],
       "tags": [],
@@ -1546,31 +1546,31 @@
           "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1",
           "value": 1,
           "description": null,
-          "description_cn": "弹道附着点攻击1"
+          "description_cn": "攻击附着点1"
         },
         {
           "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_2",
           "value": 2,
           "description": null,
-          "description_cn": "使用英雄的第二攻击动作附着点"
+          "description_cn": "攻击附着点2"
         },
         {
           "name": "DOTA_PROJECTILE_ATTACHMENT_HITLOCATION",
           "value": 3,
           "description": null,
-          "description_cn": "使用命中位置的附着点"
+          "description_cn": "命中位置附着点"
         },
         {
           "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_3",
           "value": 4,
           "description": null,
-          "description_cn": "使用英雄的第三攻击动作附着点"
+          "description_cn": "攻击附着点3"
         },
         {
           "name": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_4",
           "value": 5,
           "description": null,
-          "description_cn": "使用英雄的第四攻击动作附着点"
+          "description_cn": "攻击附着点4"
         },
         {
           "name": "DOTA_PROJECTILE_ATTACHMENT_LAST",
@@ -1579,11 +1579,11 @@
           "description_cn": "枚举结束标记"
         }
       ],
-      "name_cn": "投射物附着点枚举",
-      "description_cn": "定义投射物发射时使用的英雄骨骼附着点位置",
+      "name_cn": "投射物附着点类型",
+      "description_cn": "定义投射物发射时使用的单位骨骼附着点位置",
       "example_ts": "",
       "notes_cn": "",
-      "common_usage_cn": "用于控制技能或攻击投射物的发射位置，如不同攻击动作阶段的弹道起点",
+      "common_usage_cn": "用于控制技能或攻击投射物的发射位置，例如不同攻击动作的弹道起点",
       "related": [],
       "see_also": [],
       "tags": [],
@@ -1623,7 +1623,7 @@
           "name": "DOTA_ITEM_SLOT_5",
           "value": 4,
           "description": null,
-          "description_cn": "物品槽位5"
+          "description_cn": "主物品栏第5格"
         },
         {
           "name": "DOTA_ITEM_SLOT_6",
@@ -1653,37 +1653,37 @@
           "name": "DOTA_STASH_SLOT_1",
           "value": 9,
           "description": null,
-          "description_cn": "储藏处第1格"
+          "description_cn": "储物处第1格"
         },
         {
           "name": "DOTA_STASH_SLOT_2",
           "value": 10,
           "description": null,
-          "description_cn": "储藏处第2格"
+          "description_cn": "储物处第2格"
         },
         {
           "name": "DOTA_STASH_SLOT_3",
           "value": 11,
           "description": null,
-          "description_cn": "储藏处第3格"
+          "description_cn": "储物处第3格"
         },
         {
           "name": "DOTA_STASH_SLOT_4",
           "value": 12,
           "description": null,
-          "description_cn": "储藏处第4格"
+          "description_cn": "储物处第4格"
         },
         {
           "name": "DOTA_STASH_SLOT_5",
           "value": 13,
           "description": null,
-          "description_cn": "储藏处第5格"
+          "description_cn": "储物处第5格"
         },
         {
           "name": "DOTA_STASH_SLOT_6",
           "value": 14,
           "description": null,
-          "description_cn": "储藏处第6格"
+          "description_cn": "储物处第6格"
         },
         {
           "name": "DOTA_ITEM_TP_SCROLL",
@@ -1723,7 +1723,7 @@
         }
       ],
       "name_cn": "物品栏槽位枚举",
-      "description_cn": "定义英雄物品栏和储藏处槽位的枚举类型",
+      "description_cn": "定义英雄物品栏和储物处槽位的枚举类型",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "用于获取或设置英雄/单位特定槽位的物品，处理物品栏操作",
@@ -2354,7 +2354,7 @@
           "name": "DOTA_LOADOUT_TYPE_ROSHAN",
           "value": 98,
           "description": null,
-          "description_cn": "Roshan皮肤槽位"
+          "description_cn": "肉山皮肤槽位"
         },
         {
           "name": "DOTA_LOADOUT_TYPE_TORMENTOR",
@@ -2387,7 +2387,7 @@
           "description_cn": "槽位类型总数"
         }
       ],
-      "name_cn": "DOTASlotType_t",
+      "name_cn": "装备栏位类型",
       "description_cn": "定义Dota2中英雄和玩家装备槽位的枚举类型，用于标识不同类型的装备、技能特效和游戏元素",
       "example_ts": "",
       "notes_cn": "",
@@ -2508,7 +2508,7 @@
           "name": "DOTA_TEAM_NEUTRALS",
           "value": 4,
           "description": null,
-          "description_cn": "中立生物阵营"
+          "description_cn": "野怪阵营"
         },
         {
           "name": "DOTA_TEAM_NOTEAM",
@@ -2595,7 +2595,7 @@
           "description_cn": "队伍数量"
         }
       ],
-      "name_cn": "DOTATeam_t",
+      "name_cn": "队伍类型",
       "description_cn": "定义Dota2中各种队伍类型的枚举",
       "example_ts": "",
       "notes_cn": "",
@@ -2615,7 +2615,7 @@
           "name": "DOTA_UNIT_CAP_NO_ATTACK",
           "value": 0,
           "description": null,
-          "description_cn": "单位上限无攻击"
+          "description_cn": "单位无攻击能力"
         },
         {
           "name": "DOTA_UNIT_CAP_MELEE_ATTACK",
@@ -2633,7 +2633,7 @@
           "name": "DOTA_UNIT_ATTACK_CAPABILITY_BIT_COUNT",
           "value": 3,
           "description": null,
-          "description_cn": "攻击能力位标识计数（内部使用）"
+          "description_cn": "攻击能力位计数（内部使用）"
         },
         {
           "name": "DOTA_UNIT_CAP_RANGED_ATTACK_DIRECTIONAL",
@@ -2642,7 +2642,7 @@
           "description_cn": "单位具备定向远程攻击能力"
         }
       ],
-      "name_cn": "单位攻击能力类型",
+      "name_cn": "单位攻击能力枚举",
       "description_cn": "定义单位具备的攻击类型能力标识",
       "example_ts": "",
       "notes_cn": "",
@@ -2697,13 +2697,13 @@
           "name": "DOTA_ABILITY_BEHAVIOR_LAST_RESORT_POINT",
           "value": -2147483648,
           "description": null,
-          "description_cn": "最后点目标"
+          "description_cn": "最后手段点目标"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_AFFECTED_BY_MUTE",
           "value": 0,
           "description": null,
-          "description_cn": "技能行为受影响于物品沉默"
+          "description_cn": "受压制影响"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_ALT_CASTABLE",
@@ -2721,7 +2721,7 @@
           "name": "DOTA_ABILITY_BEHAVIOR_DONT_PROC_OTHER_ABILITIES",
           "value": 0,
           "description": null,
-          "description_cn": "技能行为不要触发其他技能"
+          "description_cn": "不触发其他技能"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_FREE_DRAW_TARGETING",
@@ -2739,13 +2739,13 @@
           "name": "DOTA_ABILITY_BEHAVIOR_IGNORE_MUTED",
           "value": 0,
           "description": null,
-          "description_cn": "忽略物品沉默"
+          "description_cn": "无视被压制"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE",
           "value": 0,
           "description": null,
-          "description_cn": "忽略沉默"
+          "description_cn": "无视沉默"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_INNATE_UI",
@@ -2763,13 +2763,13 @@
           "name": "DOTA_ABILITY_BEHAVIOR_NONE",
           "value": 0,
           "description": null,
-          "description_cn": "无特殊行为"
+          "description_cn": "无"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
           "value": 0,
           "description": null,
-          "description_cn": "超距施法"
+          "description_cn": "超距"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
@@ -2793,7 +2793,7 @@
           "name": "DOTA_ABILITY_BEHAVIOR_UNLOCKED_BY_EFFECT_INDEX",
           "value": 0,
           "description": null,
-          "description_cn": "通过效果索引解锁"
+          "description_cn": "由效果索引解锁"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_UNSWAPPABLE",
@@ -2805,37 +2805,37 @@
           "name": "DOTA_ABILITY_BEHAVIOR_HIDDEN",
           "value": 1,
           "description": null,
-          "description_cn": "隐藏技能"
+          "description_cn": "隐藏"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
           "value": 2,
           "description": null,
-          "description_cn": "被动技能"
+          "description_cn": "被动"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
           "value": 4,
           "description": null,
-          "description_cn": "无目标技能"
+          "description_cn": "无目标"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
           "value": 8,
           "description": null,
-          "description_cn": "单位目标技能"
+          "description_cn": "单位目标"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_POINT",
           "value": 16,
           "description": null,
-          "description_cn": "点目标技能"
+          "description_cn": "点目标"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_AOE",
           "value": 32,
           "description": null,
-          "description_cn": "范围效果技能"
+          "description_cn": "范围效果"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
@@ -2853,25 +2853,25 @@
           "name": "DOTA_ABILITY_BEHAVIOR_ITEM",
           "value": 256,
           "description": null,
-          "description_cn": "物品技能"
+          "description_cn": "物品"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_TOGGLE",
           "value": 512,
           "description": null,
-          "description_cn": "切换技能"
+          "description_cn": "切换"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL",
           "value": 1024,
           "description": null,
-          "description_cn": "方向性技能"
+          "description_cn": "方向性"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
           "value": 2048,
           "description": null,
-          "description_cn": "立即施放"
+          "description_cn": "立即"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_AUTOCAST",
@@ -2901,13 +2901,13 @@
           "name": "DOTA_ABILITY_BEHAVIOR_AURA",
           "value": 65536,
           "description": null,
-          "description_cn": "光环技能"
+          "description_cn": "光环"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_ATTACK",
           "value": 131072,
           "description": null,
-          "description_cn": "攻击技能"
+          "description_cn": "攻击"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
@@ -2919,7 +2919,7 @@
           "name": "DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
           "value": 524288,
           "description": null,
-          "description_cn": "缠绕时禁用"
+          "description_cn": "缠绕禁用"
         },
         {
           "name": "DOTA_ABILITY_BEHAVIOR_UNRESTRICTED",
@@ -3997,7 +3997,7 @@
           "name": "DOTA_INVALID_ORDER_NOT_ENOUGH_GOLD",
           "value": 63,
           "description": null,
-          "description_cn": "无效命令不足够金钱"
+          "description_cn": "无效命令不足够金币"
         },
         {
           "name": "DOTA_INVALID_ORDER_PURCHASE_AUTOCOMBINE_RECIPE",
@@ -4159,7 +4159,7 @@
           "name": "DOTA_INVALID_ORDER_CANT_BUYBACK_NOT_ENOUGH_GOLD",
           "value": 90,
           "description": null,
-          "description_cn": "无效命令无法买活不足够金钱"
+          "description_cn": "无效命令无法买活不足够金币"
         },
         {
           "name": "DOTA_INVALID_ORDER_CANT_BUYBACK_IN_COOLDOWN",
@@ -4431,7 +4431,7 @@
           "name": "OVERHEAD_ALERT_GOLD",
           "value": 0,
           "description": null,
-          "description_cn": "金钱提示"
+          "description_cn": "金币提示"
         },
         {
           "name": "OVERHEAD_ALERT_DENY",
@@ -5158,7 +5158,7 @@
           "name": "DOTA_DEFAULT_UI_INVENTORY_GOLD",
           "value": 11,
           "description": null,
-          "description_cn": "默认UI物品栏金钱"
+          "description_cn": "默认UI物品栏金币"
         },
         {
           "name": "DOTA_DEFAULT_UI_SHOP_SUGGESTEDITEMS",
@@ -5399,7 +5399,7 @@
           "name": "DOTA_ModifyGold_RoshanKill",
           "value": 15,
           "description": null,
-          "description_cn": "Roshan击杀"
+          "description_cn": "肉山击杀"
         },
         {
           "name": "DOTA_ModifyGold_CourierKill",
@@ -5417,13 +5417,13 @@
           "name": "DOTA_ModifyGold_SharedGold",
           "value": 18,
           "description": null,
-          "description_cn": "共享金钱"
+          "description_cn": "共享金币"
         },
         {
           "name": "DOTA_ModifyGold_AbilityGold",
           "value": 19,
           "description": null,
-          "description_cn": "技能金钱"
+          "description_cn": "技能金币"
         },
         {
           "name": "DOTA_ModifyGold_WardKill",
@@ -5438,7 +5438,7 @@
           "description_cn": "ModifyGoldCourierKilledByThisPlayer"
         }
       ],
-      "name_cn": "金钱变更原因",
+      "name_cn": "金币变更原因",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",
@@ -5478,7 +5478,7 @@
           "name": "DOTA_ModifyXP_RoshanKill",
           "value": 3,
           "description": null,
-          "description_cn": "Roshan击杀"
+          "description_cn": "肉山击杀"
         },
         {
           "name": "DOTA_ModifyXP_TomeOfKnowledge",
@@ -13647,7 +13647,7 @@
           "description_cn": "无效"
         }
       ],
-      "name_cn": "Lua修饰器类型",
+      "name_cn": "Lua Modifier类型",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",
@@ -13796,37 +13796,37 @@
           "name": "DOTA_PSEUDO_RANDOM_NONE",
           "value": 0,
           "description": null,
-          "description_cn": "伪随机随机无"
+          "description_cn": "无伪随机"
         },
         {
           "name": "DOTA_PSEUDO_RANDOM_MAGNUS_SHARD",
           "value": 1,
           "description": null,
-          "description_cn": "伪随机随机碎片"
+          "description_cn": "马格纳斯碎片伪随机"
         },
         {
           "name": "DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT",
           "value": 2,
           "description": null,
-          "description_cn": "伪随机随机暴击"
+          "description_cn": "幻影刺客暴击伪随机"
         },
         {
           "name": "DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_DAGGER",
           "value": 3,
           "description": null,
-          "description_cn": "伪随机随机"
+          "description_cn": "幻影刺客匕首伪随机"
         },
         {
           "name": "DOTA_PSEUDO_RANDOM_PHANTOMLANCER_JUXTAPOSE",
           "value": 4,
           "description": null,
-          "description_cn": "伪随机随机姿势"
+          "description_cn": "幻影长矛师并列伪随机"
         },
         {
           "name": "DOTA_PSEUDO_RANDOM_TINY_CRAGGY",
           "value": 5,
           "description": null,
-          "description_cn": "伪随机随机TY岩石GY"
+          "description_cn": "小小崎岖外表伪随机"
         },
         {
           "name": "DOTA_PSEUDO_RANDOM_COLD_REBUKE",
@@ -14333,7 +14333,7 @@
           "description_cn": "伪随机随机自定义游戏9"
         }
       ],
-      "name_cn": "伪随机类型",
+      "name_cn": "伪随机",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",
@@ -15237,241 +15237,241 @@
           "name": "DOTA_UNIT_ORDER_NONE",
           "value": 0,
           "description": null,
-          "description_cn": "单位顺序无"
+          "description_cn": "无"
         },
         {
           "name": "DOTA_UNIT_ORDER_MOVE_TO_POSITION",
           "value": 1,
           "description": null,
-          "description_cn": "单位命令移动位置"
+          "description_cn": "移动到位置"
         },
         {
           "name": "DOTA_UNIT_ORDER_MOVE_TO_TARGET",
           "value": 2,
           "description": null,
-          "description_cn": "单位命令移动目标"
+          "description_cn": "移动到目标"
         },
         {
           "name": "DOTA_UNIT_ORDER_ATTACK_MOVE",
           "value": 3,
           "description": null,
-          "description_cn": "单位顺序攻击移动"
+          "description_cn": "攻击移动"
         },
         {
           "name": "DOTA_UNIT_ORDER_ATTACK_TARGET",
           "value": 4,
           "description": null,
-          "description_cn": "单位顺序攻击目标"
+          "description_cn": "攻击目标"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_POSITION",
           "value": 5,
           "description": null,
-          "description_cn": "单位顺序施法位置"
+          "description_cn": "对位置施法"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_TARGET",
           "value": 6,
           "description": null,
-          "description_cn": "单位顺序施法目标"
+          "description_cn": "对目标施法"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_TARGET_TREE",
           "value": 7,
           "description": null,
-          "description_cn": "单位顺序施法目标树"
+          "description_cn": "对树木施法"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_NO_TARGET",
           "value": 8,
           "description": null,
-          "description_cn": "单位顺序施法否目标"
+          "description_cn": "无目标施法"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_TOGGLE",
           "value": 9,
           "description": null,
-          "description_cn": "单位顺序施法切换"
+          "description_cn": "切换技能"
         },
         {
           "name": "DOTA_UNIT_ORDER_HOLD_POSITION",
           "value": 10,
           "description": null,
-          "description_cn": "单位顺序原地待命位置"
+          "description_cn": "原地待命"
         },
         {
           "name": "DOTA_UNIT_ORDER_TRAIN_ABILITY",
           "value": 11,
           "description": null,
-          "description_cn": "单位命令技能"
+          "description_cn": "学习技能"
         },
         {
           "name": "DOTA_UNIT_ORDER_DROP_ITEM",
           "value": 12,
           "description": null,
-          "description_cn": "单位顺序丢弃物品"
+          "description_cn": "丢弃物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_GIVE_ITEM",
           "value": 13,
           "description": null,
-          "description_cn": "单位顺序给予物品"
+          "description_cn": "给予物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_PICKUP_ITEM",
           "value": 14,
           "description": null,
-          "description_cn": "单位顺序拾取物品"
+          "description_cn": "拾取物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_PICKUP_RUNE",
           "value": 15,
           "description": null,
-          "description_cn": "单位顺序拾取神符"
+          "description_cn": "拾取神符"
         },
         {
           "name": "DOTA_UNIT_ORDER_PURCHASE_ITEM",
           "value": 16,
           "description": null,
-          "description_cn": "单位顺序购买物品"
+          "description_cn": "购买物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_SELL_ITEM",
           "value": 17,
           "description": null,
-          "description_cn": "单位顺序出售物品"
+          "description_cn": "出售物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_DISASSEMBLE_ITEM",
           "value": 18,
           "description": null,
-          "description_cn": "单位命令拆解物品"
+          "description_cn": "拆分物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_MOVE_ITEM",
           "value": 19,
           "description": null,
-          "description_cn": "单位顺序移动物品"
+          "description_cn": "移动物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_TOGGLE_AUTO",
           "value": 20,
           "description": null,
-          "description_cn": "单位顺序施法切换自动"
+          "description_cn": "切换自动施法"
         },
         {
           "name": "DOTA_UNIT_ORDER_STOP",
           "value": 21,
           "description": null,
-          "description_cn": "单位顺序停止"
+          "description_cn": "停止"
         },
         {
           "name": "DOTA_UNIT_ORDER_TAUNT",
           "value": 22,
           "description": null,
-          "description_cn": "单位顺序嘲讽"
+          "description_cn": "嘲讽"
         },
         {
           "name": "DOTA_UNIT_ORDER_BUYBACK",
           "value": 23,
           "description": null,
-          "description_cn": "单位顺序买活"
+          "description_cn": "买活"
         },
         {
           "name": "DOTA_UNIT_ORDER_GLYPH",
           "value": 24,
           "description": null,
-          "description_cn": "单位命令雕文"
+          "description_cn": "防御符文"
         },
         {
           "name": "DOTA_UNIT_ORDER_EJECT_ITEM_FROM_STASH",
           "value": 25,
           "description": null,
-          "description_cn": "单位命令弹出物品储藏"
+          "description_cn": "从储物处取出物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_RUNE",
           "value": 26,
           "description": null,
-          "description_cn": "单位顺序施法神符"
+          "description_cn": "使用神符"
         },
         {
           "name": "DOTA_UNIT_ORDER_PING_ABILITY",
           "value": 27,
           "description": null,
-          "description_cn": "单位顺序标记技能"
+          "description_cn": "Ping技能"
         },
         {
           "name": "DOTA_UNIT_ORDER_MOVE_TO_DIRECTION",
           "value": 28,
           "description": null,
-          "description_cn": "单位命令移动夜魇I"
+          "description_cn": "向方向移动"
         },
         {
           "name": "DOTA_UNIT_ORDER_PATROL",
           "value": 29,
           "description": null,
-          "description_cn": "单位顺序巡逻"
+          "description_cn": "巡逻"
         },
         {
           "name": "DOTA_UNIT_ORDER_VECTOR_TARGET_POSITION",
           "value": 30,
           "description": null,
-          "description_cn": "单位命令矢量目标位置"
+          "description_cn": "矢量目标位置"
         },
         {
           "name": "DOTA_UNIT_ORDER_RADAR",
           "value": 31,
           "description": null,
-          "description_cn": "单位命令天辉"
+          "description_cn": "扫描"
         },
         {
           "name": "DOTA_UNIT_ORDER_SET_ITEM_COMBINE_LOCK",
           "value": 32,
           "description": null,
-          "description_cn": "单位命令设置物品组合锁定"
+          "description_cn": "锁定物品合成"
         },
         {
           "name": "DOTA_UNIT_ORDER_CONTINUE",
           "value": 33,
           "description": null,
-          "description_cn": "单位顺序继续"
+          "description_cn": "继续"
         },
         {
           "name": "DOTA_UNIT_ORDER_VECTOR_TARGET_CANCELED",
           "value": 34,
           "description": null,
-          "description_cn": "单位命令矢量目标取消"
+          "description_cn": "取消矢量目标"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_RIVER_PAINT",
           "value": 35,
           "description": null,
-          "description_cn": "单位命令施法河道路径"
+          "description_cn": "河道涂鸦"
         },
         {
           "name": "DOTA_UNIT_ORDER_PREGAME_ADJUST_ITEM_ASSIGNMENT",
           "value": 36,
           "description": null,
-          "description_cn": "单位命令恢复物品"
+          "description_cn": "赛前调整物品分配"
         },
         {
           "name": "DOTA_UNIT_ORDER_DROP_ITEM_AT_FOUNTAIN",
           "value": 37,
           "description": null,
-          "description_cn": "单位命令丢弃物品AT泉水"
+          "description_cn": "在泉水丢弃物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_TAKE_ITEM_FROM_NEUTRAL_ITEM_STASH",
           "value": 38,
           "description": null,
-          "description_cn": "单位命令获取物品中立物品储藏"
+          "description_cn": "从野怪物品储物处取物品"
         },
         {
           "name": "DOTA_UNIT_ORDER_MOVE_RELATIVE",
           "value": 39,
           "description": null,
-          "description_cn": "单位命令移动"
+          "description_cn": "相对移动"
         },
         {
           "name": "DOTA_UNIT_ORDER_CAST_TOGGLE_ALT",
@@ -15514,73 +15514,73 @@
           "name": "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE",
           "value": 0,
           "description": "Method Name: `GetModifierPreAttack_BonusDamage`",
-          "description_cn": "修饰器属性攻击前加成伤害"
+          "description_cn": "攻击前加成伤害"
         },
         {
           "name": "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE_TARGET",
           "value": 1,
           "description": "Method Name: `GetModifierPreAttack_BonusDamage_Target`",
-          "description_cn": "修饰器属性攻击前加成伤害目标"
+          "description_cn": "攻击前加成伤害目标"
         },
         {
           "name": "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE_PROC",
           "value": 2,
           "description": "Method Name: `GetModifierPreAttack_BonusDamage_Proc`",
-          "description_cn": "修饰器属性攻击前加成伤害触发"
+          "description_cn": "攻击前加成伤害触发"
         },
         {
           "name": "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE_POST_CRIT",
           "value": 3,
           "description": "Method Name: `GetModifierPreAttack_BonusDamagePostCrit`",
-          "description_cn": "修饰器属性攻击前加成伤害后暴击"
+          "description_cn": "攻击前加成伤害后暴击"
         },
         {
           "name": "MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE",
           "value": 4,
           "description": "Method Name: `GetModifierBaseAttack_BonusDamage`",
-          "description_cn": "修饰器属性基础攻击伤害"
+          "description_cn": "基础攻击伤害"
         },
         {
           "name": "MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_PHYSICAL",
           "value": 5,
           "description": "Method Name: `GetModifierProcAttack_BonusDamage_Physical`",
-          "description_cn": "修饰器属性触发攻击加成伤害物理"
+          "description_cn": "触发攻击加成伤害物理"
         },
         {
           "name": "MODIFIER_PROPERTY_PROCATTACK_CONVERT_PHYSICAL_TO_MAGICAL",
           "value": 6,
           "description": "Method Name: `GetModifierProcAttack_ConvertPhysicalToMagical`",
-          "description_cn": "修饰器属性触发攻击转换物理魔法"
+          "description_cn": "触发攻击转换物理魔法"
         },
         {
           "name": "MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL",
           "value": 7,
           "description": "Method Name: `GetModifierProcAttack_BonusDamage_Magical`",
-          "description_cn": "修饰器属性触发攻击加成伤害魔法"
+          "description_cn": "触发攻击加成伤害魔法"
         },
         {
           "name": "MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_PURE",
           "value": 8,
           "description": "Method Name: `GetModifierProcAttack_BonusDamage_Pure`",
-          "description_cn": "修饰器属性触发攻击加成伤害纯粹"
+          "description_cn": "触发攻击加成伤害纯粹"
         },
         {
           "name": "MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL_TARGET",
           "value": 9,
           "description": "Method Name: `GetModifierProcAttack_BonusDamage_Magical_Target`",
-          "description_cn": "修饰器属性触发攻击加成伤害魔法目标"
+          "description_cn": "触发攻击加成伤害魔法目标"
         },
         {
           "name": "MODIFIER_PROPERTY_PROCATTACK_FEEDBACK",
           "value": 10,
           "description": "Method Name: `GetModifierProcAttack_Feedback`",
-          "description_cn": "修饰器属性触发攻击FE背部"
+          "description_cn": "触发攻击FE背部"
         },
         {
           "name": "MODIFIER_PROPERTY_OVERRIDE_ATTACK_DAMAGE",
           "value": 11,
           "description": "Method Name: `GetModifierOverrideAttackDamage`",
-          "description_cn": "修饰器属性覆盖攻击伤害"
+          "description_cn": "覆盖攻击伤害"
         },
         {
           "name": "MODIFIER_PROPERTY_PRE_ATTACK",
@@ -15598,163 +15598,163 @@
           "name": "MODIFIER_PROPERTY_INVISIBILITY_ATTACK_BEHAVIOR_EXCEPTION",
           "value": 14,
           "description": "Method Name: `GetModifierInvisibilityAttackBehaviorException`",
-          "description_cn": "修饰器属性攻击行为"
+          "description_cn": "攻击行为"
         },
         {
           "name": "MODIFIER_PROPERTY_PERSISTENT_INVISIBILITY",
           "value": 15,
           "description": "Method Name: `GetModifierPersistentInvisibility`",
-          "description_cn": "修饰器属性"
+          "description_cn": "永久隐身"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT",
           "value": 16,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Constant`",
-          "description_cn": "修饰器属性移动速度加成常数"
+          "description_cn": "移动速度加成常数"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE",
           "value": 17,
           "description": "Method Name: `GetModifierMoveSpeedOverride`",
-          "description_cn": "修饰器属性移动速度基础覆盖"
+          "description_cn": "移动速度基础覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_MIN_OVERRIDE",
           "value": 18,
           "description": "Method Name: `GetModifierMoveSpeed_MinOverride`",
-          "description_cn": "修饰器属性移动速度M覆盖"
+          "description_cn": "移动速度M覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_MAX_OVERRIDE",
           "value": 19,
           "description": "Method Name: `GetModifierMoveSpeed_MaxOverride`",
-          "description_cn": "修饰器属性移动速度最大覆盖"
+          "description_cn": "移动速度最大覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE",
           "value": 20,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Percentage`",
-          "description_cn": "修饰器属性移动速度加成百分比"
+          "description_cn": "移动速度加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE_UNIQUE",
           "value": 21,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Percentage_Unique`",
-          "description_cn": "修饰器属性移动速度加成百分比唯一"
+          "description_cn": "移动速度加成百分比唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE",
           "value": 22,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Special_Boots`",
-          "description_cn": "修饰器属性移动速度加成唯一"
+          "description_cn": "移动速度加成唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE_2",
           "value": 23,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Special_Boots_2`",
-          "description_cn": "修饰器属性移动速度加成唯一2"
+          "description_cn": "移动速度加成唯一2"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT_UNIQUE",
           "value": 24,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Constant_Unique`",
-          "description_cn": "修饰器属性移动速度加成常数唯一"
+          "description_cn": "移动速度加成常数唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT_UNIQUE_2",
           "value": 25,
           "description": "Method Name: `GetModifierMoveSpeedBonus_Constant_Unique_2`",
-          "description_cn": "修饰器属性移动速度加成常数唯一2"
+          "description_cn": "移动速度加成常数唯一2"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE",
           "value": 26,
           "description": "Method Name: `GetModifierMoveSpeed_Absolute`",
-          "description_cn": "修饰器属性移动速度绝对"
+          "description_cn": "移动速度绝对"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE_MIN",
           "value": 27,
           "description": "Method Name: `GetModifierMoveSpeed_AbsoluteMin`",
-          "description_cn": "修饰器属性移动速度绝对M"
+          "description_cn": "移动速度绝对M"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE_MAX",
           "value": 28,
           "description": "Method Name: `GetModifierMoveSpeed_AbsoluteMax`",
-          "description_cn": "修饰器属性移动速度绝对最大"
+          "description_cn": "移动速度绝对最大"
         },
         {
           "name": "MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT",
           "value": 29,
           "description": "Method Name: `GetModifierIgnoreMovespeedLimit`",
-          "description_cn": "修饰器属性忽略移动速度限制"
+          "description_cn": "忽略移动速度限制"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_LIMIT",
           "value": 30,
           "description": "Method Name: `GetModifierMoveSpeed_Limit`",
-          "description_cn": "修饰器属性移动速度限制"
+          "description_cn": "移动速度限制"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACKSPEED_BASE_OVERRIDE",
           "value": 31,
           "description": "Method Name: `GetModifierAttackSpeedBaseOverride`",
-          "description_cn": "修饰器属性攻击速度"
+          "description_cn": "攻击速度"
         },
         {
           "name": "MODIFIER_PROPERTY_FIXED_ATTACK_RATE",
           "value": 32,
           "description": "Method Name: `GetModifierFixedAttackRate`",
-          "description_cn": "修饰器属性攻击速率"
+          "description_cn": "攻击速率"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT",
           "value": 33,
           "description": "Method Name: `GetModifierAttackSpeedBonus_Constant`",
-          "description_cn": "修饰器属性攻击速度"
+          "description_cn": "攻击速度"
         },
         {
           "name": "MODIFIER_PROPERTY_IGNORE_ATTACKSPEED_LIMIT",
           "value": 34,
           "description": "Method Name: `GetModifierAttackSpeed_Limit`",
-          "description_cn": "修饰器属性忽略攻击速度"
+          "description_cn": "忽略攻击速度"
         },
         {
           "name": "MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT",
           "value": 35,
           "description": "Method Name: `GetModifierCooldownReduction_Constant`",
-          "description_cn": "修饰器属性冷却减免常数"
+          "description_cn": "冷却减免常数"
         },
         {
           "name": "MODIFIER_PROPERTY_MANACOST_REDUCTION_CONSTANT",
           "value": 36,
           "description": "Method Name: `GetModifierManacostReduction_Constant`",
-          "description_cn": "修饰器属性法力消耗减免常数"
+          "description_cn": "法力消耗减免常数"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTHCOST_REDUCTION_CONSTANT",
           "value": 37,
           "description": "Method Name: `GetModifierHealthcostReduction_Constant`",
-          "description_cn": "修饰器属性HE替代H消耗减免常数"
+          "description_cn": "HE替代H消耗减免常数"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT",
           "value": 38,
           "description": "Method Name: `GetModifierBaseAttackTimeConstant`",
-          "description_cn": "修饰器属性基础攻击时间常数"
+          "description_cn": "基础攻击时间常数"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT_ADJUST",
           "value": 39,
           "description": "Method Name: `GetModifierBaseAttackTimeConstant_Adjust`",
-          "description_cn": "修饰器属性基础攻击时间常数"
+          "description_cn": "基础攻击时间常数"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_ATTACK_TIME_PERCENTAGE",
           "value": 40,
           "description": "Method Name: `GetModifierBaseAttackTimePercentage`",
-          "description_cn": "修饰器属性基础攻击时间百分比"
+          "description_cn": "基础攻击时间百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_POINT_CONSTANT",
@@ -15766,217 +15766,217 @@
           "name": "MODIFIER_PROPERTY_BONUSDAMAGEOUTGOING_PERCENTAGE",
           "value": 42,
           "description": "Method Name: `GetModifierBonusDamageOutgoing_Percentage`",
-          "description_cn": "修饰器属性伤害输出"
+          "description_cn": "伤害输出"
         },
         {
           "name": "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE",
           "value": 43,
           "description": "Method Name: `GetModifierDamageOutgoing_Percentage`",
-          "description_cn": "修饰器属性伤害输出"
+          "description_cn": "伤害输出"
         },
         {
           "name": "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE_ILLUSION",
           "value": 44,
           "description": "Method Name: `GetModifierDamageOutgoing_Percentage_Illusion`",
-          "description_cn": "修饰器属性伤害输出"
+          "description_cn": "伤害输出"
         },
         {
           "name": "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE_ILLUSION_AMPLIFY",
           "value": 45,
           "description": "Method Name: `GetModifierDamageOutgoing_Percentage_Illusion_Amplify`",
-          "description_cn": "修饰器属性伤害输出"
+          "description_cn": "伤害输出"
         },
         {
           "name": "MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE",
           "value": 46,
           "description": "Method Name: `GetModifierTotalDamageOutgoing_Percentage`",
-          "description_cn": "修饰器属性总"
+          "description_cn": "总"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_CREEP",
           "value": 47,
           "description": "Method Name: `GetModifierSpellAmplify_PercentageCreep`",
-          "description_cn": "修饰器属性法术增强百分比小兵"
+          "description_cn": "法术增强百分比小兵"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE",
           "value": 48,
           "description": "Method Name: `GetModifierSpellAmplify_Percentage`",
-          "description_cn": "修饰器属性法术增强百分比"
+          "description_cn": "法术增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_UNIQUE",
           "value": 49,
           "description": "Method Name: `GetModifierSpellAmplify_PercentageUnique`",
-          "description_cn": "修饰器属性法术增强百分比唯一"
+          "description_cn": "法术增强百分比唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_TARGET",
           "value": 50,
           "description": "Method Name: `GetModifierSpellAmplify_PercentageTarget`",
-          "description_cn": "修饰器属性法术增强百分比目标"
+          "description_cn": "法术增强百分比目标"
         },
         {
           "name": "MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_SOURCE",
           "value": 51,
           "description": "Method Name: `GetModifierHealAmplify_PercentageSource`",
-          "description_cn": "修饰器属性治疗增强百分比来源"
+          "description_cn": "治疗增强百分比来源"
         },
         {
           "name": "MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET",
           "value": 52,
           "description": "Method Name: `GetModifierHealAmplify_PercentageTarget`",
-          "description_cn": "修饰器属性治疗增强百分比目标"
+          "description_cn": "治疗增强百分比目标"
         },
         {
           "name": "MODIFIER_PROPERTY_HP_REGEN_CAN_BE_NEGATIVE",
           "value": 53,
           "description": "Method Name: `GetModifierHPRegen_CanBeNegative`",
-          "description_cn": "修饰器属性生命值恢复负面"
+          "description_cn": "生命值恢复负面"
         },
         {
           "name": "MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE",
           "value": 54,
           "description": "Method Name: `GetModifierHPRegenAmplify_Percentage`",
-          "description_cn": "修饰器属性生命值恢复增强百分比"
+          "description_cn": "生命值恢复增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE",
           "value": 55,
           "description": "Method Name: `GetModifierLifestealRegenAmplify_Percentage`",
-          "description_cn": "修饰器属性吸血增强百分比"
+          "description_cn": "吸血增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_LIFESTEAL_AMPLIFY_PERCENTAGE",
           "value": 56,
           "description": "Method Name: `GetModifierSpellLifestealRegenAmplify_Percentage`",
-          "description_cn": "修饰器属性法术吸血增强百分比"
+          "description_cn": "法术吸血增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_LIFESTEAL_AMPLIFY_PERCENTAGE_UNIQUE",
           "value": 57,
           "description": "Method Name: `GetModifierSpellLifestealRegenAmplify_Percentage_Unique`",
-          "description_cn": "修饰器属性法术吸血增强百分比唯一"
+          "description_cn": "法术吸血增强百分比唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE",
           "value": 58,
           "description": "Method Name: `GetModifierMPRegenAmplify_Percentage`",
-          "description_cn": "修饰器属性法力值恢复增强百分比"
+          "description_cn": "法力值恢复增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE_UNIQUE",
           "value": 59,
           "description": "Method Name: `GetModifierMPRegenAmplify_Percentage_Unique`",
-          "description_cn": "修饰器属性法力值恢复增强百分比唯一"
+          "description_cn": "法力值恢复增强百分比唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MANA_DRAIN_AMPLIFY_PERCENTAGE",
           "value": 60,
           "description": "Method Name: `GetModifierManaDrainAmplify_Percentage`",
-          "description_cn": "修饰器属性法力增强百分比"
+          "description_cn": "法力增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_MP_RESTORE_AMPLIFY_PERCENTAGE",
           "value": 61,
           "description": "Total amplify value is clamped to 0.\n\nMethod Name: `GetModifierMPRestoreAmplify_Percentage`.",
-          "description_cn": "修饰器属性法力值抗性RE增强百分比"
+          "description_cn": "法力值抗性RE增强百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE",
           "value": 62,
           "description": "Method Name: `GetModifierBaseDamageOutgoing_Percentage`",
-          "description_cn": "修饰器属性百分比"
+          "description_cn": "百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE_UNIQUE",
           "value": 63,
           "description": "Method Name: `GetModifierBaseDamageOutgoing_PercentageUnique`",
-          "description_cn": "修饰器属性百分比唯一"
+          "description_cn": "百分比唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE",
           "value": 64,
           "description": "Method Name: `GetModifierIncomingDamage_Percentage`",
-          "description_cn": "修饰器属性传入伤害百分比"
+          "description_cn": "传入伤害百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE",
           "value": 65,
           "description": "Method Name: `GetModifierIncomingPhysicalDamage_Percentage`",
-          "description_cn": "修饰器属性传入物理伤害百分比"
+          "description_cn": "传入物理伤害百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_CONSTANT",
           "value": 66,
           "description": "This property controls 'physical' shield, if defined both on client and server. Return value on client should be current shield health, as a positive integer, on server - amount of damage blocked.\n\nMethod Name: `GetModifierIncomingPhysicalDamageConstant`.",
-          "description_cn": "修饰器属性传入物理伤害常数"
+          "description_cn": "传入物理伤害常数"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_SPELL_DAMAGE_CONSTANT",
           "value": 67,
           "description": "This property controls 'spell' shield, if defined both on client and server. Return value on client should be current shield health, as a positive integer, on server - amount of damage blocked.\n\nMethod Name: `GetModifierIncomingSpellDamageConstant`.",
-          "description_cn": "修饰器属性传入法术伤害常数"
+          "description_cn": "传入法术伤害常数"
         },
         {
           "name": "MODIFIER_PROPERTY_EVASION_CONSTANT",
           "value": 68,
           "description": "Method Name: `GetModifierEvasion_Constant`",
-          "description_cn": "修饰器属性闪避常数"
+          "description_cn": "闪避常数"
         },
         {
           "name": "MODIFIER_PROPERTY_NEGATIVE_EVASION_CONSTANT",
           "value": 69,
           "description": "Method Name: `GetModifierNegativeEvasion_Constant`",
-          "description_cn": "修饰器属性负面闪避常数"
+          "description_cn": "负面闪避常数"
         },
         {
           "name": "MODIFIER_PROPERTY_STATUS_RESISTANCE",
           "value": 70,
           "description": "Method Name: `GetModifierStatusResistance`",
-          "description_cn": "修饰器属性状态抗性"
+          "description_cn": "状态抗性"
         },
         {
           "name": "MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING",
           "value": 71,
           "description": "Method Name: `GetModifierStatusResistanceStacking`",
-          "description_cn": "修饰器属性状态抗性叠加"
+          "description_cn": "状态抗性叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_STATUS_RESISTANCE_CASTER",
           "value": 72,
           "description": "Method Name: `GetModifierStatusResistanceCaster`",
-          "description_cn": "修饰器属性状态抗性施法者"
+          "description_cn": "状态抗性施法者"
         },
         {
           "name": "MODIFIER_PROPERTY_AVOID_DAMAGE",
           "value": 73,
           "description": "Method Name: `GetModifierAvoidDamage`",
-          "description_cn": "修饰器属性避免伤害"
+          "description_cn": "避免伤害"
         },
         {
           "name": "MODIFIER_PROPERTY_AVOID_SPELL",
           "value": 74,
           "description": "Method Name: `GetModifierAvoidSpell`",
-          "description_cn": "修饰器属性避免法术"
+          "description_cn": "避免法术"
         },
         {
           "name": "MODIFIER_PROPERTY_MISS_PERCENTAGE",
           "value": 75,
           "description": "Method Name: `GetModifierMiss_Percentage`",
-          "description_cn": "修饰器属性MS百分比"
+          "description_cn": "MS百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BASE_PERCENTAGE",
           "value": 76,
           "description": "Values above 100% are ignored.\n\nMethod Name: `GetModifierPhysicalArmorBase_Percentage`.",
-          "description_cn": "修饰器属性物理护甲基础百分比"
+          "description_cn": "物理护甲基础百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_TOTAL_PERCENTAGE",
           "value": 77,
           "description": "Method Name: `GetModifierPhysicalArmorTotal_Percentage`",
-          "description_cn": "修饰器属性物理护甲总"
+          "description_cn": "物理护甲总"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS",
@@ -15988,13 +15988,13 @@
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE",
           "value": 79,
           "description": "Method Name: `GetModifierPhysicalArmorBonusUnique`",
-          "description_cn": "修饰器属性物理护甲加成唯一"
+          "description_cn": "物理护甲加成唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE",
           "value": 80,
           "description": "Method Name: `GetModifierPhysicalArmorBonusUniqueActive`",
-          "description_cn": "修饰器属性物理护甲加成唯一主动"
+          "description_cn": "物理护甲加成唯一主动"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_POST",
@@ -16006,91 +16006,91 @@
           "name": "MODIFIER_PROPERTY_MIN_PHYSICAL_ARMOR",
           "value": 82,
           "description": "Method Name: `GetModifierMinPhysicalArmor`",
-          "description_cn": "修饰器属性M物理护甲"
+          "description_cn": "M物理护甲"
         },
         {
           "name": "MODIFIER_PROPERTY_IGNORE_PHYSICAL_ARMOR",
           "value": 83,
           "description": "Method Name: `GetModifierIgnorePhysicalArmor`",
-          "description_cn": "修饰器属性忽略物理护甲"
+          "description_cn": "忽略物理护甲"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BASE_REDUCTION",
           "value": 84,
           "description": "Method Name: `GetModifierMagicalResistanceBaseReduction`",
-          "description_cn": "修饰器属性魔法抗性基础减免"
+          "description_cn": "魔法抗性基础减免"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DIRECT_MODIFICATION",
           "value": 85,
           "description": "Method Name: `GetModifierMagicalResistanceDirectModification`",
-          "description_cn": "修饰器属性魔法抗性夜魇"
+          "description_cn": "魔法抗性夜魇"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS",
           "value": 86,
           "description": "Method Name: `GetModifierMagicalResistanceBonus`",
-          "description_cn": "修饰器属性魔法抗性加成"
+          "description_cn": "魔法抗性加成"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS_ILLUSIONS",
           "value": 87,
           "description": "Method Name: `GetModifierMagicalResistanceBonusIllusions`",
-          "description_cn": "修饰器属性魔法抗性加成幻象"
+          "description_cn": "魔法抗性加成幻象"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS_UNIQUE",
           "value": 88,
           "description": "Method Name: `GetModifierMagicalResistanceBonusUnique`",
-          "description_cn": "修饰器属性魔法抗性加成唯一"
+          "description_cn": "魔法抗性加成唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE",
           "value": 89,
           "description": "Method Name: `GetModifierMagicalResistanceDecrepifyUnique`",
-          "description_cn": "修饰器属性魔法抗性唯一"
+          "description_cn": "魔法抗性唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_MANA_REGEN",
           "value": 90,
           "description": "Method Name: `GetModifierBaseRegen`",
-          "description_cn": "修饰器属性基础法力恢复"
+          "description_cn": "基础法力恢复"
         },
         {
           "name": "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT",
           "value": 91,
           "description": "Method Name: `GetModifierConstantManaRegen`",
-          "description_cn": "修饰器属性法力恢复常数"
+          "description_cn": "法力恢复常数"
         },
         {
           "name": "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT_UNIQUE",
           "value": 92,
           "description": "Method Name: `GetModifierConstantManaRegenUnique`",
-          "description_cn": "修饰器属性法力恢复常数唯一"
+          "description_cn": "法力恢复常数唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE",
           "value": 93,
           "description": "Method Name: `GetModifierTotalPercentageManaRegen`",
-          "description_cn": "修饰器属性法力恢复总"
+          "description_cn": "法力恢复总"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT",
           "value": 94,
           "description": "Method Name: `GetModifierConstantHealthRegen`",
-          "description_cn": "修饰器属性生命恢复常数"
+          "description_cn": "生命恢复常数"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE",
           "value": 95,
           "description": "Method Name: `GetModifierHealthRegenPercentage`",
-          "description_cn": "修饰器属性生命恢复百分比"
+          "description_cn": "生命恢复百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE_UNIQUE",
           "value": 96,
           "description": "Method Name: `GetModifierHealthRegenPercentageUnique`",
-          "description_cn": "修饰器属性生命恢复百分比唯一"
+          "description_cn": "生命恢复百分比唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTH_BONUS",
@@ -16108,73 +16108,73 @@
           "name": "MODIFIER_PROPERTY_EXTRA_STRENGTH_BONUS",
           "value": 99,
           "description": "Method Name: `GetModifierExtraStrengthBonus`",
-          "description_cn": "修饰器属性额外力量加成"
+          "description_cn": "额外力量加成"
         },
         {
           "name": "MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS",
           "value": 100,
           "description": "Method Name: `GetModifierExtraHealthBonus`",
-          "description_cn": "修饰器属性额外生命加成"
+          "description_cn": "额外生命加成"
         },
         {
           "name": "MODIFIER_PROPERTY_EXTRA_MANA_BONUS",
           "value": 101,
           "description": "Method Name: `GetModifierExtraManaBonus`",
-          "description_cn": "修饰器属性额外法力加成"
+          "description_cn": "额外法力加成"
         },
         {
           "name": "MODIFIER_PROPERTY_EXTRA_MANA_BONUS_PERCENTAGE",
           "value": 102,
           "description": "Method Name: `GetModifierExtraManaBonusPercentage`",
-          "description_cn": "修饰器属性额外法力加成百分比"
+          "description_cn": "额外法力加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE",
           "value": 103,
           "description": "Method Name: `GetModifierExtraHealthPercentage`",
-          "description_cn": "修饰器属性额外生命百分比"
+          "description_cn": "额外生命百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_EXTRA_MANA_PERCENTAGE",
           "value": 104,
           "description": "Method Name: `GetModifierExtraManaPercentage`",
-          "description_cn": "修饰器属性额外法力百分比"
+          "description_cn": "额外法力百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS",
           "value": 105,
           "description": "Method Name: `GetModifierBonusStats_Strength`",
-          "description_cn": "修饰器属性统计力量加成"
+          "description_cn": "统计力量加成"
         },
         {
           "name": "MODIFIER_PROPERTY_STATS_AGILITY_BONUS",
           "value": 106,
           "description": "Method Name: `GetModifierBonusStats_Agility`",
-          "description_cn": "修饰器属性统计敏捷加成"
+          "description_cn": "统计敏捷加成"
         },
         {
           "name": "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS",
           "value": 107,
           "description": "Method Name: `GetModifierBonusStats_Intellect`",
-          "description_cn": "修饰器属性统计加成"
+          "description_cn": "统计加成"
         },
         {
           "name": "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS_PERCENTAGE",
           "value": 108,
           "description": "Method Name: `GetModifierBonusStats_Strength_Percentage`",
-          "description_cn": "修饰器属性统计力量加成百分比"
+          "description_cn": "统计力量加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_STATS_AGILITY_BONUS_PERCENTAGE",
           "value": 109,
           "description": "Method Name: `GetModifierBonusStats_Agility_Percentage`",
-          "description_cn": "修饰器属性统计敏捷加成百分比"
+          "description_cn": "统计敏捷加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS_PERCENTAGE",
           "value": 110,
           "description": "Method Name: `GetModifierBonusStats_Intellect_Percentage`",
-          "description_cn": "修饰器属性统计加成百分比"
+          "description_cn": "统计加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_CAST_RANGE_BONUS",
@@ -16186,7 +16186,7 @@
           "name": "MODIFIER_PROPERTY_CAST_RANGE_BONUS_PERCENTAGE",
           "value": 112,
           "description": "Method Name: `GetModifierCastRangeBonusPercentage`",
-          "description_cn": "修饰器属性施法范围加成百分比"
+          "description_cn": "施法范围加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_CAST_RANGE_BONUS_TARGET",
@@ -16198,13 +16198,13 @@
           "name": "MODIFIER_PROPERTY_CAST_RANGE_BONUS_STACKING",
           "value": 114,
           "description": "Method Name: `GetModifierCastRangeBonusStacking`",
-          "description_cn": "修饰器属性施法范围加成叠加"
+          "description_cn": "施法范围加成叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_RANGE_BASE_OVERRIDE",
           "value": 115,
           "description": "Method Name: `GetModifierAttackRangeOverride`",
-          "description_cn": "修饰器属性攻击范围基础覆盖"
+          "description_cn": "攻击范围基础覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS",
@@ -16216,13 +16216,13 @@
           "name": "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_UNIQUE",
           "value": 117,
           "description": "Method Name: `GetModifierAttackRangeBonusUnique`",
-          "description_cn": "修饰器属性攻击范围加成唯一"
+          "description_cn": "攻击范围加成唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_PERCENTAGE",
           "value": 118,
           "description": "Method Name: `GetModifierAttackRangeBonusPercentage`",
-          "description_cn": "修饰器属性攻击范围加成百分比"
+          "description_cn": "攻击范围加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_MAX_ATTACK_RANGE",
@@ -16234,139 +16234,139 @@
           "name": "MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS",
           "value": 120,
           "description": "Method Name: `GetModifierProjectileSpeedBonus`",
-          "description_cn": "修饰器属性弹道速度"
+          "description_cn": "弹道速度"
         },
         {
           "name": "MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS_PERCENTAGE",
           "value": 121,
           "description": "Method Name: `GetModifierProjectileSpeedBonusPercentage`",
-          "description_cn": "修饰器属性弹道速度"
+          "description_cn": "弹道速度"
         },
         {
           "name": "MODIFIER_PROPERTY_PROJECTILE_NAME",
           "value": 122,
           "description": "Method Name: `GetModifierProjectileName`",
-          "description_cn": "修饰器属性弹道名称"
+          "description_cn": "弹道名称"
         },
         {
           "name": "MODIFIER_PROPERTY_REINCARNATION",
           "value": 123,
           "description": "Method Name: `ReincarnateTime`",
-          "description_cn": "修饰器属性突击步枪"
+          "description_cn": "突击步枪"
         },
         {
           "name": "MODIFIER_PROPERTY_REINCARNATION_SUPPRESS_FX",
           "value": 124,
           "description": "Method Name: `ReincarnateSuppressFX`",
-          "description_cn": "修饰器属性突击步枪上抗性特效"
+          "description_cn": "突击步枪上抗性特效"
         },
         {
           "name": "MODIFIER_PROPERTY_RESPAWNTIME",
           "value": 125,
           "description": "Method Name: `GetModifierConstantRespawnTime`",
-          "description_cn": "修饰器属性RE生成时间"
+          "description_cn": "RE生成时间"
         },
         {
           "name": "MODIFIER_PROPERTY_RESPAWNTIME_PERCENTAGE",
           "value": 126,
           "description": "Method Name: `GetModifierPercentageRespawnTime`",
-          "description_cn": "修饰器属性RE生成时间百分比"
+          "description_cn": "RE生成时间百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_RESPAWNTIME_STACKING",
           "value": 127,
           "description": "Method Name: `GetModifierStackingRespawnTime`",
-          "description_cn": "修饰器属性RE生成时间叠加"
+          "description_cn": "RE生成时间叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE",
           "value": 128,
           "description": "Method Name: `GetModifierPercentageCooldown`",
-          "description_cn": "修饰器属性冷却百分比"
+          "description_cn": "冷却百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_ONGOING",
           "value": 129,
           "description": "Method Name: `GetModifierPercentageCooldownOngoing`",
-          "description_cn": "修饰器属性冷却百分比"
+          "description_cn": "冷却百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_CASTTIME_PERCENTAGE",
           "value": 130,
           "description": "Method Name: `GetModifierPercentageCasttime`",
-          "description_cn": "修饰器属性施法时间百分比"
+          "description_cn": "施法时间百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_ANIM_TIME_PERCENTAGE",
           "value": 131,
           "description": "Method Name: `GetModifierPercentageAttackAnimTime`",
-          "description_cn": "修饰器属性攻击动画时间百分比"
+          "description_cn": "攻击动画时间百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_MANACOST_PERCENTAGE",
           "value": 132,
           "description": "Method Name: `GetModifierPercentageManacost`",
-          "description_cn": "修饰器属性法力消耗百分比"
+          "description_cn": "法力消耗百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_MANACOST_PERCENTAGE_STACKING",
           "value": 133,
           "description": "Method Name: `GetModifierPercentageManacostStacking`",
-          "description_cn": "修饰器属性法力消耗百分比叠加"
+          "description_cn": "法力消耗百分比叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTHCOST_PERCENTAGE",
           "value": 134,
           "description": "Method Name: `GetModifierPercentageHealthcost`",
-          "description_cn": "修饰器属性HE替代H消耗百分比"
+          "description_cn": "HE替代H消耗百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTHCOST_PERCENTAGE_STACKING",
           "value": 135,
           "description": "Method Name: `GetModifierPercentageHealthcostStacking`",
-          "description_cn": "修饰器属性HE替代H消耗百分比叠加"
+          "description_cn": "HE替代H消耗百分比叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_DEATHGOLDCOST",
           "value": 136,
           "description": "Method Name: `GetModifierConstantDeathGoldCost`",
-          "description_cn": "修饰器属性消耗"
+          "description_cn": "消耗"
         },
         {
           "name": "MODIFIER_PROPERTY_PERCENTAGE_DEATHGOLDCOST",
           "value": 137,
           "description": "Method Name: `GetModifierPercentageDeathGoldCost`",
-          "description_cn": "修饰器属性百分比消耗"
+          "description_cn": "百分比消耗"
         },
         {
           "name": "MODIFIER_PROPERTY_EXP_RATE_BOOST",
           "value": 138,
           "description": "Method Name: `GetModifierPercentageExpRateBoost`",
-          "description_cn": "修饰器属性经验速率"
+          "description_cn": "经验速率"
         },
         {
           "name": "MODIFIER_PROPERTY_GOLD_RATE_BOOST",
           "value": 139,
           "description": "Method Name: `GetModifierPercentageGoldRateBoost`",
-          "description_cn": "修饰器属性金钱速率"
+          "description_cn": "金币速率"
         },
         {
           "name": "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE",
           "value": 140,
           "description": "Method Name: `GetModifierPreAttack_CriticalStrike`",
-          "description_cn": "修饰器属性攻击前暴击力量"
+          "description_cn": "攻击前暴击力量"
         },
         {
           "name": "MODIFIER_PROPERTY_PREATTACK_TARGET_CRITICALSTRIKE",
           "value": 141,
           "description": "Method Name: `GetModifierPreAttack_Target_CriticalStrike`",
-          "description_cn": "修饰器属性攻击前目标暴击力量"
+          "description_cn": "攻击前目标暴击力量"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_CONSTANT_BLOCK",
           "value": 142,
           "description": "Method Name: `GetModifierMagical_ConstantBlock`",
-          "description_cn": "修饰器属性魔法常数格挡"
+          "description_cn": "魔法常数格挡"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK",
@@ -16378,55 +16378,55 @@
           "name": "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK_SPECIAL",
           "value": 144,
           "description": "Method Name: `GetModifierPhysical_ConstantBlockSpecial`",
-          "description_cn": "修饰器属性物理常数格挡特殊"
+          "description_cn": "物理常数格挡特殊"
         },
         {
           "name": "MODIFIER_PROPERTY_INNATE_DAMAGE_BLOCK_PCT_OVERRIDE",
           "value": 145,
           "description": "Method Name: `GetModifierInnateDamageBlockPctOverride`",
-          "description_cn": "修饰器属性伤害格挡百分比覆盖"
+          "description_cn": "伤害格挡百分比覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_UNAVOIDABLE_PRE_ARMOR",
           "value": 146,
           "description": "Method Name: `GetModifierPhysical_ConstantBlockUnavoidablePreArmor`",
-          "description_cn": "修饰器属性总"
+          "description_cn": "总"
         },
         {
           "name": "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK",
           "value": 147,
           "description": "Method Name: `GetModifierTotal_ConstantBlock`",
-          "description_cn": "修饰器属性总"
+          "description_cn": "总"
         },
         {
           "name": "MODIFIER_PROPERTY_OVERRIDE_ANIMATION",
           "value": 148,
           "description": "Method Name: `GetOverrideAnimation`",
-          "description_cn": "修饰器属性覆盖动画"
+          "description_cn": "覆盖动画"
         },
         {
           "name": "MODIFIER_PROPERTY_OVERRIDE_ANIMATION_RATE",
           "value": 149,
           "description": "Method Name: `GetOverrideAnimationRate`",
-          "description_cn": "修饰器属性覆盖动画速率"
+          "description_cn": "覆盖动画速率"
         },
         {
           "name": "MODIFIER_PROPERTY_ABSORB_SPELL",
           "value": 150,
           "description": "Method Name: `GetAbsorbSpell`",
-          "description_cn": "修饰器属性吸收法术"
+          "description_cn": "吸收法术"
         },
         {
           "name": "MODIFIER_PROPERTY_REFLECT_SPELL",
           "value": 151,
           "description": "Method Name: `GetReflectSpell`",
-          "description_cn": "修饰器属性法术"
+          "description_cn": "法术"
         },
         {
           "name": "MODIFIER_PROPERTY_DISABLE_AUTOATTACK",
           "value": 152,
           "description": "Method Name: `GetDisableAutoAttack`",
-          "description_cn": "修饰器属性禁用AU攻击"
+          "description_cn": "禁用AU攻击"
         },
         {
           "name": "MODIFIER_PROPERTY_BONUS_DAY_VISION",
@@ -16438,7 +16438,7 @@
           "name": "MODIFIER_PROPERTY_BONUS_DAY_VISION_PERCENTAGE",
           "value": 154,
           "description": "Method Name: `GetBonusDayVisionPercentage`",
-          "description_cn": "修饰器属性加成视野百分比"
+          "description_cn": "加成视野百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_BONUS_NIGHT_VISION",
@@ -16450,61 +16450,61 @@
           "name": "MODIFIER_PROPERTY_BONUS_NIGHT_VISION_UNIQUE",
           "value": 156,
           "description": "Method Name: `GetBonusNightVisionUnique`",
-          "description_cn": "修饰器属性加成视野唯一"
+          "description_cn": "加成视野唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_BONUS_VISION_PERCENTAGE",
           "value": 157,
           "description": "Method Name: `GetBonusVisionPercentage`",
-          "description_cn": "修饰器属性加成视野百分比"
+          "description_cn": "加成视野百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_FIXED_DAY_VISION",
           "value": 158,
           "description": "Method Name: `GetFixedDayVision`",
-          "description_cn": "修饰器属性视野"
+          "description_cn": "视野"
         },
         {
           "name": "MODIFIER_PROPERTY_FIXED_NIGHT_VISION",
           "value": 159,
           "description": "Method Name: `GetFixedNightVision`",
-          "description_cn": "修饰器属性视野"
+          "description_cn": "视野"
         },
         {
           "name": "MODIFIER_PROPERTY_MIN_HEALTH",
           "value": 160,
           "description": "Method Name: `GetMinHealth`",
-          "description_cn": "修饰器属性M生命"
+          "description_cn": "M生命"
         },
         {
           "name": "MODIFIER_PROPERTY_MIN_MANA",
           "value": 161,
           "description": "Method Name: `GetMinMana`",
-          "description_cn": "修饰器属性M法力"
+          "description_cn": "M法力"
         },
         {
           "name": "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL",
           "value": 162,
           "description": "Method Name: `GetAbsoluteNoDamagePhysical`",
-          "description_cn": "修饰器属性绝对无伤害物理"
+          "description_cn": "绝对无伤害物理"
         },
         {
           "name": "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL",
           "value": 163,
           "description": "Method Name: `GetAbsoluteNoDamageMagical`",
-          "description_cn": "修饰器属性绝对无伤害魔法"
+          "description_cn": "绝对无伤害魔法"
         },
         {
           "name": "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE",
           "value": 164,
           "description": "Method Name: `GetAbsoluteNoDamagePure`",
-          "description_cn": "修饰器属性绝对无伤害纯粹"
+          "description_cn": "绝对无伤害纯粹"
         },
         {
           "name": "MODIFIER_PROPERTY_IS_ILLUSION",
           "value": 165,
           "description": "Method Name: `GetIsIllusion`",
-          "description_cn": "修饰器属性幻象"
+          "description_cn": "幻象"
         },
         {
           "name": "MODIFIER_PROPERTY_ILLUSION_LABEL",
@@ -16528,91 +16528,91 @@
           "name": "MODIFIER_PROPERTY_SUPER_ILLUSION_WITH_ULTIMATE",
           "value": 169,
           "description": "Method Name: `GetModifierSuperIllusionWithUltimate`",
-          "description_cn": "修饰器属性超级幻象终极"
+          "description_cn": "超级幻象终极"
         },
         {
           "name": "MODIFIER_PROPERTY_XP_DURING_DEATH",
           "value": 170,
           "description": "Method Name: `GetModifierXPDuringDeath`",
-          "description_cn": "修饰器属性经验死亡"
+          "description_cn": "经验死亡"
         },
         {
           "name": "MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE",
           "value": 171,
           "description": "Method Name: `GetModifierTurnRate_Percentage`",
-          "description_cn": "修饰器属性转身速率百分比"
+          "description_cn": "转身速率百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_TURN_RATE_OVERRIDE",
           "value": 172,
           "description": "Method Name: `GetModifierTurnRate_Override`",
-          "description_cn": "修饰器属性转身速率覆盖"
+          "description_cn": "转身速率覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_DISABLE_HEALING",
           "value": 173,
           "description": "Method Name: `GetDisableHealing`",
-          "description_cn": "修饰器属性禁用治疗G"
+          "description_cn": "禁用治疗G"
         },
         {
           "name": "MODIFIER_PROPERTY_DISABLE_MANA_GAIN",
           "value": 174,
           "description": "Method Name: `GetDisableManaGain`",
-          "description_cn": "修饰器属性禁用法力GA"
+          "description_cn": "禁用法力GA"
         },
         {
           "name": "MODIFIER_PROPERTY_ALWAYS_ALLOW_ATTACK",
           "value": 175,
           "description": "Method Name: `GetAlwaysAllowAttack`",
-          "description_cn": "修饰器属性允许攻击"
+          "description_cn": "允许攻击"
         },
         {
           "name": "MODIFIER_PROPERTY_ALWAYS_ETHEREAL_ATTACK",
           "value": 176,
           "description": "Method Name: `GetAllowEtherealAttack`",
-          "description_cn": "修饰器属性设置攻击"
+          "description_cn": "设置攻击"
         },
         {
           "name": "MODIFIER_PROPERTY_OVERRIDE_ATTACK_MAGICAL",
           "value": 177,
           "description": "Method Name: `GetOverrideAttackMagical`",
-          "description_cn": "修饰器属性覆盖攻击魔法"
+          "description_cn": "覆盖攻击魔法"
         },
         {
           "name": "MODIFIER_PROPERTY_UNIT_STATS_NEEDS_REFRESH",
           "value": 178,
           "description": "Method Name: `GetModifierUnitStatsNeedsRefresh`",
-          "description_cn": "修饰器属性单位统计刷新"
+          "description_cn": "单位统计刷新"
         },
         {
           "name": "MODIFIER_PROPERTY_BOUNTY_CREEP_MULTIPLIER",
           "value": 179,
           "description": null,
-          "description_cn": "修饰器属性小兵多重钳子"
+          "description_cn": "小兵多重钳子"
         },
         {
           "name": "MODIFIER_PROPERTY_BOUNTY_OTHER_MULTIPLIER",
           "value": 180,
           "description": null,
-          "description_cn": "修饰器属性其他多重钳子"
+          "description_cn": "其他多重钳子"
         },
         {
           "name": "MODIFIER_PROPERTY_UNIT_DISALLOW_UPGRADING",
           "value": 181,
           "description": "Method Name: `GetModifierUnitDisllowUpgrading`",
-          "description_cn": "修饰器属性单位D允许上G天辉"
+          "description_cn": "单位D允许上G天辉"
         },
         {
           "name": "MODIFIER_PROPERTY_DODGE_PROJECTILE",
           "value": 182,
           "description": "Method Name: `GetModifierDodgeProjectile`",
-          "description_cn": "修饰器属性闪避弹道"
+          "description_cn": "闪避弹道"
         },
         {
           "name": "MODIFIER_PROPERTY_TRIGGER_COSMETIC_AND_END_ATTACK",
           "value": 183,
           "description": "Method Name: `GetTriggerCosmeticAndEndAttack`",
-          "description_cn": "修饰器属性结束攻击"
+          "description_cn": "结束攻击"
         },
         {
           "name": "MODIFIER_PROPERTY_MAX_DEBUFF_DURATION",
@@ -16624,43 +16624,43 @@
           "name": "MODIFIER_PROPERTY_PRIMARY_STAT_DAMAGE_MULTIPLIER",
           "value": 185,
           "description": "Method Name: `GetPrimaryStatDamageMultiplier`",
-          "description_cn": "修饰器属性主要统计伤害多重钳子"
+          "description_cn": "主要统计伤害多重钳子"
         },
         {
           "name": "MODIFIER_PROPERTY_PREATTACK_DEADLY_BLOW",
           "value": 186,
           "description": "Method Name: `GetModifierPreAttack_DeadlyBlow`",
-          "description_cn": "修饰器属性攻击前死亡"
+          "description_cn": "攻击前死亡"
         },
         {
           "name": "MODIFIER_PROPERTY_ALWAYS_AUTOATTACK_WHILE_HOLD_POSITION",
           "value": 187,
           "description": "Method Name: `GetAlwaysAutoAttackWhileHoldPosition`",
-          "description_cn": "修饰器属性攻击当保持位置"
+          "description_cn": "攻击当保持位置"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_PIERCING_PERCENTAGE_TARGET",
           "value": 188,
           "description": "Method Name: `GetPhysicalArmorPiercingPercentageTarget`",
-          "description_cn": "修饰器属性物理护甲百分比目标"
+          "description_cn": "物理护甲百分比目标"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_ARMOR_PIERCING_PERCENTAGE_TARGET",
           "value": 189,
           "description": "Method Name: `GetMagicalArmorPiercingPercentageTarget`",
-          "description_cn": "修饰器属性魔法护甲百分比目标"
+          "description_cn": "魔法护甲百分比目标"
         },
         {
           "name": "MODIFIER_PROPERTY_CRITICAL_STRIKE_BONUS",
           "value": 190,
           "description": "Method Name: `GetCriticalStrikeBonus`",
-          "description_cn": "修饰器属性暴击力量加成"
+          "description_cn": "暴击力量加成"
         },
         {
           "name": "MODIFIER_PROPERTY_CONVERT_ATTACK_PHYSICAL_TO_PURE",
           "value": 191,
           "description": "Method Name: `GetConvertAttackPhysicalToPure`",
-          "description_cn": "修饰器属性转换攻击物理纯粹"
+          "description_cn": "转换攻击物理纯粹"
         },
         {
           "name": "MODIFIER_EVENT_ON_SPELL_TARGET_READY",
@@ -16672,7 +16672,7 @@
           "name": "MODIFIER_EVENT_ON_ATTACK_RECORD",
           "value": 193,
           "description": "Method Name: `OnAttackRecord`",
-          "description_cn": "修饰器事件攻击随机征召"
+          "description_cn": "攻击随机征召"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTACK_START",
@@ -16690,7 +16690,7 @@
           "name": "MODIFIER_EVENT_ON_ATTACK_LANDED",
           "value": 196,
           "description": "Method Name: `OnAttackLanded`",
-          "description_cn": "修饰器事件攻击着陆"
+          "description_cn": "攻击着陆"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTACK_FAIL",
@@ -16702,13 +16702,13 @@
           "name": "MODIFIER_EVENT_ON_ATTACK_ALLIED",
           "value": 198,
           "description": "Happens even if attack can't be issued.\n\nMethod Name: `OnAttackAllied`.",
-          "description_cn": "修饰器事件攻击"
+          "description_cn": "攻击"
         },
         {
           "name": "MODIFIER_EVENT_ON_PROJECTILE_DODGE",
           "value": 199,
           "description": "Method Name: `OnProjectileDodge`",
-          "description_cn": "修饰器事件弹道闪避"
+          "description_cn": "弹道闪避"
         },
         {
           "name": "MODIFIER_EVENT_ON_ORDER",
@@ -16720,7 +16720,7 @@
           "name": "MODIFIER_EVENT_ON_UNIT_MOVED",
           "value": 201,
           "description": "Method Name: `OnUnitMoved`",
-          "description_cn": "修饰器事件单位"
+          "description_cn": "单位"
         },
         {
           "name": "MODIFIER_EVENT_ON_ABILITY_START",
@@ -16732,13 +16732,13 @@
           "name": "MODIFIER_EVENT_ON_ABILITY_EXECUTED",
           "value": 203,
           "description": "Method Name: `OnAbilityExecuted`",
-          "description_cn": "修饰器事件技能"
+          "description_cn": "技能"
         },
         {
           "name": "MODIFIER_EVENT_ON_ABILITY_FULLY_CAST",
           "value": 204,
           "description": "Method Name: `OnAbilityFullyCast`",
-          "description_cn": "修饰器事件技能施法"
+          "description_cn": "技能施法"
         },
         {
           "name": "MODIFIER_EVENT_ON_BREAK_INVISIBILITY",
@@ -16756,61 +16756,61 @@
           "name": "MODIFIER_EVENT_ON_PROCESS_UPGRADE",
           "value": 207,
           "description": null,
-          "description_cn": "修饰器事件触发上天辉"
+          "description_cn": "触发上天辉"
         },
         {
           "name": "MODIFIER_EVENT_ON_REFRESH",
           "value": 208,
           "description": null,
-          "description_cn": "修饰器事件刷新"
+          "description_cn": "刷新"
         },
         {
           "name": "MODIFIER_EVENT_ON_TAKEDAMAGE",
           "value": 209,
           "description": "Method Name: `OnTakeDamage`",
-          "description_cn": "修饰器事件受到伤害"
+          "description_cn": "受到伤害"
         },
         {
           "name": "MODIFIER_EVENT_ON_DEATH_PREVENTED",
           "value": 210,
           "description": "Method Name: `OnDamagePrevented`",
-          "description_cn": "修饰器事件死亡预"
+          "description_cn": "死亡预"
         },
         {
           "name": "MODIFIER_EVENT_ON_STATE_CHANGED",
           "value": 211,
           "description": "Method Name: `OnStateChanged`",
-          "description_cn": "修饰器事件状态C悬挂"
+          "description_cn": "状态C悬挂"
         },
         {
           "name": "MODIFIER_EVENT_ON_ORB_EFFECT",
           "value": 212,
           "description": null,
-          "description_cn": "修饰器事件法球效果"
+          "description_cn": "法球效果"
         },
         {
           "name": "MODIFIER_EVENT_ON_PROCESS_CLEAVE",
           "value": 213,
           "description": "Method Name: `OnProcessCleave`",
-          "description_cn": "修饰器事件触发分裂"
+          "description_cn": "触发分裂"
         },
         {
           "name": "MODIFIER_EVENT_ON_DAMAGE_CALCULATED",
           "value": 214,
           "description": "Method Name: `OnDamageCalculated`",
-          "description_cn": "修饰器事件伤害计算"
+          "description_cn": "伤害计算"
         },
         {
           "name": "MODIFIER_EVENT_ON_MAGIC_DAMAGE_CALCULATED",
           "value": 215,
           "description": "Method Name: `OnMagicDamageCalculated`",
-          "description_cn": "修饰器事件魔法伤害计算"
+          "description_cn": "魔法伤害计算"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTACKED",
           "value": 216,
           "description": "Method Name: `OnAttacked`",
-          "description_cn": "修饰器事件攻击"
+          "description_cn": "攻击"
         },
         {
           "name": "MODIFIER_EVENT_ON_DEATH",
@@ -16822,37 +16822,37 @@
           "name": "MODIFIER_EVENT_ON_DEATH_COMPLETED",
           "value": 218,
           "description": "Method Name: `OnDeathCompleted`",
-          "description_cn": "修饰器事件死亡法力值"
+          "description_cn": "死亡法力值"
         },
         {
           "name": "MODIFIER_EVENT_ON_RESPAWN",
           "value": 219,
           "description": "Method Name: `OnRespawn`",
-          "description_cn": "修饰器事件RE生成"
+          "description_cn": "RE生成"
         },
         {
           "name": "MODIFIER_EVENT_ON_SPENT_MANA",
           "value": 220,
           "description": "Method Name: `OnSpentMana`",
-          "description_cn": "修饰器事件速度"
+          "description_cn": "速度"
         },
         {
           "name": "MODIFIER_EVENT_ON_SPENT_HEALTH",
           "value": 221,
           "description": "Method Name: `OnSpentHealth`",
-          "description_cn": "修饰器事件速度"
+          "description_cn": "速度"
         },
         {
           "name": "MODIFIER_EVENT_ON_TELEPORTING",
           "value": 222,
           "description": "Method Name: `OnTeleporting`",
-          "description_cn": "修饰器事件传送G"
+          "description_cn": "传送G"
         },
         {
           "name": "MODIFIER_EVENT_ON_TELEPORTED",
           "value": 223,
           "description": "Method Name: `OnTeleported`",
-          "description_cn": "修饰器事件传送"
+          "description_cn": "传送"
         },
         {
           "name": "MODIFIER_EVENT_ON_SET_LOCATION",
@@ -16864,55 +16864,55 @@
           "name": "MODIFIER_EVENT_ON_HEALTH_GAINED",
           "value": 225,
           "description": "Method Name: `OnHealthGained`",
-          "description_cn": "修饰器事件生命GA"
+          "description_cn": "生命GA"
         },
         {
           "name": "MODIFIER_EVENT_ON_MANA_GAINED",
           "value": 226,
           "description": "Method Name: `OnManaGained`",
-          "description_cn": "修饰器事件法力GA"
+          "description_cn": "法力GA"
         },
         {
           "name": "MODIFIER_EVENT_ON_TAKEDAMAGE_KILLCREDIT",
           "value": 227,
           "description": "Method Name: `OnTakeDamageKillCredit`",
-          "description_cn": "修饰器事件受到伤害击杀暴击"
+          "description_cn": "受到伤害击杀暴击"
         },
         {
           "name": "MODIFIER_EVENT_ON_HERO_KILLED",
           "value": 228,
           "description": "Method Name: `OnHeroKilled`",
-          "description_cn": "修饰器事件英雄击杀"
+          "description_cn": "英雄击杀"
         },
         {
           "name": "MODIFIER_EVENT_ON_HEAL_RECEIVED",
           "value": 229,
           "description": "Method Name: `OnHealReceived`",
-          "description_cn": "修饰器事件治疗"
+          "description_cn": "治疗"
         },
         {
           "name": "MODIFIER_EVENT_ON_BUILDING_KILLED",
           "value": 230,
           "description": "Method Name: `OnBuildingKilled`",
-          "description_cn": "修饰器事件建筑击杀"
+          "description_cn": "建筑击杀"
         },
         {
           "name": "MODIFIER_EVENT_ON_MODEL_CHANGED",
           "value": 231,
           "description": "Method Name: `OnModelChanged`",
-          "description_cn": "修饰器事件悬挂"
+          "description_cn": "悬挂"
         },
         {
           "name": "MODIFIER_EVENT_ON_MODIFIER_ADDED",
           "value": 232,
           "description": "Method Name: `OnModifierAdded`",
-          "description_cn": "修饰器事件修饰器添加"
+          "description_cn": "Modifier添加"
         },
         {
           "name": "MODIFIER_EVENT_ON_MODIFIER_REMOVED",
           "value": 233,
           "description": "Method Name: `OnModifierRemoved`",
-          "description_cn": "修饰器事件修饰器"
+          "description_cn": "Modifier"
         },
         {
           "name": "MODIFIER_PROPERTY_TOOLTIP",
@@ -16924,103 +16924,103 @@
           "name": "MODIFIER_PROPERTY_MODEL_CHANGE",
           "value": 235,
           "description": "Method Name: `GetModifierModelChange`",
-          "description_cn": "修饰器属性悬挂"
+          "description_cn": "悬挂"
         },
         {
           "name": "MODIFIER_PROPERTY_MODEL_SCALE",
           "value": 236,
           "description": "Method Name: `GetModifierModelScale`",
-          "description_cn": "修饰器属性模型缩放"
+          "description_cn": "模型缩放"
         },
         {
           "name": "MODIFIER_PROPERTY_MODEL_SCALE_ANIMATE_TIME",
           "value": 237,
           "description": "Method Name: `GetModifierModelScaleAnimateTime`",
-          "description_cn": "修饰器属性模型缩放动画时间"
+          "description_cn": "模型缩放动画时间"
         },
         {
           "name": "MODIFIER_PROPERTY_MODEL_SCALE_USE_IN_OUT_EASE",
           "value": 238,
           "description": "Method Name: `GetModifierModelScaleUseInOutEase`",
-          "description_cn": "修饰器属性模型缩放使用离开缓动"
+          "description_cn": "模型缩放使用离开缓动"
         },
         {
           "name": "MODIFIER_PROPERTY_MODEL_SCALE_CONSTANT",
           "value": 239,
           "description": "Method Name: `GetModifierModelScaleConstant`",
-          "description_cn": "修饰器属性模型缩放常数"
+          "description_cn": "模型缩放常数"
         },
         {
           "name": "MODIFIER_PROPERTY_IS_SCEPTER",
           "value": 240,
           "description": "Applies scepter when this property is active\n\nMethod Name: `GetModifierScepter`.",
-          "description_cn": "修饰器属性"
+          "description_cn": "是否持有阿哈利姆神杖"
         },
         {
           "name": "MODIFIER_PROPERTY_IS_SHARD",
           "value": 241,
           "description": "Applies shard when this property is active\n\nMethod Name: `GetModifierShard`.",
-          "description_cn": "修饰器属性碎片"
+          "description_cn": "碎片"
         },
         {
           "name": "MODIFIER_PROPERTY_RADAR_COOLDOWN_REDUCTION",
           "value": 242,
           "description": "Method Name: `GetModifierRadarCooldownReduction`",
-          "description_cn": "修饰器属性天辉"
+          "description_cn": "天辉"
         },
         {
           "name": "MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS",
           "value": 243,
           "description": "Method Name: `GetActivityTranslationModifiers`",
-          "description_cn": "修饰器属性活动"
+          "description_cn": "活动"
         },
         {
           "name": "MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND",
           "value": 244,
           "description": "Method Name: `GetAttackSound`",
-          "description_cn": "修饰器属性攻击音效"
+          "description_cn": "攻击音效"
         },
         {
           "name": "MODIFIER_PROPERTY_LIFETIME_FRACTION",
           "value": 245,
           "description": "Method Name: `GetUnitLifetimeFraction`",
-          "description_cn": "修饰器属性生命时间FR动作I"
+          "description_cn": "生命时间FR动作I"
         },
         {
           "name": "MODIFIER_PROPERTY_PROVIDES_FOW_POSITION",
           "value": 246,
           "description": "Method Name: `GetModifierProvidesFOWVision`",
-          "description_cn": "修饰器属性提供战争迷雾位置"
+          "description_cn": "提供战争迷雾位置"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELLS_REQUIRE_HP",
           "value": 247,
           "description": "Method Name: `GetModifierSpellsRequireHP`",
-          "description_cn": "修饰器属性法术S需要"
+          "description_cn": "法术S需要"
         },
         {
           "name": "MODIFIER_PROPERTY_CONVERT_MANA_COST_TO_HEALTH_COST",
           "value": 248,
           "description": "Method Name: `GetModifierConvertManaCostToHealthCost`",
-          "description_cn": "修饰器属性转换法力消耗生命消耗"
+          "description_cn": "转换法力消耗生命消耗"
         },
         {
           "name": "MODIFIER_PROPERTY_FORCE_DRAW_MINIMAP",
           "value": 249,
           "description": "Method Name: `GetForceDrawOnMinimap`",
-          "description_cn": "修饰器属性CE绘制小地图"
+          "description_cn": "CE绘制小地图"
         },
         {
           "name": "MODIFIER_PROPERTY_DISABLE_TURNING",
           "value": 250,
           "description": "Method Name: `GetModifierDisableTurning`",
-          "description_cn": "修饰器属性禁用转身G"
+          "description_cn": "禁用转身G"
         },
         {
           "name": "MODIFIER_PROPERTY_IGNORE_CAST_ANGLE",
           "value": 251,
           "description": "Method Name: `GetModifierIgnoreCastAngle`",
-          "description_cn": "修饰器属性忽略施法角度"
+          "description_cn": "忽略施法角度"
         },
         {
           "name": "MODIFIER_PROPERTY_CHANGE_ABILITY_VALUE",
@@ -17032,19 +17032,19 @@
           "name": "MODIFIER_PROPERTY_OVERRIDE_ABILITY_SPECIAL",
           "value": 253,
           "description": "Method Name: `GetModifierOverrideAbilitySpecial`",
-          "description_cn": "修饰器属性覆盖技能特殊"
+          "description_cn": "覆盖技能特殊"
         },
         {
           "name": "MODIFIER_PROPERTY_OVERRIDE_ABILITY_SPECIAL_VALUE",
           "value": 254,
           "description": "Method Name: `GetModifierOverrideAbilitySpecialValue`",
-          "description_cn": "修饰器属性覆盖技能特殊值"
+          "description_cn": "覆盖技能特殊值"
         },
         {
           "name": "MODIFIER_PROPERTY_ABILITY_LAYOUT",
           "value": 255,
           "description": "Method Name: `GetModifierAbilityLayout`",
-          "description_cn": "修饰器属性技能"
+          "description_cn": "技能"
         },
         {
           "name": "MODIFIER_EVENT_ON_DOMINATED",
@@ -17062,199 +17062,199 @@
           "name": "MODIFIER_EVENT_ON_ASSIST",
           "value": 258,
           "description": "Method Name: `OnAssist`",
-          "description_cn": "修饰器事件T"
+          "description_cn": "T"
         },
         {
           "name": "MODIFIER_PROPERTY_TEMPEST_DOUBLE",
           "value": 259,
           "description": "Method Name: `GetModifierTempestDouble`",
-          "description_cn": "修饰器属性法力值"
+          "description_cn": "法力值"
         },
         {
           "name": "MODIFIER_PROPERTY_PRESERVE_PARTICLES_ON_MODEL_CHANGE",
           "value": 260,
           "description": "Method Name: `PreserveParticlesOnModelChanged`",
-          "description_cn": "修饰器属性抗性粒子悬挂"
+          "description_cn": "抗性粒子悬挂"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTACK_FINISHED",
           "value": 261,
           "description": "Method Name: `OnAttackFinished`",
-          "description_cn": "修饰器事件攻击FH"
+          "description_cn": "攻击FH"
         },
         {
           "name": "MODIFIER_PROPERTY_IGNORE_COOLDOWN",
           "value": 262,
           "description": "Method Name: `GetModifierIgnoreCooldown`",
-          "description_cn": "修饰器属性忽略冷却"
+          "description_cn": "忽略冷却"
         },
         {
           "name": "MODIFIER_PROPERTY_CAN_ATTACK_TREES",
           "value": 263,
           "description": "Method Name: `GetModifierCanAttackTrees`",
-          "description_cn": "修饰器属性攻击树木"
+          "description_cn": "攻击树木"
         },
         {
           "name": "MODIFIER_PROPERTY_VISUAL_Z_DELTA",
           "value": 264,
           "description": "Method Name: `GetVisualZDelta`",
-          "description_cn": "修饰器属性"
+          "description_cn": "视觉Z轴偏移"
         },
         {
           "name": "MODIFIER_PROPERTY_VISUAL_Z_SPEED_BASE_OVERRIDE",
           "value": 265,
           "description": "Method Name: `GetVisualZSpeedBaseOverride`",
-          "description_cn": "修饰器属性速度"
+          "description_cn": "速度"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_DAMAGE_ILLUSION",
           "value": 266,
           "description": null,
-          "description_cn": "修饰器属性传入伤害幻象"
+          "description_cn": "传入伤害幻象"
         },
         {
           "name": "MODIFIER_PROPERTY_DONT_GIVE_VISION_OF_ATTACKER",
           "value": 267,
           "description": "Method Name: `GetModifierNoVisionOfAttacker`",
-          "description_cn": "修饰器属性不要给予视野OF攻击ER"
+          "description_cn": "不要给予视野OF攻击ER"
         },
         {
           "name": "MODIFIER_PROPERTY_TOOLTIP2",
           "value": 268,
           "description": "Method Name: `OnTooltip2`",
-          "description_cn": "修饰器属性2"
+          "description_cn": "2"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTACK_RECORD_DESTROY",
           "value": 269,
           "description": "Method Name: `OnAttackRecordDestroy`",
-          "description_cn": "修饰器事件攻击随机征召销毁"
+          "description_cn": "攻击随机征召销毁"
         },
         {
           "name": "MODIFIER_EVENT_ON_PROJECTILE_OBSTRUCTION_HIT",
           "value": 270,
           "description": "Method Name: `OnProjectileObstructionHit`",
-          "description_cn": "修饰器事件弹道OB力量UI命中"
+          "description_cn": "弹道OB力量UI命中"
         },
         {
           "name": "MODIFIER_PROPERTY_SUPPRESS_TELEPORT",
           "value": 271,
           "description": "Method Name: `GetSuppressTeleport`",
-          "description_cn": "修饰器属性压制传送"
+          "description_cn": "压制传送"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTACK_CANCELLED",
           "value": 272,
           "description": "Method Name: `OnAttackCancelled`",
-          "description_cn": "修饰器事件攻击取消L"
+          "description_cn": "攻击取消L"
         },
         {
           "name": "MODIFIER_PROPERTY_SUPPRESS_CLEAVE",
           "value": 273,
           "description": "Method Name: `GetSuppressCleave`",
-          "description_cn": "修饰器属性压制分裂"
+          "description_cn": "压制分裂"
         },
         {
           "name": "MODIFIER_PROPERTY_BOT_ATTACK_SCORE_BONUS",
           "value": 274,
           "description": "Method Name: `BotAttackScoreBonus`",
-          "description_cn": "修饰器属性机器人攻击得分加成"
+          "description_cn": "机器人攻击得分加成"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACKSPEED_REDUCTION_PERCENTAGE",
           "value": 275,
           "description": "Method Name: `GetModifierAttackSpeedReductionPercentage`",
-          "description_cn": "修饰器属性攻击速度"
+          "description_cn": "攻击速度"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_REDUCTION_PERCENTAGE",
           "value": 276,
           "description": "Method Name: `GetModifierMoveSpeedReductionPercentage`",
-          "description_cn": "修饰器属性移动速度减免百分比"
+          "description_cn": "移动速度减免百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_WHILE_MOVING_TARGET",
           "value": 277,
           "description": null,
-          "description_cn": "修饰器属性攻击当目标"
+          "description_cn": "攻击当目标"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACKSPEED_PERCENTAGE",
           "value": 278,
           "description": "Method Name: `GetModifierAttackSpeedPercentage`",
-          "description_cn": "修饰器属性攻击速度"
+          "description_cn": "攻击速度"
         },
         {
           "name": "MODIFIER_EVENT_ON_ATTEMPT_PROJECTILE_DODGE",
           "value": 279,
           "description": "Method Name: `OnAttemptProjectileDodge`",
-          "description_cn": "修饰器事件法力值弹道闪避"
+          "description_cn": "法力值弹道闪避"
         },
         {
           "name": "MODIFIER_EVENT_ON_PREDEBUFF_APPLIED",
           "value": 280,
           "description": "Method Name: `OnPreDebuffApplied`",
-          "description_cn": "修饰器事件预增益"
+          "description_cn": "预增益"
         },
         {
           "name": "MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_STACKING",
           "value": 281,
           "description": "Method Name: `GetModifierPercentageCooldownStacking`",
-          "description_cn": "修饰器属性冷却百分比叠加"
+          "description_cn": "冷却百分比叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_SPELL_REDIRECT_TARGET",
           "value": 282,
           "description": "Method Name: `GetModifierSpellRedirectTarget`",
-          "description_cn": "修饰器属性法术RE夜魇目标"
+          "description_cn": "法术RE夜魇目标"
         },
         {
           "name": "MODIFIER_PROPERTY_TURN_RATE_CONSTANT",
           "value": 283,
           "description": "Method Name: `GetModifierTurnRateConstant`",
-          "description_cn": "修饰器属性转身速率常数"
+          "description_cn": "转身速率常数"
         },
         {
           "name": "MODIFIER_PROPERTY_PACK_RAT",
           "value": 284,
           "description": "Method Name: `GetModifierIsPackRat`",
-          "description_cn": "修饰器属性包"
+          "description_cn": "包"
         },
         {
           "name": "MODIFIER_PROPERTY_PHYSICALDAMAGEOUTGOING_PERCENTAGE",
           "value": 285,
           "description": "Method Name: `GetModifierPhysicalDamageOutgoing_Percentage`",
-          "description_cn": "修饰器属性伤害输出"
+          "description_cn": "伤害输出"
         },
         {
           "name": "MODIFIER_PROPERTY_KNOCKBACK_AMPLIFICATION_PERCENTAGE",
           "value": 286,
           "description": "Method Name: `GetModifierKnockbackAmplification_Percentage`",
-          "description_cn": "修饰器属性击退A法力值加成百分比"
+          "description_cn": "击退A法力值加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_HEALTHBAR_PIPS",
           "value": 287,
           "description": "Return value is a count of pips.\n\nMethod Name: `GetModifierHealthBarPips`.",
-          "description_cn": "修饰器属性替代突击步枪"
+          "description_cn": "替代突击步枪"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT",
           "value": 288,
           "description": "This property controls 'universal' shield, if defined both on client and server. Return value on client should be current shield health, as a positive integer, on server - amount of damage blocked.\n\nMethod Name: `GetModifierIncomingDamageConstant`.",
-          "description_cn": "修饰器属性传入伤害常数"
+          "description_cn": "传入伤害常数"
         },
         {
           "name": "MODIFIER_EVENT_SPELL_APPLIED_SUCCESSFULLY",
           "value": 289,
           "description": "Method Name: `OnSpellAppliedSuccessfully`",
-          "description_cn": "修饰器事件法术"
+          "description_cn": "法术"
         },
         {
           "name": "MODIFIER_PROPERTY_AVOID_DAMAGE_AFTER_REDUCTIONS",
           "value": 290,
           "description": "Method Name: `GetModifierAvoidDamageAfterReductions`",
-          "description_cn": "修饰器属性避免伤害"
+          "description_cn": "避免伤害"
         },
         {
           "name": "MODIFIER_PROPERTY_FAIL_ATTACK",
@@ -17266,133 +17266,133 @@
           "name": "MODIFIER_PROPERTY_PREREDUCE_INCOMING_DAMAGE_MULT",
           "value": 292,
           "description": "Method Name: `GetModifierPrereduceIncomingDamage_Mult`",
-          "description_cn": "修饰器属性预传入伤害"
+          "description_cn": "预传入伤害"
         },
         {
           "name": "MODIFIER_PROPERTY_SUPPRESS_FULLSCREEN_DEATH_FX",
           "value": 293,
           "description": "Method Name: `GetModifierSuppressFullscreenDeathFX`",
-          "description_cn": "修饰器属性压制死亡特效"
+          "description_cn": "压制死亡特效"
         },
         {
           "name": "MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT_POST",
           "value": 294,
           "description": "Method Name: `MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT_POST`",
-          "description_cn": "修饰器属性传入伤害常数后"
+          "description_cn": "传入伤害常数后"
         },
         {
           "name": "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE_MULTIPLICATIVE",
           "value": 295,
           "description": "Method Name: `GetModifierDamageOutgoing_PercentageMultiplicative`",
-          "description_cn": "修饰器属性伤害输出"
+          "description_cn": "伤害输出"
         },
         {
           "name": "MODIFIER_PROPERTY_TICK_GOLD_MULTIPLIER",
           "value": 296,
           "description": "Method Name: `GetModifierTickGold_Multiplier`",
-          "description_cn": "修饰器属性刻度金钱多重钳子"
+          "description_cn": "刻度金币多重钳子"
         },
         {
           "name": "MODIFIER_PROPERTY_SLOW_RESISTANCE_UNIQUE",
           "value": 297,
           "description": "Method Name: `GEtModifierSlowResistance_Unique`",
-          "description_cn": "修饰器属性减速抗性唯一"
+          "description_cn": "减速抗性唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_SLOW_RESISTANCE_STACKING",
           "value": 298,
           "description": "Method Name: `GetModifierSlowResistance_Stacking`",
-          "description_cn": "修饰器属性减速抗性叠加"
+          "description_cn": "减速抗性叠加"
         },
         {
           "name": "MODIFIER_PROPERTY_SLOW_RESISTANCE_APPLIES_TO_ATTACKS",
           "value": 299,
           "description": "Method Name: `GetModifierSlowResistanceAppliesToAttacks`",
-          "description_cn": "修饰器属性减速抗性攻击"
+          "description_cn": "减速抗性攻击"
         },
         {
           "name": "MODIFIER_PROPERTY_AOE_BONUS_PERCENTAGE",
           "value": 300,
           "description": "Method Name: `GetModifierAoEBonusPercentage`",
-          "description_cn": "修饰器属性范围效果加成百分比"
+          "description_cn": "范围效果加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_PROJECTILE_SPEED",
           "value": 301,
           "description": "Method Name: `GetModifierProjectileSpeed`",
-          "description_cn": "修饰器属性弹道速度"
+          "description_cn": "弹道速度"
         },
         {
           "name": "MODIFIER_PROPERTY_PROJECTILE_SPEED_TARGET",
           "value": 302,
           "description": "Method Name: `GetModifierProjectileSpeedTarget`",
-          "description_cn": "修饰器属性弹道速度"
+          "description_cn": "弹道速度"
         },
         {
           "name": "MODIFIER_PROPERTY_BECOME_STRENGTH",
           "value": 303,
           "description": "Method Name: `GetModifierBecomeStrength`",
-          "description_cn": "修饰器属性变为力量"
+          "description_cn": "变为力量"
         },
         {
           "name": "MODIFIER_PROPERTY_BECOME_AGILITY",
           "value": 304,
           "description": "Method Name: `GetModifierBecomeAgility`",
-          "description_cn": "修饰器属性变为敏捷"
+          "description_cn": "变为敏捷"
         },
         {
           "name": "MODIFIER_PROPERTY_BECOME_INTELLIGENCE",
           "value": 305,
           "description": "Method Name: `GetModifierBecomeIntelligence`",
-          "description_cn": "修饰器属性变为智力"
+          "description_cn": "变为智力"
         },
         {
           "name": "MODIFIER_PROPERTY_BECOME_UNIVERSAL",
           "value": 306,
           "description": "Method Name: `GetModifierBecomeUniversal`",
-          "description_cn": "修饰器属性变为"
+          "description_cn": "变为"
         },
         {
           "name": "MODIFIER_EVENT_ON_FORCE_PROC_MAGIC_STICK",
           "value": 307,
           "description": "Method Name: `OnForceProcMagicStick`",
-          "description_cn": "修饰器事件触发魔法"
+          "description_cn": "触发魔法"
         },
         {
           "name": "MODIFIER_EVENT_ON_DAMAGE_HPLOSS",
           "value": 308,
           "description": "Method Name: `OnDamageHPLoss`",
-          "description_cn": "修饰器事件伤害生命值视线S"
+          "description_cn": "伤害生命值视线S"
         },
         {
           "name": "MODIFIER_PROPERTY_SHARE_XPRUNE",
           "value": 309,
           "description": "Method Name: `GetModifierShareXPRune`",
-          "description_cn": "修饰器属性SH突击步枪经验奔跑E"
+          "description_cn": "SH突击步枪经验奔跑E"
         },
         {
           "name": "MODIFIER_PROPERTY_XP_FOUNTAIN_COUNTDOWN_TIME_OVERRIDE",
           "value": 310,
           "description": "Method Name: `GetModifierXPFountainCountdownTimeOverride`",
-          "description_cn": "修饰器属性经验泉水数量下时间覆盖"
+          "description_cn": "经验泉水数量下时间覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_NO_FREE_TP_SCROLL_ON_DEATH",
           "value": 311,
           "description": "Method Name: `GetModifierNoFreeTPScrollOnDeath`",
-          "description_cn": "修饰器属性无翻滚死亡"
+          "description_cn": "无翻滚死亡"
         },
         {
           "name": "MODIFIER_PROPERTY_HAS_BONUS_NEUTRAL_ITEM_CHOICE",
           "value": 312,
           "description": "Method Name: `GetModifierHasBonusNeutralItemChoice`",
-          "description_cn": "修饰器属性加成中立物品"
+          "description_cn": "加成中立物品"
         },
         {
           "name": "MODIFIER_PROPERTY_PRESERVE_NEUTRAL_ITEM_PASSIVES",
           "value": 313,
           "description": "Method Name: `GetModifierPreserveNeutralItemPassives`",
-          "description_cn": "修饰器属性抗性中立物品被动技能"
+          "description_cn": "抗性中立物品被动技能"
         },
         {
           "name": "MODIFIER_PROPERTY_FORCE_MAX_HEALTH",
@@ -17416,73 +17416,73 @@
           "name": "MODIFIER_PROPERTY_AOE_BONUS_CONSTANT_STACKING",
           "value": 317,
           "description": "Method Name: `GetModifierAoEBonusConstantStacking`",
-          "description_cn": "修饰器属性范围效果加成常数叠加"
+          "description_cn": "范围效果加成常数叠加"
         },
         {
           "name": "MODIFIER_EVENT_ON_TAKEDAMAGE_POST_UNAVOIDABLE_BLOCK",
           "value": 318,
           "description": "Method Name: `OnTakeDamagePostUnavoidableBlock`",
-          "description_cn": "修饰器事件受到伤害后避免格挡"
+          "description_cn": "受到伤害后避免格挡"
         },
         {
           "name": "MODIFIER_EVENT_ON_MUTE_DAMAGE_ABILITIES",
           "value": 319,
           "description": "Method Name: `OnMuteDamageAbilities`",
-          "description_cn": "修饰器事件物品沉默伤害技能"
+          "description_cn": "物品沉默伤害技能"
         },
         {
           "name": "MODIFIER_PROPERTY_SUPPRESS_CRIT",
           "value": 320,
           "description": "Method Name: `GetSuppressCrit`",
-          "description_cn": "修饰器属性压制暴击"
+          "description_cn": "压制暴击"
         },
         {
           "name": "MODIFIER_PROPERTY_ABILITY_POINTS",
           "value": 321,
           "description": "Method Name: `GetModifierAbilityPoints`",
-          "description_cn": "修饰器属性技能锅"
+          "description_cn": "技能锅"
         },
         {
           "name": "MODIFIER_PROPERTY_BUYBACK_PENALTY_PERCENT",
           "value": 322,
           "description": "Method Name: `GetModifierBuybackPenaltyPercent`",
-          "description_cn": "修饰器属性买活惩罚百分比"
+          "description_cn": "买活惩罚百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_ITEM_SELLBACK_COST",
           "value": 323,
           "description": "Method Name: `GetModifierItemSellbackCost`",
-          "description_cn": "修饰器属性物品出售背部消耗"
+          "description_cn": "物品出售背部消耗"
         },
         {
           "name": "MODIFIER_PROPERTY_DISASSEMBLE_ANYTHING",
           "value": 324,
           "description": "Method Name: `GetModifierDisassembleAnything`",
-          "description_cn": "修饰器属性拆解"
+          "description_cn": "拆解"
         },
         {
           "name": "MODIFIER_PROPERTY_FIXED_MANA_REGEN",
           "value": 325,
           "description": "Method Name: `GetModifierFixedManaRegen`",
-          "description_cn": "修饰器属性法力恢复"
+          "description_cn": "法力恢复"
         },
         {
           "name": "MODIFIER_PROPERTY_BONUS_UPHILL_MISS_CHANCE",
           "value": 326,
           "description": "Method Name: `GetModifierBonusUphillMissChance`",
-          "description_cn": "修饰器属性加成上"
+          "description_cn": "加成上"
         },
         {
           "name": "MODIFIER_PROPERTY_CREEP_DENY_PERCENT",
           "value": 327,
           "description": "Method Name: `GetModifierCreepDenyPercent`",
-          "description_cn": "修饰器属性小兵反补百分比"
+          "description_cn": "小兵反补百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACKSPEED_ABSOLUTE_MAX",
           "value": 328,
           "description": "Method Name: `GetModifierAttackSpeedAbsoluteMax`",
-          "description_cn": "修饰器属性攻击速度"
+          "description_cn": "攻击速度"
         },
         {
           "name": "MODIFIER_PROPERTY_FOW_TEAM",
@@ -17494,55 +17494,55 @@
           "name": "MODIFIER_EVENT_ON_HERO_BEGIN_DYING",
           "value": 330,
           "description": "Method Name: `OnHeroBeginDying`",
-          "description_cn": "修饰器事件英雄"
+          "description_cn": "英雄"
         },
         {
           "name": "MODIFIER_PROPERTY_BONUS_LOTUS_HEAL",
           "value": 331,
           "description": "Method Name: `GetModifierBonusLotusHeal`",
-          "description_cn": "修饰器属性加成治疗"
+          "description_cn": "加成治疗"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_HP_REGEN_PER_STR_BONUS_PERCENTAGE",
           "value": 332,
           "description": "Method Name: `GetModifierBonusLotusHeal`",
-          "description_cn": "修饰器属性基础生命值恢复力量加成百分比"
+          "description_cn": "基础生命值恢复力量加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_ARMOR_PER_AGI_BONUS_PERCENTAGE",
           "value": 333,
           "description": "Method Name: `GetModifierBonusLotusHeal`",
-          "description_cn": "修饰器属性基础护甲敏捷加成百分比"
+          "description_cn": "基础护甲敏捷加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_MP_REGEN_PER_INT_BONUS_PERCENTAGE",
           "value": 334,
           "description": "Method Name: `GetModifierBonusLotusHeal`",
-          "description_cn": "修饰器属性基础法力值恢复加成百分比"
+          "description_cn": "基础法力值恢复加成百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_BASE_MRES_PER_INT_BONUS_PERCENTAGE",
           "value": 335,
           "description": "Method Name: `GetModifierBonusLotusHeal`",
-          "description_cn": "修饰器属性基础速度"
+          "description_cn": "基础速度"
         },
         {
           "name": "MODIFIER_EVENT_ON_DAY_STARTED",
           "value": 336,
           "description": "Method Name: `OnDayStarted`",
-          "description_cn": "修饰器事件突击步枪"
+          "description_cn": "突击步枪"
         },
         {
           "name": "MODIFIER_EVENT_ON_NIGHT_STARTED",
           "value": 337,
           "description": "Method Name: `OnNightStarted`",
-          "description_cn": "修饰器事件突击步枪"
+          "description_cn": "突击步枪"
         },
         {
           "name": "MODIFIER_PROPERTY_CREATE_BONUS_ILLUSION_CHANCE",
           "value": 338,
           "description": "Method Name: `GetModifierCreateBonusIllusionChance`",
-          "description_cn": "修饰器属性创建加成幻象"
+          "description_cn": "创建加成幻象"
         },
         {
           "name": "MODIFIER_PROPERTY_CREATE_BONUS_ILLUSION_COUNT",
@@ -17554,7 +17554,7 @@
           "name": "MODIFIER_PROPERTY_PSEUDORANDOM_BONUS",
           "value": 340,
           "description": "Method Name: `GetModofierPropertyPseudoRandomBonus`",
-          "description_cn": "修饰器属性伪随机加成"
+          "description_cn": "伪随机加成"
         },
         {
           "name": "MODIFIER_PROPERTY_ATTACK_HEIGHT_BONUS",
@@ -17566,121 +17566,121 @@
           "name": "MODIFIER_PROPERTY_SKIP_ATTACK_REGULATOR",
           "value": 342,
           "description": "Method Name: `GetSkipAttackRegulator`",
-          "description_cn": "修饰器属性跳过攻击恢复UL突击步枪"
+          "description_cn": "跳过攻击恢复UL突击步枪"
         },
         {
           "name": "MODIFIER_PROPERTY_MISS_PERCENTAGE_TARGET",
           "value": 343,
           "description": "Method Name: `GetModifierMiss_Percentage_Target`",
-          "description_cn": "修饰器属性MS百分比目标"
+          "description_cn": "MS百分比目标"
         },
         {
           "name": "MODIFIER_PROPERTY_ADDITIONAL_NEUTRAL_ITEM_DROPS",
           "value": 344,
           "description": "Method Name: `GetModifierAdditionalNutralItemDrops`",
-          "description_cn": "修饰器属性添加中立物品丢弃"
+          "description_cn": "添加中立物品丢弃"
         },
         {
           "name": "MODIFIER_PROPERTY_KILL_STREAK_BONUS_GOLD_PERCENTAGE",
           "value": 345,
           "description": "Method Name: `GetModifierKillStreakBonusGoldPercentage`",
-          "description_cn": "修饰器属性击杀连杀加成金钱百分比"
+          "description_cn": "击杀连杀加成金币百分比"
         },
         {
           "name": "MODIFIER_PROPERTY_HP_REGEN_MULTIPLIER_PRE_AMPLIFICATION",
           "value": 346,
           "description": "Method Name: `GetModifierHPRegenMultiplierPreAmplification`",
-          "description_cn": "修饰器属性生命值恢复多重钳子前A法力值加成"
+          "description_cn": "生命值恢复多重钳子前A法力值加成"
         },
         {
           "name": "MODIFIER_PROPERTY_HEROFACET_OVERRIDE",
           "value": 347,
           "description": "Method Name: `GetModifierHeroFacetOverride`",
-          "description_cn": "修饰器属性脸覆盖"
+          "description_cn": "脸覆盖"
         },
         {
           "name": "MODIFIER_EVENT_ON_TREE_CUT_DOWN",
           "value": 348,
           "description": "Method Name: `OnTreeCutDown`",
-          "description_cn": "修饰器事件树木下"
+          "description_cn": "树木下"
         },
         {
           "name": "MODIFIER_EVENT_ON_CLEAVE_ATTACK_LANDED",
           "value": 349,
           "description": "Method Name: `OnCleaveAttackLanded`",
-          "description_cn": "修饰器事件分裂攻击着陆"
+          "description_cn": "分裂攻击着陆"
         },
         {
           "name": "MODIFIER_PROPERTY_MIN_ATTRIBUTE_LEVEL",
           "value": 350,
           "description": "Method Name: `MinAttributeLevel`",
-          "description_cn": "修饰器属性M属性等级"
+          "description_cn": "M属性等级"
         },
         {
           "name": "MODIFIER_PROPERTY_TIER_TOKEN_REROLL",
           "value": 351,
           "description": "Method Name: `GetTierTokenReroll`",
-          "description_cn": "修饰器属性层级翻滚"
+          "description_cn": "层级翻滚"
         },
         {
           "name": "MODIFIER_PROPERTY_VISION_DEGREES_RESTRICTION",
           "value": 352,
           "description": "Method Name: `GetVisionDegreeRestriction`",
-          "description_cn": "修饰器属性视野力量"
+          "description_cn": "视野力量"
         },
         {
           "name": "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_STACKING",
           "value": 353,
           "description": "Method Name: `GetModifierTotal_ConstantBlockStacking`",
-          "description_cn": "修饰器属性总"
+          "description_cn": "总"
         },
         {
           "name": "MODIFIER_PROPERTY_INVENTORY_SLOT_RESTRICTED",
           "value": 354,
           "description": "Method Name: `GetModifierInventorySlotRestricted`",
-          "description_cn": "修饰器属性物品栏槽位受限"
+          "description_cn": "物品栏槽位受限"
         },
         {
           "name": "MODIFIER_EVENT_ON_TIER_TOKEN_REROLLED",
           "value": 355,
           "description": "Method Name: `OnTierTokenRerolled`",
-          "description_cn": "修饰器事件层级翻滚"
+          "description_cn": "层级翻滚"
         },
         {
           "name": "MODIFIER_PROPERTY_REDIRECT_SPELL",
           "value": 356,
           "description": "Method Name: `GetRedirectSpell`",
-          "description_cn": "修饰器属性RE夜魇法术"
+          "description_cn": "RE夜魇法术"
         },
         {
           "name": "MODIFIER_PROPERTY_BASEATTACK_POSTBONUS",
           "value": 357,
           "description": "Method Name: `GetBaseAttackPostBonus`",
-          "description_cn": "修饰器属性基础攻击位置"
+          "description_cn": "基础攻击位置"
         },
         {
           "name": "MODIFIER_EVENT_ON_FOW_TEAM_CHANGED",
           "value": 358,
           "description": "Method Name: `OnFoWTeamChanged`",
-          "description_cn": "修饰器事件战争迷雾队伍C悬挂"
+          "description_cn": "战争迷雾队伍C悬挂"
         },
         {
           "name": "MODIFIER_PROPERTY_SUPPRESS_ATTACK_PROCS",
           "value": 359,
           "description": "Method Name: `GetSuppressAttackProcs`",
-          "description_cn": "修饰器属性压制攻击触发S"
+          "description_cn": "压制攻击触发S"
         },
         {
           "name": "MODIFIER_EVENT_ON_ABILITY_TOGGLED",
           "value": 360,
           "description": "Method Name: `OnAbilityToggled`",
-          "description_cn": "修饰器事件技能"
+          "description_cn": "技能"
         },
         {
           "name": "MODIFIER_PROPERTY_AVOID_ATTACK_PROCS",
           "value": 361,
           "description": "Method Name: `GetModifierAvoidAttackProcs`",
-          "description_cn": "修饰器属性避免攻击触发S"
+          "description_cn": "避免攻击触发S"
         },
         {
           "name": "MODIFIER_EVENT_ON_RUNE_SPAWN",
@@ -17692,85 +17692,85 @@
           "name": "MODIFIER_PROPERTY_PHYSICAL_LIFESTEAL",
           "value": 363,
           "description": "Method Name: `GetModifierProperty_PhysicalLifesteal`",
-          "description_cn": "修饰器属性物理吸血"
+          "description_cn": "物理吸血"
         },
         {
           "name": "MODIFIER_PROPERTY_MAGICAL_LIFESTEAL",
           "value": 364,
           "description": "Method Name: `GetModifierProperty_MagicalLifesteal`",
-          "description_cn": "修饰器属性魔法吸血"
+          "description_cn": "魔法吸血"
         },
         {
           "name": "MODIFIER_EVENT_ON_PURE_DAMAGE_CALCULATED",
           "value": 365,
           "description": "Method Name: `OnPureDamageCalculated`",
-          "description_cn": "修饰器事件纯粹伤害计算"
+          "description_cn": "纯粹伤害计算"
         },
         {
           "name": "MODIFIER_EVENT_NEUTRAL_TRINKET_OPTIONS",
           "value": 366,
           "description": "Method Name: `GetModifierNeutralTrinketOptions`",
-          "description_cn": "修饰器事件中立"
+          "description_cn": "中立"
         },
         {
           "name": "MODIFIER_EVENT_NEUTRAL_ENHANCEMENT_OPTIONS",
           "value": 367,
           "description": "Method Name: `GetModifierNeutralEnhancementOptions`",
-          "description_cn": "修饰器事件中立"
+          "description_cn": "中立"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_MAX_BONUS_CONSTANT",
           "value": 368,
           "description": "Method Name: `GetModifierMoveSpeedMax_BonusConstant`",
-          "description_cn": "修饰器属性移动速度最大加成常数"
+          "description_cn": "移动速度最大加成常数"
         },
         {
           "name": "MODIFIER_PROPERTY_MOVESPEED_POST_MULTIPLIER_BONUS_CONSTANT",
           "value": 369,
           "description": "Method Name: `GetModifierMoveSpeedPostMultiplierBonus_Constant `",
-          "description_cn": "修饰器属性移动速度后多重钳子加成常数"
+          "description_cn": "移动速度后多重钳子加成常数"
         },
         {
           "name": "MODIFIER_PROPERTY_FORBID_ILLUSIONS",
           "value": 370,
           "description": "Method Name: `GetModifierPropertyForbidIllusions`",
-          "description_cn": "修饰器属性禁止幻象"
+          "description_cn": "禁止幻象"
         },
         {
           "name": "MODIFIER_PROPERTY_MANACOST_OVERRIDE",
           "value": 371,
           "description": "Method Name: `GetModifierPropertyManacostOverride`",
-          "description_cn": "修饰器属性法力消耗覆盖"
+          "description_cn": "法力消耗覆盖"
         },
         {
           "name": "MODIFIER_PROPERTY_RESTORATION_AMPLIFICATION",
           "value": 372,
           "description": "Method Name: `GetModifierPropertyRestorationAmplification`",
-          "description_cn": "修饰器属性抗性法力值加成"
+          "description_cn": "抗性法力值加成"
         },
         {
           "name": "MODIFIER_PROPERTY_RESTORATION_AMPLIFICATION_UNIQUE",
           "value": 373,
           "description": "Method Name: `GetModifierPropertyRestorationAmplificationUnique`",
-          "description_cn": "修饰器属性抗性法力值加成唯一"
+          "description_cn": "抗性法力值加成唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_SOURCE_UNIQUE",
           "value": 374,
           "description": "Method Name: `GetModifierPropertyHealingAmplificationUnique`",
-          "description_cn": "修饰器属性治疗增强百分比来源唯一"
+          "description_cn": "治疗增强百分比来源唯一"
         },
         {
           "name": "MODIFIER_PROPERTY_SUPPRESS_INCOMING_CRIT",
           "value": 375,
           "description": "Method Name: `GetSuppressIncomingCrit`",
-          "description_cn": "修饰器属性压制传入暴击"
+          "description_cn": "压制传入暴击"
         },
         {
           "name": "MODIFIER_PROPERTY_UPGRADE_NEUTRAL_ARTIFACTS",
           "value": 376,
           "description": "Method Name: `GetModifierPropertyUpgradeNeutralArtifacts`",
-          "description_cn": "修饰器属性上G天辉"
+          "description_cn": "上G天辉"
         },
         {
           "name": "MODIFIER_PROPERTY_CONSUMABLE_USE_SPEED",
@@ -17782,7 +17782,7 @@
           "name": "MODIFIER_PROPERTY_FORCE_NETWORK_TRANSMIT",
           "value": 378,
           "description": null,
-          "description_cn": "修饰器属性"
+          "description_cn": "强制网络传输"
         },
         {
           "name": "MODIFIER_FUNCTION_LAST",
@@ -17797,7 +17797,7 @@
           "description_cn": "函数无效"
         }
       ],
-      "name_cn": "修饰器函数",
+      "name_cn": "Modifier函数",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",
@@ -17846,7 +17846,7 @@
           "description_cn": "最高优先级"
         }
       ],
-      "name_cn": "修饰器优先级",
+      "name_cn": "Modifier优先级",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",
@@ -17883,7 +17883,7 @@
           "description_cn": "增益移除盟友"
         }
       ],
-      "name_cn": "修饰器移除类型",
+      "name_cn": "Modifier移除类型",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",
@@ -17905,394 +17905,394 @@
           "name": "MODIFIER_STATE_ROOTED",
           "value": 0,
           "description": null,
-          "description_cn": "状态被缠绕"
+          "description_cn": "缠绕"
         },
         {
           "name": "MODIFIER_STATE_DISARMED",
           "value": 1,
           "description": null,
-          "description_cn": "状态被缴械"
+          "description_cn": "缴械"
         },
         {
           "name": "MODIFIER_STATE_ATTACK_IMMUNE",
           "value": 2,
           "description": null,
-          "description_cn": "状态攻击免疫"
+          "description_cn": "攻击免疫"
         },
         {
           "name": "MODIFIER_STATE_SILENCED",
           "value": 3,
           "description": null,
-          "description_cn": "状态被沉默"
+          "description_cn": "沉默"
         },
         {
           "name": "MODIFIER_STATE_MUTED",
           "value": 4,
           "description": null,
-          "description_cn": "状态被物品沉默"
+          "description_cn": "被压制（物品禁用）"
         },
         {
           "name": "MODIFIER_STATE_STUNNED",
           "value": 5,
           "description": null,
-          "description_cn": "状态被眩晕"
+          "description_cn": "眩晕"
         },
         {
           "name": "MODIFIER_STATE_HEXED",
           "value": 6,
           "description": null,
-          "description_cn": "状态被妖术"
+          "description_cn": "妖术"
         },
         {
           "name": "MODIFIER_STATE_INVISIBLE",
           "value": 7,
           "description": null,
-          "description_cn": "状态隐身"
+          "description_cn": "隐身"
         },
         {
           "name": "MODIFIER_STATE_INVULNERABLE",
           "value": 8,
           "description": null,
-          "description_cn": "状态无敌"
+          "description_cn": "无敌"
         },
         {
           "name": "MODIFIER_STATE_MAGIC_IMMUNE",
           "value": 9,
           "description": null,
-          "description_cn": "状态魔法免疫"
+          "description_cn": "魔法免疫"
         },
         {
           "name": "MODIFIER_STATE_PROVIDES_VISION",
           "value": 10,
           "description": null,
-          "description_cn": "修饰器状态提供视野"
+          "description_cn": "提供视野"
         },
         {
           "name": "MODIFIER_STATE_NIGHTMARED",
           "value": 11,
           "description": null,
-          "description_cn": "状态噩梦状态"
+          "description_cn": "噩梦"
         },
         {
           "name": "MODIFIER_STATE_BLOCK_DISABLED",
           "value": 12,
           "description": null,
-          "description_cn": "修饰器状态格挡被禁用"
+          "description_cn": "格挡禁用"
         },
         {
           "name": "MODIFIER_STATE_EVADE_DISABLED",
           "value": 13,
           "description": null,
-          "description_cn": "修饰器状态闪避被禁用"
+          "description_cn": "闪避禁用"
         },
         {
           "name": "MODIFIER_STATE_UNSELECTABLE",
           "value": 14,
           "description": null,
-          "description_cn": "修饰器状态不可选中"
+          "description_cn": "不可选中"
         },
         {
           "name": "MODIFIER_STATE_CANNOT_TARGET_ENEMIES",
           "value": 15,
           "description": null,
-          "description_cn": "修饰器状态无法目标敌人"
+          "description_cn": "无法选择敌人"
         },
         {
           "name": "MODIFIER_STATE_CANNOT_TARGET_BUILDINGS",
           "value": 16,
           "description": null,
-          "description_cn": "修饰器状态无法目标建筑"
+          "description_cn": "Modifier状态无法目标建筑"
         },
         {
           "name": "MODIFIER_STATE_CANNOT_MISS",
           "value": 17,
           "description": null,
-          "description_cn": "修饰器状态无法MS"
+          "description_cn": "必中"
         },
         {
           "name": "MODIFIER_STATE_SPECIALLY_DENIABLE",
           "value": 18,
           "description": null,
-          "description_cn": "修饰器状态特殊可反补"
+          "description_cn": "可被反补"
         },
         {
           "name": "MODIFIER_STATE_FROZEN",
           "value": 19,
           "description": null,
-          "description_cn": "修饰器状态被冻结"
+          "description_cn": "冻结"
         },
         {
           "name": "MODIFIER_STATE_COMMAND_RESTRICTED",
           "value": 20,
           "description": null,
-          "description_cn": "修饰器状态命令受限"
+          "description_cn": "指令受限"
         },
         {
           "name": "MODIFIER_STATE_NOT_ON_MINIMAP",
           "value": 21,
           "description": null,
-          "description_cn": "修饰器状态不小地图"
+          "description_cn": "小地图不可见"
         },
         {
           "name": "MODIFIER_STATE_LOW_ATTACK_PRIORITY",
           "value": 22,
           "description": null,
-          "description_cn": "状态低攻击优先级"
+          "description_cn": "低攻击优先级"
         },
         {
           "name": "MODIFIER_STATE_NO_HEALTH_BAR",
           "value": 23,
           "description": null,
-          "description_cn": "修饰器状态无生命条"
+          "description_cn": "无血条"
         },
         {
           "name": "MODIFIER_STATE_NO_HEALTH_BAR_FOR_ENEMIES",
           "value": 24,
           "description": null,
-          "description_cn": "修饰器状态无生命条敌人"
+          "description_cn": "敌方无血条"
         },
         {
           "name": "MODIFIER_STATE_NO_HEALTH_BAR_FOR_OTHER_PLAYERS",
           "value": 25,
           "description": null,
-          "description_cn": "修饰器状态无生命条其他P层S"
+          "description_cn": "Modifier状态无生命条其他P层S"
         },
         {
           "name": "MODIFIER_STATE_FLYING",
           "value": 26,
           "description": null,
-          "description_cn": "状态飞行"
+          "description_cn": "飞行"
         },
         {
           "name": "MODIFIER_STATE_NO_UNIT_COLLISION",
           "value": 27,
           "description": null,
-          "description_cn": "修饰器状态无单位"
+          "description_cn": "无碰撞体积"
         },
         {
           "name": "MODIFIER_STATE_NO_TEAM_MOVE_TO",
           "value": 28,
           "description": null,
-          "description_cn": "修饰器状态无队伍移动"
+          "description_cn": "无法被队友移动到"
         },
         {
           "name": "MODIFIER_STATE_NO_TEAM_SELECT",
           "value": 29,
           "description": null,
-          "description_cn": "修饰器状态无队伍选择"
+          "description_cn": "无法被队友选中"
         },
         {
           "name": "MODIFIER_STATE_PASSIVES_DISABLED",
           "value": 30,
           "description": null,
-          "description_cn": "修饰器状态被动技能被禁用"
+          "description_cn": "被动禁用"
         },
         {
           "name": "MODIFIER_STATE_DOMINATED",
           "value": 31,
           "description": null,
-          "description_cn": "状态被支配"
+          "description_cn": "被支配"
         },
         {
           "name": "MODIFIER_STATE_BLIND",
           "value": 32,
           "description": null,
-          "description_cn": "修饰器状态致盲"
+          "description_cn": "致盲"
         },
         {
           "name": "MODIFIER_STATE_OUT_OF_GAME",
           "value": 33,
           "description": null,
-          "description_cn": "修饰器状态离开OF游戏"
+          "description_cn": "游戏外"
         },
         {
           "name": "MODIFIER_STATE_FAKE_ALLY",
           "value": 34,
           "description": null,
-          "description_cn": "修饰器状态假友方"
+          "description_cn": "伪装友军"
         },
         {
           "name": "MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY",
           "value": 35,
           "description": null,
-          "description_cn": "修饰器状态飞行姿势仅"
+          "description_cn": "仅用于寻路的飞行"
         },
         {
           "name": "MODIFIER_STATE_TRUESIGHT_IMMUNE",
           "value": 36,
           "description": null,
-          "description_cn": "修饰器状态真视免疫"
+          "description_cn": "真视免疫"
         },
         {
           "name": "MODIFIER_STATE_UNTARGETABLE",
           "value": 37,
           "description": null,
-          "description_cn": "修饰器状态不可作为目标"
+          "description_cn": "不可作为目标"
         },
         {
           "name": "MODIFIER_STATE_UNTARGETABLE_ALLIED",
           "value": 38,
           "description": null,
-          "description_cn": "修饰器状态不可作为目标"
+          "description_cn": "Modifier状态不可作为目标"
         },
         {
           "name": "MODIFIER_STATE_UNTARGETABLE_ENEMY",
           "value": 39,
           "description": null,
-          "description_cn": "修饰器状态不可作为目标敌方"
+          "description_cn": "Modifier状态不可作为目标敌方"
         },
         {
           "name": "MODIFIER_STATE_UNTARGETABLE_SELF",
           "value": 40,
           "description": null,
-          "description_cn": "修饰器状态不可作为目标"
+          "description_cn": "Modifier状态不可作为目标"
         },
         {
           "name": "MODIFIER_STATE_IGNORING_MOVE_AND_ATTACK_ORDERS",
           "value": 41,
           "description": null,
-          "description_cn": "修饰器状态忽略移动A攻击命令"
+          "description_cn": "忽略移动和攻击指令"
         },
         {
           "name": "MODIFIER_STATE_ALLOW_PATHING_THROUGH_TREES",
           "value": 42,
           "description": null,
-          "description_cn": "修饰器状态允许穿过树木"
+          "description_cn": "允许穿越树木"
         },
         {
           "name": "MODIFIER_STATE_NOT_ON_MINIMAP_FOR_ENEMIES",
           "value": 43,
           "description": null,
-          "description_cn": "修饰器状态不小地图敌人"
+          "description_cn": "敌方小地图不可见"
         },
         {
           "name": "MODIFIER_STATE_UNSLOWABLE",
           "value": 44,
           "description": null,
-          "description_cn": "修饰器状态减速"
+          "description_cn": "无法减速"
         },
         {
           "name": "MODIFIER_STATE_TETHERED",
           "value": 45,
           "description": null,
-          "description_cn": "修饰器状态被连接"
+          "description_cn": "被连接"
         },
         {
           "name": "MODIFIER_STATE_IGNORING_STOP_ORDERS",
           "value": 46,
           "description": null,
-          "description_cn": "修饰器状态忽略停止命令"
+          "description_cn": "忽略停止指令"
         },
         {
           "name": "MODIFIER_STATE_FEARED",
           "value": 47,
           "description": null,
-          "description_cn": "状态被恐惧"
+          "description_cn": "恐惧"
         },
         {
           "name": "MODIFIER_STATE_TAUNTED",
           "value": 48,
           "description": null,
-          "description_cn": "状态被嘲讽"
+          "description_cn": "嘲讽"
         },
         {
           "name": "MODIFIER_STATE_CANNOT_BE_MOTION_CONTROLLED",
           "value": 49,
           "description": null,
-          "description_cn": "修饰器状态无法BE运动控制"
+          "description_cn": "无法被位移控制"
         },
         {
           "name": "MODIFIER_STATE_FORCED_FLYING_VISION",
           "value": 50,
           "description": null,
-          "description_cn": "修饰器状态C飞行视野"
+          "description_cn": "强制飞行视野"
         },
         {
           "name": "MODIFIER_STATE_ATTACK_ALLIES",
           "value": 51,
           "description": null,
-          "description_cn": "修饰器状态攻击友军"
+          "description_cn": "攻击友军"
         },
         {
           "name": "MODIFIER_STATE_ALLOW_PATHING_THROUGH_CLIFFS",
           "value": 52,
           "description": null,
-          "description_cn": "修饰器状态允许穿过"
+          "description_cn": "允许穿越悬崖"
         },
         {
           "name": "MODIFIER_STATE_ALLOW_PATHING_THROUGH_FISSURE",
           "value": 53,
           "description": null,
-          "description_cn": "修饰器状态允许穿过"
+          "description_cn": "允许穿越沟壑"
         },
         {
           "name": "MODIFIER_STATE_SPECIALLY_UNDENIABLE",
           "value": 54,
           "description": null,
-          "description_cn": "修饰器状态特殊不可反补"
+          "description_cn": "不可被反补"
         },
         {
           "name": "MODIFIER_STATE_ALLOW_PATHING_THROUGH_OBSTRUCTIONS",
           "value": 55,
           "description": null,
-          "description_cn": "修饰器状态允许穿过障碍物"
+          "description_cn": "允许穿越障碍物"
         },
         {
           "name": "MODIFIER_STATE_DEBUFF_IMMUNE",
           "value": 56,
           "description": null,
-          "description_cn": "状态减益免疫"
+          "description_cn": "负面效果免疫"
         },
         {
           "name": "MODIFIER_STATE_ALLOW_PATHING_THROUGH_BASE_BLOCKER",
           "value": 57,
           "description": null,
-          "description_cn": "修饰器状态允许穿过基础格挡ER"
+          "description_cn": "允许穿越基地阻挡"
         },
         {
           "name": "MODIFIER_STATE_IGNORING_MOVE_ORDERS",
           "value": 58,
           "description": null,
-          "description_cn": "修饰器状态忽略移动命令"
+          "description_cn": "忽略移动指令"
         },
         {
           "name": "MODIFIER_STATE_ATTACKS_ARE_MELEE",
           "value": 59,
           "description": null,
-          "description_cn": "修饰器状态攻击S突击步枪E近战"
+          "description_cn": "Modifier状态攻击S突击步枪E近战"
         },
         {
           "name": "MODIFIER_STATE_CAN_USE_BACKPACK_ITEMS",
           "value": 60,
           "description": null,
-          "description_cn": "修饰器状态使用背部包物品"
+          "description_cn": "Modifier状态使用背部包物品"
         },
         {
           "name": "MODIFIER_STATE_CASTS_IGNORE_CHANNELING",
           "value": 61,
           "description": null,
-          "description_cn": "修饰器状态施法S忽略持续施法"
+          "description_cn": "Modifier状态施法S忽略持续施法"
         },
         {
           "name": "MODIFIER_STATE_ATTACKS_DONT_REVEAL",
           "value": 62,
           "description": null,
-          "description_cn": "修饰器状态攻击不要"
+          "description_cn": "Modifier状态攻击不要"
         },
         {
           "name": "MODIFIER_STATE_NEUTRALS_DONT_ATTACK",
           "value": 63,
           "description": null,
-          "description_cn": "修饰器状态中立不要攻击"
+          "description_cn": "Modifier状态中立不要攻击"
         },
         {
           "name": "MODIFIER_STATE_LAST",
           "value": 64,
           "description": null,
-          "description_cn": "状态最后"
+          "description_cn": "末尾标记"
         }
       ],
-      "name_cn": "修饰器状态",
+      "name_cn": "Modifier状态",
       "description_cn": "",
       "example_ts": "",
       "notes_cn": "",

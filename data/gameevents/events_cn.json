@@ -63,7 +63,7 @@
           "type_description_cn": "整数"
         },
         {
-          "ename": "hero_entindex",
+          "name": "hero_entindex",
           "type": "EntityIndex",
           "description": null,
           "description_cn": "英雄实体索引",
@@ -118,7 +118,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_hero_inventory_item_change%22",
       "link": "#!/events/dota_hero_inventory_item_change",
       "name_cn": "英雄物品栏变更事件",
-      "description_cn": "英雄实体索引",
+      "description_cn": "当英雄物品栏中的物品发生变化时触发，包括物品被移除、丢弃、出售等情况",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -837,7 +837,7 @@
           "name": "herokills",
           "type": "short",
           "description": null,
-          "description_cn": "当前团队的英雄击杀总数",
+          "description_cn": "当前队伍的英雄击杀总数",
           "type_description_cn": "短整型"
         }
       ],
@@ -846,8 +846,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_team_kill_credit%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_team_kill_credit%22",
       "link": "#!/events/dota_team_kill_credit",
-      "name_cn": "团队击杀奖励事件",
-      "description_cn": "当一名玩家击杀敌方英雄时触发，用于记录团队击杀数和奖励计算",
+      "name_cn": "队伍击杀奖励事件",
+      "description_cn": "当一名玩家击杀敌方英雄时触发，用于记录队伍击杀数和奖励计算",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -871,18 +871,18 @@
           "name": "teamnumber",
           "type": "short",
           "description": null,
-          "description_cn": "完成击杀的团队编号（2为天辉，3为夜魇）",
+          "description_cn": "完成击杀的队伍编号（2为天辉，3为夜魇）",
           "type_description_cn": "短整型"
         },
         {
           "name": "gold",
           "type": "short",
           "description": null,
-          "description_cn": "团队获得的金钱奖励",
+          "description_cn": "队伍获得的金币奖励",
           "type_description_cn": "短整型"
         },
         {
-          "": "tier",
+          "name": "tier",
           "type": "short",
           "description": null,
           "description_cn": "防御塔的等级（1-4表示外塔到基地塔）",
@@ -916,7 +916,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_tower_kill%22",
       "link": "#!/events/dota_tower_kill",
       "name_cn": "防御塔被摧毁事件",
-      "description_cn": "防御塔的等级（1-4表示外塔到高地塔）",
+      "description_cn": "当游戏中的防御塔被摧毁时触发此事件。包含击杀者、所属队伍、金币奖励和塔的位置等信息。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -2968,7 +2968,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_buyback%22",
       "link": "#!/events/dota_buyback",
       "name_cn": "买活事件",
-      "description_cn": "当玩家消耗金钱立即复活英雄时触发的事件。可用于监听玩家买活行为并执行自定义逻辑。",
+      "description_cn": "当玩家消耗金币立即复活英雄时触发的事件。可用于监听玩家买活行为并执行自定义逻辑。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -3312,7 +3312,7 @@
           "name": "gold",
           "type": "short",
           "description": null,
-          "description_cn": "获得的第一滴血金钱奖励",
+          "description_cn": "获得的第一滴血金币奖励",
           "type_description_cn": "短整型"
         },
         {
@@ -3670,7 +3670,7 @@
         },
         {
           "name": "attackername",
-          " type": "short",
+          "type": "short",
           "description": null,
           "description_cn": "攻击者实体名称索引",
           "type_description_cn": "短整型"
@@ -3770,7 +3770,7 @@
           "name": "gold_reason",
           "type": "short",
           "description": null,
-          "description_cn": "金钱变动原因",
+          "description_cn": "金币变动原因",
           "type_description_cn": "短整型"
         },
         {
@@ -3809,7 +3809,7 @@
           "name": "teamnumber",
           "type": "short",
           "description": null,
-          "description_cn": "信使所属的团队编号",
+          "description_cn": "信使所属的队伍编号",
           "type_description_cn": "短整型"
         },
         {
@@ -3877,7 +3877,6 @@
           "name": "courier_entindex",
           "type": "EntityIndex",
           "description": null,
-          "description_cн": "信使实体的索引值",
           "type_description_cn": "实体索引",
           "description_cn": "信使的实体索引"
         },
@@ -4118,8 +4117,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_enemy_money_changed%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_enemy_money_changed%22",
       "link": "#!/events/dota_enemy_money_changed",
-      "name_cn": "敌方金钱变动",
-      "description_cn": "当敌方队伍中任一玩家的金钱发生变化时触发的事件。可用于检测敌方经济状况变化或触发相关游戏逻辑。",
+      "name_cn": "敌方金币变动",
+      "description_cn": "当敌方队伍中任一玩家的金币发生变化时触发的事件。可用于检测敌方经济状况变化或触发相关游戏逻辑。",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -4283,7 +4282,7 @@
           "name": "teamnumber",
           "type": "short",
           "description": null,
-          "description_cn": "使用防御符文的团队编号",
+          "description_cn": "使用防御符文的队伍编号",
           "type_description_cn": "短整型"
         }
       ],
@@ -4293,7 +4292,7 @@
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_glyph_used%22",
       "link": "#!/events/dota_glyph_used",
       "name_cn": "防御符文被使用",
-      "description_cn": "当一方团队使用了防御符文（Glyph of Fortification）时触发此事件",
+      "description_cn": "当一方队伍使用了防御符文（Glyph of Fortification）时触发此事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -5321,7 +5320,7 @@
           "name": "gold",
           "type": "short",
           "description": null,
-          "description_cn": "奖励的金钱数量",
+          "description_cn": "奖励的金币数量",
           "type_description_cn": "短整型"
         }
       ],
@@ -5349,8 +5348,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_money_changed%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_money_changed%22",
       "link": "#!/events/dota_money_changed",
-      "name_cn": "金钱变更事件",
-      "description_cn": "当玩家金钱数量发生变化时触发此事件",
+      "name_cn": "金币变更事件",
+      "description_cn": "当玩家金币数量发生变化时触发此事件",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -6300,14 +6299,14 @@
           "name": "teamnumber",
           "type": "short",
           "description": null,
-          "description_cn": "击杀Roshan的队伍编号",
+          "description_cn": "击杀肉山的队伍编号",
           "type_description_cn": "短整型"
         },
         {
           "name": "gold",
           "type": "short",
           "description": null,
-          "description_cn": "击杀Roshan获得的金钱总数",
+          "description_cn": "击杀肉山获得的金币总数",
           "type_description_cn": "短整型"
         }
       ],
@@ -6316,8 +6315,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_roshan_kill%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_roshan_kill%22",
       "link": "#!/events/dota_roshan_kill",
-      "name_cn": "Roshan击杀事件",
-      "description_cn": "当Roshan被击杀时触发，用于通知服务器击杀队伍和获得的金钱",
+      "name_cn": "肉山击杀事件",
+      "description_cn": "当肉山被击杀时触发，用于通知服务器击杀队伍和获得的金币",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -6343,8 +6342,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=dota_roshan_roar%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22dota_roshan_roar%22",
       "link": "#!/events/dota_roshan_roar",
-      "name_cn": "Roshan咆哮",
-      "description_cn": "当Roshan发出咆哮时触发的事件，通常用于通知所有玩家Roshan已被激怒或进入战斗状态",
+      "name_cn": "肉山咆哮",
+      "description_cn": "当肉山发出咆哮时触发的事件，通常用于通知所有玩家肉山已被激怒或进入战斗状态",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -6450,7 +6449,7 @@
           "name": "bounty_amount",
           "type": "short",
           "description": null,
-          "description_cn": "符文提供的金钱奖励数额",
+          "description_cn": "符文提供的金币奖励数额",
           "type_description_cn": "短整型"
         }
       ],
@@ -6525,7 +6524,7 @@
           "name": "teamnumber",
           "type": "short",
           "description": null,
-          "description_cn": "发现敌方英雄的团队编号",
+          "description_cn": "发现敌方英雄的队伍编号",
           "type_description_cn": "短整型"
         }
       ],
@@ -6672,7 +6671,7 @@
           "name": "gold",
           "type": "short",
           "description": null,
-          "description_cn": "获得的金钱数量",
+          "description_cn": "获得的金币数量",
           "type_description_cn": "短整型"
         }
       ],
@@ -11412,7 +11411,7 @@
           "name": "team",
           "type": "byte",
           "description": "Unique team id.",
-          "description_cn": "目标团队编号",
+          "description_cn": "目标队伍编号",
           "type_description_cn": "字节类型"
         },
         {
@@ -11428,8 +11427,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=teamplay_broadcast_audio%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22teamplay_broadcast_audio%22",
       "link": "#!/events/teamplay_broadcast_audio",
-      "name_cn": "团队广播音频",
-      "description_cn": "当游戏需要向特定团队播放音频时触发此事件，用于实现团队专属的音效播放",
+      "name_cn": "队伍广播音频",
+      "description_cn": "当游戏需要向特定队伍播放音频时触发此事件，用于实现队伍专属的音效播放",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
@@ -11455,8 +11454,8 @@
       "githubLink": "https://github.com/search?l=Lua&q=teamplay_round_start%20path%3Avscripts&type=Code",
       "googleLink": "https://www.google.com/search?q=site%3Agithub.com%20inurl%3Avscripts%20%22teamplay_round_start%22",
       "link": "#!/events/teamplay_round_start",
-      "name_cn": "团队回合开始",
-      "description_cn": "当一个新的团队回合开始时触发此事件，用于通知游戏逻辑回合重置状态",
+      "name_cn": "队伍回合开始",
+      "description_cn": "当一个新的队伍回合开始时触发此事件，用于通知游戏逻辑回合重置状态",
       "example_ts": "",
       "notes_cn": "",
       "common_usage_cn": "",
