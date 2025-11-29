@@ -4,9 +4,150 @@
 
 构建一个现代化的 Dota2 中文 API 文档网站，提供 Lua API 和 Panorama API 的完整中文文档查询功能。
 
+
+我想要苹果的风格:
+好的，我给你 **“苹果官网 Apple.com 风格”** 的 **高级极简配色方案 + 设计语言（Design System）**。
+这是目前最干净、最高级、最有质感的风格之一，非常适合你的“简约 API 网站”。
+
+---
+
+# 🍎 **Apple 官网风格高级配色方案（Apple Design System）**
+
+苹果的设计关键不是颜色多，而是：
+
+### **① 大量留白（White Space）**
+
+### **② 极轻边框（0.5px hairline）**
+
+### **③ 高级灰（不使用纯黑/纯白）**
+
+### **④ 跨设备统一的中性色**
+
+以下是 *高度复刻 Apple 风格* 的配色表：
+
+---
+
+# 🎨 **Apple-style 色板（Light Theme）**
+
+### **主背景 Background**
+
+* **#F5F5F7**（Apple Light Grey — 苹果官网底色）
+* **#FFFFFF**（内容区卡片）
+
+### **主文本 Primary Text**
+
+* **#1D1D1F**（Apple Graphite 黑灰，不刺眼）
+
+### **副文本 Secondary Text**
+
+* **#6E6E73**（苹果网页常用的次级文字颜色）
+
+### **边框 Border（极轻）**
+
+* **#D2D2D7**（Apple Hairline Border）
+
+### **主色 Primary（蓝色按钮、链接）**
+
+* **#0071E3**（Apple 蓝）
+
+### **强调色 Accent**
+
+* 成功：**#34C759**（Apple Green）
+* 警告：**#FF9500**
+* 错误：**#FF3B30**
+
+---
+
+# 🌑 **Apple Dark Theme（可选深色）**
+
+### 背景
+
+* **#000000**
+* **#1C1C1E**
+
+### 文字
+
+* 主文字：**#FFFFFF**
+* 次文字：**#8E8E93**
+
+### 边框
+
+* **#2C2C2E**
+
+### 蓝色主色
+
+* **#0A84FF**
+
+---
+
+# 🍎 **Apple 风格的 UI 特征（你做网站必须遵守这些）**
+
+### ✔ 1. 大量留白
+
+* Apple 网站通常左右留白 **24–80px**
+* 组件间距大、呼吸感强
+
+### ✔ 2. 字体非常重要
+
+使用系统字体栈：
+
+```
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+```
+
+### ✔ 3. 轻边框 vs 无边框
+
+* 卡片基本不加边框
+* 若必须加边框 → **只有 0.5px 的超轻边**
+
+### ✔ 4. 微妙阴影（不明显）
+
+Apple 不用浓阴影，示例：
+
+```
+box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+```
+
+### ✔ 5. 按钮用 Apple 蓝
+
+按钮圆角小、简洁：
+
+```
+background: #0071E3;
+border-radius: 8px;
+padding: 12px 22px;
+font-weight: 500;
+color: white;
+```
+
+---
+
+# 🧱 **完整 Tailwind 配色（可直接复制到项目）**
+
+```js
+theme: {
+  extend: {
+    colors: {
+      apple: {
+        bg: '#F5F5F7',
+        card: '#FFFFFF',
+        text: '#1D1D1F',
+        textSecondary: '#6E6E73',
+        border: '#D2D2D7',
+        blue: '#0071E3',
+        green: '#34C759',
+        orange: '#FF9500',
+        red: '#FF3B30',
+      }
+    }
+  }
+}
+```
+
+
 ## 技术栈
 
-- **框架**: Next.js 14+ (App Router)
+- **框架**: Next.js 16.0.5 (App Router)
 - **UI 组件库**: shadcn/ui
 - **样式**: Tailwind CSS 4
 - **动画**: Motion (framer-motion)
@@ -73,7 +214,7 @@ data/
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Logo    [Lua API] [Game Events] [Panorama API] [...]   │  ← 顶部导航
+│  Logo    [Lua API] [Game Events] [Panorama API] [Panorama Events]   [Global Seach]│  ← 顶部导航
 │                                        🌙/☀️  🌐 i18n   │
 ├─────────────────────────────────────────────────────────┤
 │  ┌──────────┐  ┌─────────────────────────────────────┐  │
@@ -93,49 +234,31 @@ data/
 
 #### 1. Class (类) 图标
 ```svg
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-  <rect x="3" y="3" width="18" height="18" rx="2"/>
-  <path d="M9 8h6M9 12h6M9 16h4"/>
-</svg>
+你自己设计
 ```
 - 含义: 矩形框代表类的封装性，内部线条代表属性和方法
 
 #### 2. Function (函数) 图标
 ```svg
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-  <path d="M9 3v18"/>
-  <path d="M5 8c0-2.5 2-4 4-4"/>
-  <path d="M15 21v-18"/>
-  <path d="M19 16c0 2.5-2 4-4 4"/>
-</svg>
+你自己设计
 ```
 - 含义: 花括号形状，代表函数定义
 
 #### 3. Constant (常量) 图标
 ```svg
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-  <circle cx="12" cy="12" r="9"/>
-  <path d="M12 8v4l2 2"/>
-</svg>
+你自己设计
 ```
 - 含义: 圆形代表固定不变，指针代表固定值
 
 #### 4. Enum (枚举) 图标
 ```svg
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-  <rect x="4" y="4" width="6" height="6" rx="1"/>
-  <rect x="14" y="4" width="6" height="6" rx="1"/>
-  <rect x="4" y="14" width="6" height="6" rx="1"/>
-  <rect x="14" y="14" width="6" height="6" rx="1"/>
-</svg>
+你自己设计
 ```
 - 含义: 多个方块代表枚举的多个选项
 
 #### 5. Event (事件) 图标
 ```svg
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-</svg>
+你自己设计
 ```
 - 含义: 闪电形状，代表事件触发
 
@@ -151,36 +274,14 @@ data/
 
 ```tsx
 // 示例动画配置
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.3 }
-}
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.05
-    }
-  }
-}
+你自己设计
 ```
 
 ### 页脚设计
 
 ```tsx
 // 页脚样式参考
-<footer className="border-t border-border/40 py-6 mt-auto">
-  <div className="container flex justify-center">
-    <p className="text-sm text-muted-foreground tracking-wide">
-      <span className="font-light">Design by</span>
-      <span className="font-semibold mx-1.5 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-        LiamWang
-      </span>
-      <span className="font-light">© 2025</span>
-    </p>
-  </div>
-</footer>
+你自己设计
 ```
 
 ## 功能需求
@@ -188,7 +289,7 @@ const staggerContainer = {
 ### 核心功能
 
 1. **搜索功能**
-   - 全局搜索 (Cmd/Ctrl + K)
+   - 全局搜索 (Cmd/Ctrl + K)（方法名，函数名，类名，常量名，值等所有的都要支持可以搜索到，在各个页面下，在各个页面下只能搜索到各个页面下的，但是在global可以搜索到全部的，)
    - 支持模糊匹配
    - 搜索结果高亮
    - 搜索历史记录
@@ -205,10 +306,6 @@ const staggerContainer = {
    - 返回值说明
    - 相关链接 (GitHub/Google 搜索)
 
-4. **国际化 (i18n)**
-   - 中文 (默认)
-   - English
-   - 语言切换器
 
 ### 数据展示格式
 
@@ -258,59 +355,7 @@ const staggerContainer = {
 ```
 
 ## 项目结构
-
-```
-dota2-chinese-api/
-├── app/
-│   ├── [locale]/
-│   │   ├── layout.tsx
-│   │   ├── page.tsx
-│   │   ├── lua-api/
-│   │   │   ├── page.tsx
-│   │   │   ├── classes/
-│   │   │   │   └── page.tsx
-│   │   │   ├── functions/
-│   │   │   │   └── page.tsx
-│   │   │   ├── constants/
-│   │   │   │   └── page.tsx
-│   │   │   └── enums/
-│   │   │       └── page.tsx
-│   │   ├── game-events/
-│   │   │   └── page.tsx
-│   │   ├── panorama-api/
-│   │   │   └── page.tsx
-│   │   └── panorama-events/
-│   │       └── page.tsx
-│   └── globals.css
-├── components/
-│   ├── ui/                    # shadcn/ui 组件
-│   ├── layout/
-│   │   ├── header.tsx
-│   │   ├── sidebar.tsx
-│   │   └── footer.tsx
-│   ├── icons/
-│   │   └── api-icons.tsx      # 自定义 SVG 图标
-│   ├── search/
-│   │   └── command-menu.tsx   # 全局搜索
-│   └── api/
-│       ├── class-card.tsx
-│       ├── function-card.tsx
-│       ├── enum-card.tsx
-│       └── event-card.tsx
-├── lib/
-│   ├── utils.ts
-│   └── data.ts                # 数据加载工具
-├── data/                      # API 数据文件 (JSON)
-├── messages/
-│   ├── zh.json                # 中文翻译
-│   └── en.json                # 英文翻译
-├── public/
-│   └── favicon.ico
-├── next.config.js
-├── tailwind.config.ts
-├── package.json
-└── README.md
-```
+你自己进行设计这个项目data目录就在那里
 
 ## Cloudflare Pages 部署配置
 
@@ -382,39 +427,7 @@ pnpm lint
 
 ```css
 /* 亮色主题 */
-:root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
-  --primary: 221.2 83.2% 53.3%;
-  --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
-  --border: 214.3 31.8% 91.4%;
-}
-
-/* 暗色主题 */
-.dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
-  --primary: 217.2 91.2% 59.8%;
-  --primary-foreground: 222.2 47.4% 11.2%;
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
-  --border: 217.2 32.6% 17.5%;
-}
-```
+你自己设计两个主题
 
 ---
 

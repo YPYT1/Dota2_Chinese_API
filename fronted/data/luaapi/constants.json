@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "type": "constants",
+    "source": "https://moddota.com/api/#!/vscripts",
+    "crawledAt": "2025-11-28T00:29:05.164683",
+    "count": 8
+  },
+  "items": [
+    {
+      "name": "DOTA_ITEM_INVENTORY_SIZE",
+      "value": 9,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_INVENTORY_SIZE",
+      "name_cn": "物品栏大小",
+      "description_cn": "单位物品栏的槽位数量，值为9",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_MAX",
+      "value": 25,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_MAX",
+      "name_cn": "物品最大数量",
+      "description_cn": "单位可携带的最大物品数量，包括物品栏和背包，值为25",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_STASH_MAX",
+      "value": 15,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_STASH_MAX",
+      "name_cn": "储物处最大索引",
+      "description_cn": "储物处的最大槽位索引，值为15",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_STASH_MIN",
+      "value": 9,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_STASH_MIN",
+      "name_cn": "储物处最小索引",
+      "description_cn": "储物处的最小槽位索引，值为9",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_ITEM_STASH_SIZE",
+      "value": 6,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_ITEM_STASH_SIZE",
+      "name_cn": "储物处大小",
+      "description_cn": "储物处的槽位数量，值为6",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "DOTA_MAX_ABILITIES",
+      "value": 40,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#DOTA_MAX_ABILITIES",
+      "name_cn": "最大技能数量",
+      "description_cn": "单位可拥有的最大技能数量，值为40",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "FIND_UNITS_EVERYWHERE",
+      "value": -1,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#FIND_UNITS_EVERYWHERE",
+      "name_cn": "全地图搜索单位",
+      "description_cn": "用于FindUnitsInRadius等函数，表示在全地图范围内搜索，值为-1",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    },
+    {
+      "name": "SPAWN_GROUP_HANDLE_INVALID",
+      "value": 0,
+      "valueType": "int",
+      "link": "#!/vscripts/constants#SPAWN_GROUP_HANDLE_INVALID",
+      "name_cn": "无效生成组句柄",
+      "description_cn": "表示无效的生成组句柄，值为0",
+      "example_ts": "",
+      "notes_cn": "",
+      "common_usage_cn": "",
+      "related": [],
+      "see_also": [],
+      "tags": []
+    }
+  ]
+}
