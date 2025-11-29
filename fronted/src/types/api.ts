@@ -50,6 +50,16 @@ export interface LuaMethod {
   options?: OptionObject[];
 }
 
+export interface LuaField {
+  name: string;
+  type: string;
+  typeLink: string | null;
+  link: string;
+  description_cn: string;
+  type_description_cn: string;
+  notes_cn: string;
+}
+
 export interface LuaClass {
   name: string;
   extends: string | null;
@@ -70,7 +80,7 @@ export interface LuaClass {
   tags: string[];
   deprecated: boolean;
   since_version: string;
-  fields: unknown[];
+  fields: LuaField[];
   methods: LuaMethod[];
 }
 
@@ -98,6 +108,7 @@ export interface LuaFunction {
   tags: string[];
   deprecated: boolean;
   see_also: string[];
+  options?: OptionObject[];
 }
 
 export interface LuaEnumMember {
