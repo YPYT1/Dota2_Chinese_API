@@ -64,7 +64,7 @@ function SidebarGroupComponent({
               )}
             >
               {item.icon}
-              <span className="truncate">{item.name_cn || item.name}</span>
+              <span className="truncate">{item.name}</span>
             </Link>
           ))}
         </div>
@@ -128,7 +128,7 @@ export function SimpleSidebar({ items, title, className }: SimpleSidebarProps) {
               )}
             >
               {item.icon}
-              <span className="truncate">{item.name_cn || item.name}</span>
+              <span className="truncate">{item.name}</span>
             </Link>
           ))}
         </div>

@@ -10,7 +10,7 @@ export function ClassIcon({ className }: IconProps) {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#0071E3"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -30,7 +30,7 @@ export function FunctionIcon({ className }: IconProps) {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#AF52DE"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -48,7 +48,7 @@ export function ConstantIcon({ className }: IconProps) {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#FF9500"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -67,7 +67,7 @@ export function EnumIcon({ className }: IconProps) {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#34C759"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -87,7 +87,7 @@ export function EventIcon({ className }: IconProps) {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#FF3B30"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -104,7 +104,7 @@ export function MethodIcon({ className }: IconProps) {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#AF52DE"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
